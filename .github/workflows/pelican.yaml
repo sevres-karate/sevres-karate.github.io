@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: Pelican deployment
 on:
   push:
     branches: ["main"]
