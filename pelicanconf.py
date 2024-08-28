@@ -1,9 +1,9 @@
 AUTHOR = 'Sèvres Karaté'
 SITENAME = 'Sèvres Karaté'
-SITEURL = "https://www.sevres-karate.club"
+SITEURL = ""
 
-PATH = "../source"
-OUTPUT_PATH = "../"
+PATH = "content"
+OUTPUT_PATH = "output"
 
 TIMEZONE = 'Europe/Paris'
 
