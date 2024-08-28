@@ -1,9 +1,7 @@
 AUTHOR = 'Sèvres Karaté'
 SITENAME = 'Sèvres Karaté'
-SITEURL = ""
 
 PATH = "content"
-OUTPUT_PATH = "output"
 
 TIMEZONE = 'Europe/Paris'
 
