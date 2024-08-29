@@ -1,7 +1,7 @@
 AUTHOR = 'Sèvres Karaté'
 SITENAME = 'Sèvres Karaté'
 
-PATH = "content"
+PATH = "content/"
 
 TIMEZONE = 'Europe/Paris'
 
