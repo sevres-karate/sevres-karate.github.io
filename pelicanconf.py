@@ -16,13 +16,12 @@ AUTHOR_FEED_RSS = None
 
 # Blogroll
 LINKS = (
-    ("You can modify those links in your config file", "#"),
+    ("Fiche d'inscription 2024-2025", "{static}/pdfs/fiche_inscription_coskarate_2024-2025.pdf"),
 )
 
 # Social widget
 SOCIAL = (
-    ("You can add links in your config file", "#"),
-    ("Another social link", "#"),
+    ("Instagram", "#"),
 )
 
 DEFAULT_PAGINATION = 10
