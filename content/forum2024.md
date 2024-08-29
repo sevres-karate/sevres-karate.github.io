@@ -17,27 +17,3 @@ Venez nombreux pour vous inscrire !
 La fiche d'inscription se trouve [ici]({static}/pdfs/fiche_inscription_coskarate_2024-2025.pdf)
 
 ![Alt Text]({static}/images/cos_karate_plaquette.jpg)
-
-## Horaires
-
-### Adultes
-| Jour | Horaires |
-| ----------- | ----------- |
-| Lundi | 19h15 - 20h45 |
-| Mercredi | 19h15 - 20h45 |
-| Samedi | 10h15 - 11h30 |
-
-### Enfants
-| Jour | Horaires |
-| ----------- | ----------- |
-| Lundi | 18h15 - 19h15 |
-| Mercredi | 18h15 - 19h15 |
-| Samedi | 9h00 - 10h15 |
-
-## Tarifs annuels
-
-| Groupe | Tarif Sévrien | Tarif non-Sévrien |
-| ----------- | ----------- | ----------- |
-| Adulte | 360 € | 375 € |
-| Enfant | 270 € | 285 € |
-| Baby | 215 € | 230 € |
