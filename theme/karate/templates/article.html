@@ -22,7 +22,7 @@
     <header>
       <h1 class="entry-title">
         <a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
-           title="Permalink to {{ article.title|striptags }}">{{ article.title }}</a></h1>
+           title="Permalink vers {{ article.title|striptags }}">{{ article.title }}</a></h1>
       {% include 'twitter.html' %}
     </header>
 
@@ -44,7 +44,7 @@
         (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
         })();
       </script>
-      <noscript>Please enable JavaScript to view the comments.</noscript>
+      <noscript>Autorisez Javascript pour voir les commentaires.</noscript>
     </div>
     {% endif %}
 
