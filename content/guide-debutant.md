@@ -57,3 +57,35 @@ Les commandements pour le salut :
 | Coup de poing, même bras même jambe, en avançant d'un pas                                                | Oi zuki | ![Alt Oi Zuki]({static}/images/oi-zuki.jpg)      |
 | Coup de poing arrière, en position zenkutsu dachi, on frappe du poing opposé à la jambe qui est avancée  | Gyaku zuki | ![Alt Oi Zuki]({static}/images/gyaku-zuki.jpg)   |
 | Coup point direct bras avant                                                                             | Kizami zuki | ![Alt Oi Zuki]({static}/images/kizami-zuki.jpg)  |
+
+## Les coups de pied
+
+| Français                | Japonais        | Image                                          |
+|-------------------------|-----------------|------------------------------------------------|
+| Coup de pied direct     | 	Mae geri       | ![Alt Yoko Geri]({static}/images/mae-geri.jpg) | 	
+| Coup de pied circulaire | 	Mawashi geri | 	![Alt Yoko Geri]({static}/images/mawashi.jpg) | 
+| Coup pied latéral       |  	Yoko geri     | ![Alt Yoko Geri]({static}/images/yoko.jpg)     |
+
+## Les déplacements
+
+| Français | Japonais |
+| -------- | -------- |
+| Avancer d'un pas |	Yumi ashi | 	
+| Reculer d'un pas |	Hiki ashi |	
+| Pas glissé |	Yori ashi |
+| Pas chassé |	Tsugi ashi |
+
+## Je compte
+
+| Français | Japonais          |
+| -------- |-------------------|
+|Un | 	ichi [itch]      |
+|Deux | ni [ni]           |
+|Trois | san [san]         |
+|Quatre | 	chi [chi]        |
+|Cinq | go [go]           |
+|Six | Roku [lok]        |
+|Sept | Shichi [chitchi]  |
+|Huit | Hachi [hatchi]    |
+|Neuf | kyū [kiou]        |
+|Dix | Jū [Djiou]        | 
