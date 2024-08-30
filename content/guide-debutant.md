@@ -1,7 +1,7 @@
 Title: Le guide du débutant
 Date: 2024-08-28 00:00
 Modified: 2024-08-30 00:00
-Category: Culture
+Category: Karaté
 Tags: karate, sevres, cos, culture, debutant
 Slug: guide-debutant
 Authors: Sèvres Karaté 
