@@ -33,17 +33,22 @@ Les commandements pour le salut :
 
 ## Niveaux (hauteur) : dan=niveau
 
-- Gedan : Niveau bas, en dessous de la ceinture
-- Chudan : Niveau moyen, de la ceinture jusqu’au cou 
-- Jodan : Niveau haut, la tête
+![Alt Hauteur dan]({static}/images/hauteur-dan.jpg)
+
+| Français                                               | Japonais   |
+|--------------------------------------------------------|------------|
+| Niveau bas, en dessous de la ceinture                  | Gedan      |
+| Chudan : Niveau moyen, de la ceinture jusqu’au cou     | Chudan     |
+| Jodan : Niveau haut, la tête                           | Jodan      |
 
 ## Les positions de base
-
-- Musubi-Dachi : Position d'attente pour le salut, talons joints 	
-- Hachiji-Dachi : Position d'attente, pieds écartés 	
-- Zenkutsu-Dachi : Position poids sur l'avant 	 	
-- Kokutsu-Dachi : Position poids sur l'arrière 	 	
-- Kiba-Dachi : Position du cavalier 	
+| Français                                        | Japonais          | Image                                            |
+|-------------------------------------------------|-------------------|--------------------------------------------------|
+| Position d'attente pour le salut, talons joints | Musubi Dachi      | ![Alt Hauteur dan]({static}/images/musubi-dachi.jpg) |
+| Position d'attente, pieds écartés               | Hachiji-Dachi     | ![Alt Hauteur dan]({static}/images/hachiji-dachi.jpg) |
+| Position poids sur l'avant                      | Zenkutsu-Dachi    | ![Alt Hauteur dan]({static}/images/zenkutsu-dachi.jpg) |	
+| Position poids sur l'arrière 	                  | Kokutsu-Dachi     | ![Alt Hauteur dan]({static}/images/kokutsu-dachi.jpg) |
+| Position du cavalier                            | Kiba-Dachi        | ![Alt Hauteur dan]({static}/images/kiba-dachi.jpg) | 	
 
 ## Les coups de poing
 
