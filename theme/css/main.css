@@ -17,7 +17,7 @@
 /***** Global *****/
 /* Body */
 body {
-    background: #F5F4EF;
+    background: linear-gradient(to right, #de602e, #e9c152);
     color: #000305;
     font-size: 87.5%; /* Base font size: 14px */
     font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -199,7 +199,7 @@ div.figure p.caption, figure p.caption { /* margin provided by figure */
 
 	/* Main Nav */
 	#banner nav {
-		background: #000305;
+		background: #231c4f;
 		font-size: 1.143em;
 		overflow: auto;
 		line-height: 30px;
@@ -225,7 +225,7 @@ div.figure p.caption, figure p.caption { /* margin provided by figure */
 	}
 	#banner nav a:hover, #banner nav a:active,
 	#banner nav .active a:link, #banner nav .active a:visited {
-		background: #C74451;
+		background: #e72327;
 		color: #fff;
 		text-shadow: none !important;
 	}
