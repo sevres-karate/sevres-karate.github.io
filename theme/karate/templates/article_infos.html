@@ -1,10 +1,10 @@
 <footer class="post-info">
-        <abbr class="published" title="{{ article.date.isoformat() }}">
+        <abbr class="published" title="{{ article.date.strftime('%d/%m/%Y') }}">
                 Date de publication: {{ article.locale_date }}
         </abbr>
         {% if article.modified %}
 		<br />
-        <abbr class="modified" title="{{ article.modified.isoformat() }}">
+        <abbr class="modified" title="{{ article.modified.strftime('%d/%m/%Y') }}">
                 Date de mise à jour: {{ article.locale_modified }}
         </abbr>
         {% endif %}
