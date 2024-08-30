@@ -5,7 +5,7 @@ Category: Actu
 Tags: karate, sevres, cos, stage
 Slug: stage-prerentree-2024
 Authors: Sèvres Karaté 
-Summary: Le COS Karaté présent au forum des associations de Sèvres le 7 septembre 2024
+Summary: Stage de remise en forme avant la reprise
 
 # Stage de remise en forme
 
