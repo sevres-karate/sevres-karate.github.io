@@ -37,5 +37,10 @@ DEFAULT_PAGINATION = 10
 
 THEME = 'theme/karate'
 
+EXTRA_PATH_METADATA = {
+    'extra/robots.txt': {'path': 'robots.txt'},
+    'extra/favicon.ico': {'path': 'favicon.ico'},
+}
+
 # Uncomment following line if you want document-relative URLs when developing
 # RELATIVE_URLS = True
