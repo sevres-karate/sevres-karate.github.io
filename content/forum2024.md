@@ -1,7 +1,7 @@
 Title: Forum des associations
 Date: 2024-08-28 00:00
 Modified: 2024-08-28 00:00
-Category: Forum 
+Category: Actu 
 Tags: karate, sevres, cos, forum, presentation
 Slug: forum-associations
 Authors: Sèvres Karaté 
