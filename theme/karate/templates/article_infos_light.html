@@ -1,6 +1,6 @@
 <footer class="post-info">
         <abbr class="published" title="{{ article.date.strftime('%d/%m/%Y') }}">
-                Publié le {{ article.strftime('%d/%m/%Y') }} par {% for author in article.authors %}
+                Publié le {{ article.date.strftime('%d/%m/%Y') }} par {% for author in article.authors %}
                         <a class="url fn" href="{{ SITEURL }}/{{ author.url }}">{{ author }}</a>
                 {% endfor %}{% if article.modified %} et modifié le {{ article.modified.strftime('%d/%m/%Y') }}{% endif %}
         </abbr>
