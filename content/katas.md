@@ -1,7 +1,7 @@
 Title: Les 26 katas du karaté Shotokan
 Date: 2024-08-28 00:00
 Modified: 2024-08-30 00:00
-Category: Culture
+Category: Karaté
 Tags: karate, sevres, cos, culture, katas
 Slug: katas
 Authors: Sèvres Karaté 
