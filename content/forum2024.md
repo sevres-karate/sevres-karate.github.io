@@ -1,6 +1,6 @@
 Title: Forum des associations
 Date: 2024-08-28 00:00
-Modified: 2024-08-28 00:00
+Modified: 2024-08-30 00:00
 Category: Actu 
 Tags: karate, sevres, cos, forum, presentation
 Slug: forum-associations

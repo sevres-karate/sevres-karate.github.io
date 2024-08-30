@@ -1,13 +1,13 @@
 Title: Horaires 2024-2025
 Date: 2024-08-28 00:00
-Modified: 2024-08-28 00:00
+Modified: 2024-08-30 00:00
 Category: Horaires
 Tags: karate, sevres, cos, horaires
 Slug: horaires2024
 Authors: Sèvres Karaté 
 Summary: Les horaires ds cours de Karaté pour la saison 2024-2025
 
-# Horaires 2024-2025
+# Horaires
 
 ## Adultes
 | Jour | Horaires |
