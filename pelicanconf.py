@@ -20,6 +20,12 @@ LINKS_WIDGET_NAME = "Liens"
 # Blogroll
 LINKS = (
     ("Fiche d'inscription 2024-2025", "{static}/pdfs/fiche_inscription_coskarate_2024-2025.pdf"),
+    ("Federation Française de Karaté et Disciplines Associées", "http://www.ffkama.fr/"),
+    ("Ligue des Hauts-de-Seine de Karaté", "http://www.ffkarate.fr/liguehautsdeseine/"),
+    ("Japan Karate Association", "http://www.jka.or.jp/"),
+    ("Club Olympique de Sèvres", "http://cosevres.fr/"),
+    ("Les Érables", "http://leserables-salons.com/")
+
 )
 
 # Social widget
