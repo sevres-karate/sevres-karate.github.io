@@ -44,3 +44,11 @@ Les commandements pour le salut :
 - Zenkutsu-Dachi : Position poids sur l'avant 	 	
 - Kokutsu-Dachi : Position poids sur l'arrière 	 	
 - Kiba-Dachi : Position du cavalier 	
+
+## Les coups de poing
+
+| Français                                                                                                 | Japonais | Image                                            |
+|----------------------------------------------------------------------------------------------------------| -------- |--------------------------------------------------|
+| Coup de poing, même bras même jambe, en avançant d'un pas                                                | Oi zuki | ![Alt Oi Zuki]({static}/images/oi-zuki.jpg)      |
+| Coup de poing arrière, en position zenkutsu dachi, on frappe du poing opposé à la jambe qui est avancée  | Gyaku zuki | ![Alt Oi Zuki]({static}/images/gyaku-zuki.jpg)   |
+| Coup point direct bras avant                                                                             | Kizami zuki | ![Alt Oi Zuki]({static}/images/kizami-zuki.jpg)  |
