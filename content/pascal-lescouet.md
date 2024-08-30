@@ -9,6 +9,8 @@ Summary: Présentation de Pascal Lescouët, instructeur au COS Karaté
 
 ## Pascal Lescouët - 6ème DAN FFKDA
 
+![Alt Pascal]({static}/images/pascal.gif)
+
 ## Historique
 
 Pascal a débuté le Karaté en 1979, à l’âge de 14 ans, dans le club Budo XI à Paris. Son professeur, M. Marcel LE ROLLAND (6e DAN JKA – Japan Karaté Association), est un élève direct de Senseï Taïji KASE. En 1986, il rejoint le CO Sèvres Karaté, après le départ de son professeur en province.

@@ -9,6 +9,7 @@ Summary: Présentation de José Da Silva, instructeur au COS Karaté
 
 # José DA SILVA CASTRO - 5e DAN FFKDA
 
+![Alt José]({static}/images/jose.gif)
 
 ## Historique
 
