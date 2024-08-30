@@ -1,9 +1,9 @@
 Title: Forum des associations
-Date: 2024-08-28 00:00
-Modified: 2024-08-30 00:00
+Date: 2024-09-01 00:00
+Modified: 2024-09-01 00:00
 Category: Actu 
 Tags: karate, sevres, cos, forum, presentation
-Slug: forum-associations
+Slug: forum-associations-2024
 Authors: Sèvres Karaté 
 Summary: Le COS Karaté présent au forum des associations de Sèvres le 7 septembre 2024
 
