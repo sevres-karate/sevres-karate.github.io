@@ -16,6 +16,9 @@ AUTHOR_FEED_ATOM = None
 AUTHOR_FEED_RSS = None
 SOCIAL_WIDGET_NAME = "Réseaux sociaux"
 LINKS_WIDGET_NAME = "Liens"
+DEFAULT_DATE_FORMAT = "%d/%m/%Y"
+
+ARTICLE_ORDER_BY = "basename"
 
 # Blogroll
 LINKS = (
