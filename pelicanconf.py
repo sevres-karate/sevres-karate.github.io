@@ -22,6 +22,7 @@ ARTICLE_ORDER_BY = "basename"
 
 # Blogroll
 LINKS = (
+    ("Inscription en ligne", "https://www.helloasso.com/associations/co-sevres-karate/adhesions/inscription-2024-2025"),
     ("Fiche d'inscription 2024-2025", "https://sevres-karate.fr/pdfs/fiche_inscription_coskarate_2024-2025.pdf"),
     ("Federation Française de Karaté et Disciplines Associées", "http://www.ffkama.fr/"),
     ("Ligue des Hauts-de-Seine de Karaté", "http://www.ffkarate.fr/liguehautsdeseine/"),
