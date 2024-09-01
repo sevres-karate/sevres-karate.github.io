@@ -34,7 +34,8 @@ LINKS = (
 
 # Social widget
 SOCIAL = (
-    ("Instagram", "#"),
+    ("Facebook", "https://www.facebook.com/p/CO-S%C3%A8vres-Karat%C3%A9-100066929041271/"),
+    # ("Instagram", "#"),
 )
 
 DEFAULT_PAGINATION = 10
