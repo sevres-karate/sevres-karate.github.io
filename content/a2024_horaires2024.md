@@ -11,13 +11,13 @@ Summary: Les horaires ds cours de Karaté pour la saison 2024-2025
 
 Tous les cours se déroulent au __gymnase des Cent-Gardes__, 45 Grande Rue, 92310 Sèvres.
 
-## Baby
+## Baby - 5[1] à 6 ans
 | Jour | Horaires      | Salle | 
 | ----------- |---------------|----------- |
 | Samedi | 11h30 - 12h15 | Parquet niveau -1 |
 
 
-## Enfants
+## Enfants - 7 à 14 ans
 | Jour | Horaires      | Niveau                    | Salle |
 | ----------- |---------------|---------------------------| ----------- | 
 | Lundi | 18h00 - 19h00 | Tous grades               | Tatami niveau -2 |
@@ -25,7 +25,7 @@ Tous les cours se déroulent au __gymnase des Cent-Gardes__, 45 Grande Rue, 9231
 | Mercredi | 18h15 - 19h00 | Ceintures orange et plus  | Tatami niveau -2 |
 | Samedi | 12h15 - 13h15 | Tous grades | Parquet niveau -1 |
 
-## Adultes
+## Adultes - 14 et plus
 | Jour | Horaires      | Niveau      | Salle | 
 | ----------- |---------------|-------------| ----------- | 
 | Lundi | 19h15 - 20h45 | Tous grades | Parquet niveau -1 |
@@ -36,3 +36,5 @@ Tous les cours se déroulent au __gymnase des Cent-Gardes__, 45 Grande Rue, 9231
 ## Un dimanche par mois de 10h00 - 12h00
 
 Cours à thème selon le calendrier du club, tatami niveau -2 
+
+[1]: L'enfant doit avoir 5 ans révolus à la date d'inscription
