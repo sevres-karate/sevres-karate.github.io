@@ -11,7 +11,7 @@ Summary: Les horaires ds cours de Karaté pour la saison 2024-2025
 
 Tous les cours se déroulent au __gymnase des Cent-Gardes__, 45 Grande Rue, 92310 Sèvres.
 
-## Baby - 5[1] à 6 ans
+## Baby - [5][1] à 6 ans
 | Jour | Horaires      | Salle | 
 | ----------- |---------------|----------- |
 | Samedi | 11h30 - 12h15 | Parquet niveau -1 |
