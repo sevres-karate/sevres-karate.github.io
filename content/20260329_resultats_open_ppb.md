@@ -1,5 +1,6 @@
 Title: Résultats compétition Open PPB
-Date: 2026-04-04
+Date: 2026-04-04 00:00
+Modified: 2026-04-08 00:00
 Category: Actu
 Tags: compétitions
 Slug: resultats-competition-open-ppb
