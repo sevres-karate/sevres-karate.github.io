@@ -14,7 +14,7 @@ Dimanche 29 mars 2026 a eu lieu l'Open Départemental de kumite et kata à Genne
 
 Félicitations à _Anouk, Asma, Augustin et Raphael_, qui ont tous décroché au moins 1 médaille lors de cette compétition. 
 
-### 🏅 Résultats des médailles
+### 🏅 Résultats :
 
 - **Raphael** : médaille de bronze en kumite (combat) et médaille de bronze en kata  
 - **Augustin** : médaille d'argent en kumite (combat)  
