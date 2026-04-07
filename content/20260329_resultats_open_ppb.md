@@ -12,7 +12,7 @@ Dimanche 29 mars 2026 a eu lieu l'Open Départemental de kumite et kata à Genne
   <img src="/images/open-ppb-2026.jpg" alt="Nos compétiteurs" style="max-width: 100%; height: auto;">
 </div>
 
-Félicitations à _Anouk, Asma, Augustin et Raphael_, qui ont tous décroché au moins 1 médaille lors de cette compétition. 
+Félicitations à _Raphael, Anouk, Asma et Augustin_, qui ont tous décroché au moins 1 médaille lors de cette compétition. 
 
 ### 🏅 Résultats :
 
