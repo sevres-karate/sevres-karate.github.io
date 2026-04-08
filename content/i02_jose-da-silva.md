@@ -1,6 +1,6 @@
 Title: Jose Da Silva
-Date: 2024-09-01 00:00
-Modified: 2024-09-01 00:00
+Date: 2024-09-01 00:03
+Modified: 2024-09-01 00:03
 Category: Instructeurs
 Tags: karate, sevres, cos, instructeurs, dasilva
 Slug: jose-da-silva
