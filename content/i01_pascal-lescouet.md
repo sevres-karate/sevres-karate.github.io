@@ -1,6 +1,6 @@
 Title: Pascal Lescouët
-Date: 2024-09-01 00:00
-Modified: 2024-09-01 00:00
+Date: 2024-09-01 00:04
+Modified: 2024-09-01 00:04
 Category: Instructeurs
 Tags: karate, sevres, cos, instructeurs, lescouet
 Slug: pascal-lescouet
