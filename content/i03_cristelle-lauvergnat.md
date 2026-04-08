@@ -1,6 +1,6 @@
 Title: Cristelle Lauvergnat
-Date: 2024-09-01 00:00
-Modified: 2024-09-01 00:00
+Date: 2024-09-01 00:02
+Modified: 2024-09-01 00:02
 Category: Instructeurs
 Tags: karate, sevres, cos, instructeurs, lauvergnat
 Slug: cristelle-lauvergnat
