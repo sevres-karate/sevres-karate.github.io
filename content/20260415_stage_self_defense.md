@@ -15,6 +15,7 @@ Summary: Stage self-defense du 19 avril 2026
 Dans ce cadre, elle organise un stage de self-défense le **dimanche 19 avril de 10h à 12h, en salle tatami** au **Gymnase des cent Gardes** (45 Grande Rue, 92310 Sèvres)
 
 **Modalités** : les inscriptions se font sur place (participation de 10 euros).
+
 **Tenue** : tenue libre. Vous pouvez laisser reposer un peu le kimono et venir en tenue de sport, ou même en tenue de ville, afin de travailler avec d’autres sensations.
 
 Nous vous attendons nombreux **dimanche 19 avril** pour ce stage ! 
