@@ -7,7 +7,7 @@ Authors: Sèvres Karaté
 Summary: Stage self-defense du 19 avril 2026
 
 <div style="text-align: center;">
-  <img src="/images/affiche_stage_self_defense.jpg" alt="Nos compétiteurs" style="max-width: 100%; height: auto;">
+  <img src="/images/affiche_stage_self_defense.jpg" alt="Stage self defense" style="max-width: 100%; height: auto;">
 </div>
 
 [Cristelle](/cristelle-lauvergnat.html) en parallèle du _karaté_, pratique depuis de nombreuses années d’autres disciplines complémentaires telles que le _kali ou encore le krav-maga_.
