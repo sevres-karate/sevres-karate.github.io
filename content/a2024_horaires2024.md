@@ -1,11 +1,11 @@
-Title: Horaires 2025-2026
+Title: Horaires 2026-2027
 Date: 2025-08-28 00:00
-Modified: 2025-09-01 00:00
+Modified: 2026-06-24 00:00
 Category: Horaires
 Tags: horaires
 Slug: horaires2025
 Authors: Sèvres Karaté 
-Summary: Les horaires ds cours de Karaté pour la saison 2025-2026
+Summary: Les horaires ds cours de Karaté pour la saison 2026-2027
 
 # Horaires
 
