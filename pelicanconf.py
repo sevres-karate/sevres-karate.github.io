@@ -24,7 +24,7 @@ DEFAULT_DATE_ORDER = "reversed"
 # Blogroll
 LINKS = (
     ("Inscription en ligne", "https://www.helloasso.com/associations/co-sevres-karate/adhesions/inscription-saison-2026-2027"),
-    ("Fiche d'inscription 2026-2027", "https://sevres-karate.fr/pdfs/fiche_inscription_coskarate_2026_2027.pdf"),
+    ("Fiche d'inscription 2026-2027", "https://sevres-karate.fr/pdfs/fiche_inscription_coskarate_2026-2027.pdf"),
     
     ("Federation Française de Karaté et Disciplines Associées", "http://www.ffkama.fr/"),
     ("Ligue des Hauts-de-Seine de Karaté", "http://www.ffkarate.fr/liguehautsdeseine/"),
