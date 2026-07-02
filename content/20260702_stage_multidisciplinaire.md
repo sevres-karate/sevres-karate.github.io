@@ -16,4 +16,5 @@ Summary: Stage multi-disciplines autour du karaté le 6 et 8 juillet
 Divers ateliers seront mis en place : du **karaté** mais aussi du **Body karaté**, du **handi-karaté** et de la **self defense** notamment. Nous vous attendons nombreux pour découvrir toutes ces disciplines et partager un moment à la fois sportif et convivial.
 
 Les inscriptions se font sur place, la participation est de **15 euros par cours**
+
 La tenue est **libre** : vous pouvez venir en kimono ou tenue de sport
