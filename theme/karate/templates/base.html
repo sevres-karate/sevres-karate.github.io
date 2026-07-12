@@ -27,7 +27,17 @@
                 {% endfor %}
                 {% if DISPLAY_CATEGORIES_ON_MENU -%}
                 {% for cat, null in categories %}
+                {% if cat.name == 'Karaté' %}
+                <li class="has-submenu{% if cat == category %} active{% endif %}"><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a>
+                    <ul class="submenu">
+                        <li><a href="{{ SITEURL }}/code-moral.html">Le code moral du karaté</a></li>
+                        <li><a href="{{ SITEURL }}/deroulement-cours.html">Le déroulement d'un cours</a></li>
+                        <li><a href="{{ SITEURL }}/guide-debutant.html">Le guide du débutant</a></li>
+                    </ul>
+                </li>
+                {% else %}
                 <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
+                {% endif %}
                 {% endfor %}
                 {% endif %}
                 {% if DISPLAY_PAGES_ON_MENU -%}

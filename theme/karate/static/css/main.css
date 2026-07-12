@@ -201,7 +201,7 @@ div.figure p.caption, figure p.caption { /* margin provided by figure */
 	#banner nav {
 		background: #231c4f;
 		font-size: 1.143em;
-		overflow: auto;
+		overflow: visible;
 		line-height: 30px;
 		margin: 0 auto 2em auto;
 		padding: 0;
@@ -214,7 +214,35 @@ div.figure p.caption, figure p.caption { /* margin provided by figure */
 	}
 
 	#banner nav ul {list-style: none; margin: 0 auto; max-width: 800px;}
+	#banner nav ul:after {content: ""; display: table; clear: both;}
 	#banner nav li {float: left; display: inline; margin: 0;}
+
+	/* Sous-menu déroulant (dropdown) */
+	#banner nav li.has-submenu {position: relative;}
+	#banner nav ul.submenu {
+		display: none;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		margin: 0;
+		padding: 0;
+		min-width: 220px;
+		background: #231c4f;
+		box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+		border-radius: 0 0 5px 5px;
+		text-align: left;
+		z-index: 100;
+	}
+	#banner nav li.has-submenu:hover > ul.submenu,
+	#banner nav li.has-submenu:focus-within > ul.submenu {display: block;}
+	#banner nav ul.submenu li {float: none; display: block;}
+	#banner nav ul.submenu a:link, #banner nav ul.submenu a:visited {
+		display: block;
+		height: auto;
+		line-height: 1.3;
+		padding: 10px 1.5em;
+		white-space: nowrap;
+	}
 
 	#banner nav a:link, #banner nav a:visited {
 		color: #fff;
@@ -224,7 +252,7 @@ div.figure p.caption, figure p.caption { /* margin provided by figure */
 		text-decoration: none;
 	}
 	#banner nav a:hover, #banner nav a:active,
-	#banner nav .active a:link, #banner nav .active a:visited {
+	#banner nav .active > a:link, #banner nav .active > a:visited {
 		background: #e72327;
 		color: #fff;
 		text-shadow: none !important;
@@ -437,3 +465,22 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 
 	#add-comment input[type='submit'] {float: right; margin: 0 .5em;}
 	#add-comment * {margin-bottom: .5em;}
+
+	/* Vidéos YouTube responsives */
+	.video-wrapper {
+		position: relative;
+		width: 100%;
+		max-width: 640px;
+		margin: 1em auto;
+		padding-bottom: 56.25%; /* ratio 16:9 */
+		height: 0;
+		overflow: hidden;
+	}
+	.video-wrapper iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		border: 0;
+	}
