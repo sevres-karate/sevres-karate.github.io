@@ -1,6 +1,6 @@
 Title: Le Code Moral du Karaté
-Date: 2026-07-12 00:00
-Modified: 2026-07-12 00:00
+Date: 2024-08-28 00:00
+Modified: 2024-08-30 00:00
 Category: Karaté
 Tags: karate, sevres, cos, culture, dojo-kun, funakoshi
 Slug: code-moral

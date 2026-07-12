@@ -1,6 +1,6 @@
 Title: Le déroulement d'un cours
-Date: 2026-07-12 00:00
-Modified: 2026-07-12 00:00
+Date: 2024-08-28 00:00
+Modified: 2024-08-30 00:00
 Category: Karaté
 Tags: karate, sevres, cos, cours, debutant
 Slug: deroulement-cours
