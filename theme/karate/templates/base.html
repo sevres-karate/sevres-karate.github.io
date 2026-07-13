@@ -84,5 +84,28 @@
 
 {% include 'analytics.html' %}
 {% include 'disqus_script.html' %}
+<script>
+(function () {
+    function loadVideo(el) {
+        if (el.classList.contains('video-loaded')) return;
+        var embed = el.getAttribute('data-embed');
+        if (!embed) return;
+        var sep = embed.indexOf('?') === -1 ? '?' : '&';
+        var iframe = document.createElement('iframe');
+        iframe.src = 'https://www.youtube.com/embed/' + embed + sep + 'autoplay=1';
+        iframe.title = el.getAttribute('data-title') || '';
+        iframe.setAttribute('frameborder', '0');
+        iframe.setAttribute('allow', 'autoplay; encrypted-media; picture-in-picture; fullscreen');
+        iframe.setAttribute('allowfullscreen', '');
+        el.innerHTML = '';
+        el.appendChild(iframe);
+        el.classList.add('video-loaded');
+    }
+    document.addEventListener('click', function (e) {
+        var el = e.target.closest('.video-facade');
+        if (el) loadVideo(el);
+    });
+})();
+</script>
 </body>
 </html>
