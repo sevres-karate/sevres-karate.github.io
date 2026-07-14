@@ -1,4 +1,4 @@
-Title: Le guide du débutant
+Title: Les bases du karaté
 Date: 2024-08-28 00:00
 Modified: 2024-08-30 00:00
 Category: Karaté
