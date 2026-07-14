@@ -1,0 +1,97 @@
+<html>
+<head>
+    <title>Accès Membres</title>
+    <meta name="slug" content="acces-membres" />
+    <meta name="status" content="published" />
+</head>
+<body>
+
+<p>Cet espace est <strong>réservé aux membres du club</strong>. Il contient les
+vidéos de la fête de fin d'année des enfants. Saisissez le mot de passe communiqué
+par le club pour y accéder.</p>
+
+<div id="membres-gate">
+    <form id="membres-form" autocomplete="off">
+        <label for="membres-pass"><strong>Mot de passe du club</strong></label><br>
+        <input type="password" id="membres-pass" name="membres-pass"
+               style="padding:.5em;font-size:1em;min-width:220px;margin:.4em 0;" required>
+        <button type="submit" style="padding:.5em 1.1em;font-size:1em;cursor:pointer;">Accéder</button>
+        <p id="membres-error" style="color:#C74350;font-weight:700;display:none;">
+            Mot de passe incorrect. Réessayez.
+        </p>
+        <p id="membres-wait" style="display:none;">Déchiffrement en cours…</p>
+    </form>
+</div>
+
+<div id="membres-contenu" style="display:none;"></div>
+
+<script>
+(function () {
+    var BLOB_URL = "/membres.enc.json";
+
+    function b64ToBytes(b64) {
+        var bin = atob(b64);
+        var bytes = new Uint8Array(bin.length);
+        for (var i = 0; i < bin.length; i++) { bytes[i] = bin.charCodeAt(i); }
+        return bytes;
+    }
+
+    var form = document.getElementById("membres-form");
+    var errorEl = document.getElementById("membres-error");
+    var waitEl = document.getElementById("membres-wait");
+    var gateEl = document.getElementById("membres-gate");
+    var contentEl = document.getElementById("membres-contenu");
+
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+        errorEl.style.display = "none";
+        waitEl.style.display = "block";
+        var password = document.getElementById("membres-pass").value;
+
+        fetch(BLOB_URL, { cache: "no-store" })
+            .then(function (r) {
+                if (!r.ok) { throw new Error("blob introuvable"); }
+                return r.json();
+            })
+            .then(function (data) {
+                var enc = new TextEncoder();
+                return crypto.subtle.importKey(
+                    "raw", enc.encode(password), "PBKDF2", false, ["deriveKey"]
+                ).then(function (keyMaterial) {
+                    return crypto.subtle.deriveKey(
+                        {
+                            name: "PBKDF2",
+                            salt: b64ToBytes(data.salt),
+                            iterations: data.iterations,
+                            hash: "SHA-256"
+                        },
+                        keyMaterial,
+                        { name: "AES-GCM", length: 256 },
+                        false,
+                        ["decrypt"]
+                    );
+                }).then(function (key) {
+                    return crypto.subtle.decrypt(
+                        { name: "AES-GCM", iv: b64ToBytes(data.iv) },
+                        key,
+                        b64ToBytes(data.ct)
+                    );
+                });
+            })
+            .then(function (plainBuf) {
+                var html = new TextDecoder().decode(plainBuf);
+                contentEl.innerHTML = html;
+                contentEl.style.display = "block";
+                gateEl.style.display = "none";
+                waitEl.style.display = "none";
+            })
+            .catch(function () {
+                waitEl.style.display = "none";
+                errorEl.style.display = "block";
+            });
+    });
+})();
+</script>
+
+</body>
+</html>

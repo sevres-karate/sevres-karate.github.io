@@ -49,11 +49,13 @@ STATIC_PATHS = [
     "pdfs",
     "extra/robots.txt",
     "extra/favicon.ico",
+    "extra/membres.enc.json",
 ]
 
 EXTRA_PATH_METADATA = {
     'extra/robots.txt': {'path': 'robots.txt'},
     'extra/favicon.ico': {'path': 'favicon.ico'},
+    'extra/membres.enc.json': {'path': 'membres.enc.json'},
 }
 
 # Uncomment following line if you want document-relative URLs when developing

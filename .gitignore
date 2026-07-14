@@ -2,3 +2,7 @@ output/
 __pycache__/
 *.pyc
 .DS_Store
+
+# Accès Membres : source EN CLAIR des vidéos réservées — ne jamais publier
+# (seul le blob chiffré content/extra/membres.enc.json est poussé)
+tools/membres_content.html

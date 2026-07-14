@@ -11,6 +11,8 @@ Summary: Les horaires ds cours de Karaté pour la saison 2026-2027
 
 Tous les cours se déroulent au __gymnase des Cent-Gardes__, 45 Grande Rue, 92310 Sèvres.
 
+**Débutants bienvenus**, quel que soit votre niveau — venez simplement essayer !
+
 ## Baby - 5* à 6 ans
 | Jour | Horaires      | Salle | 
 | ----------- |---------------|----------- |

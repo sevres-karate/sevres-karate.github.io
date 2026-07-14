@@ -26,9 +26,16 @@
                     <li><a href="{i{ link }}">{{ title }}</a></li>
                 {% endfor %}
                 {% if DISPLAY_CATEGORIES_ON_MENU -%}
-                {% for cat, null in categories %}
-                {% if cat.name == 'Karaté' %}
-                <li class="has-submenu{% if cat == category %} active{% endif %}"><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a>
+                {# Ordre du menu fixé explicitement : Le Club, Karaté, Horaires, Tarifs #}
+                {# (la catégorie « Actu » est intégrée au menu « Le Club ») #}
+                <li class="has-submenu{% if category and category.name in ['Actu', 'Instructeurs'] %} active{% endif %}"><a href="{{ SITEURL }}/category/actu.html">Le Club</a>
+                    <ul class="submenu">
+                        <li><a href="{{ SITEURL }}/category/actu.html">Actus</a></li>
+                        <li><a href="{{ SITEURL }}/category/instructeurs.html">Instructeurs</a></li>
+                        <li><a href="{{ SITEURL }}/pages/acces-membres.html">Accès Membres</a></li>
+                    </ul>
+                </li>
+                <li class="has-submenu{% if category and category.name == 'Karaté' %} active{% endif %}"><a href="{{ SITEURL }}/category/karate.html">Karaté</a>
                     <ul class="submenu">
                         <li><a href="{{ SITEURL }}/debuter-faq.html">Débuter / FAQ</a></li>
                         <li><a href="{{ SITEURL }}/code-moral.html">Le code moral du karaté</a></li>
@@ -36,14 +43,14 @@
                         <li><a href="{{ SITEURL }}/guide-debutant.html">Les bases du karaté</a></li>
                     </ul>
                 </li>
-                {% else %}
-                <li{% if cat == category %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ cat.url }}">{{ cat }}</a></li>
-                {% endif %}
-                {% endfor %}
+                <li{% if category and category.name == 'Horaires' %} class="active"{% endif %}><a href="{{ SITEURL }}/category/horaires.html">Horaires</a></li>
+                <li{% if category and category.name == 'Tarifs' %} class="active"{% endif %}><a href="{{ SITEURL }}/category/tarifs.html">Tarifs</a></li>
                 {% endif %}
                 {% if DISPLAY_PAGES_ON_MENU -%}
                 {% for pg in pages %}
+                {% if pg.slug != 'acces-membres' %}
                 <li{% if pg == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ pg.url }}">{{ pg.title }}</a></li>
+                {% endif %}
                 {% endfor %}
                 {% endif %}
                 </ul></nav>
