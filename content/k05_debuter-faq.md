@@ -1,5 +1,5 @@
 Title: Débuter / FAQ
-Date: 2026-07-14 00:00
+Date: 2026-07-10 00:00
 Modified: 2026-07-14 00:00
 Category: Karaté
 Tags: karate, sevres, cos, debutant, faq
