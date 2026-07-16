@@ -7,7 +7,10 @@
         {# First item #}
         {% if not articles_page.has_previous() %}
             <aside id="content" class="body">
-                <article>
+                {# La classe = slug : permet aux styles propres à un article
+                   (ex. « club-en-chiffres ») de s'appliquer aussi quand il est
+                   affiché en entier ici (accueil / page catégorie). #}
+                <article class="{{ article.slug }}">
                     <h1 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
                     {{ article.content }}{% include 'article_infos_light.html' %}{% include 'comments.html' %}
                 </article>

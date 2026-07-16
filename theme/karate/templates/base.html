@@ -28,10 +28,11 @@
                 {% if DISPLAY_CATEGORIES_ON_MENU -%}
                 {# Ordre du menu fixé explicitement : Le Club, Karaté, Horaires, Tarifs #}
                 {# (la catégorie « Actu » est intégrée au menu « Le Club ») #}
-                <li class="has-submenu{% if category and category.name in ['Actu', 'Instructeurs'] %} active{% endif %}"><a href="{{ SITEURL }}/category/actu.html">Le Club</a>
+                <li class="has-submenu{% if category and category.name in ['Actu', 'Instructeurs', 'Le Club'] %} active{% endif %}"><a href="{{ SITEURL }}/category/actu.html">Le Club</a>
                     <ul class="submenu">
                         <li><a href="{{ SITEURL }}/category/actu.html">Actus</a></li>
                         <li><a href="{{ SITEURL }}/category/instructeurs.html">Instructeurs</a></li>
+                        <li><a href="{{ SITEURL }}/club-en-chiffres.html">Le club en chiffres</a></li>
                         <li><a href="{{ SITEURL }}/pages/acces-membres.html">Accès Membres</a></li>
                     </ul>
                 </li>

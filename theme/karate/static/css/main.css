@@ -587,6 +587,165 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 	margin-top: .4em;
 }
 
+/* Page « Le club en chiffres » : tuiles de stats et graphiques en barres */
+.club-en-chiffres .ckc-tiles {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+	gap: 12px;
+	margin: 1.5em 0 2em;
+}
+
+.club-en-chiffres .ckc-tile {
+	background: #f6f7fa;
+	border-radius: 8px;
+	padding: 12px 16px 14px;
+}
+
+.club-en-chiffres .ckc-tile p { margin: 0; }
+.club-en-chiffres .ckc-tile .ckc-label {
+	font-family: 'Yanone Kaffeesatz', arial, sans-serif;
+	font-size: 1.45em;
+	line-height: 1.1;
+	color: #5b8fc7; /* le bleu des barres des graphiques */
+	text-transform: uppercase;
+	letter-spacing: .03em;
+}
+.club-en-chiffres .ckc-tile .ckc-value {
+	font-family: 'Yanone Kaffeesatz', arial, sans-serif;
+	font-size: 2.9em;
+	line-height: 1.05;
+	color: #231c4f;
+	margin: .04em 0;
+}
+/* Le commentaire sous le chiffre porte le message : il est mis en avant */
+.club-en-chiffres .ckc-tile .ckc-sub {
+	font-size: .95em;
+	font-weight: bold;
+	color: #38663e;
+	line-height: 1.25;
+	margin-top: .25em;
+}
+
+.club-en-chiffres .ckc-chart { margin: 1.2em 0 2em; }
+
+/* Une ligne = libellé | piste | valeur (alignées en colonnes) */
+.club-en-chiffres .ckc-row {
+	display: grid;
+	grid-template-columns: 110px 1fr 92px;
+	align-items: center;
+	gap: 10px;
+	margin: 6px 0;
+}
+
+.club-en-chiffres .ckc-row-label { font-size: .9em; color: #555; text-align: right; }
+.club-en-chiffres .ckc-row-label.ckc-nr { font-style: italic; color: #888; }
+
+.club-en-chiffres .ckc-track {
+	position: relative;
+	background: #f2f2f2;
+	border-radius: 4px;
+	height: 18px;
+}
+
+.club-en-chiffres .ckc-bar {
+	height: 18px;
+	background: #5b8fc7;
+	border-radius: 0 4px 4px 0; /* extrémité arrondie côté donnée, carrée à la base */
+}
+
+.club-en-chiffres .ckc-bar-nr { background: #c4c8cf; }
+
+.club-en-chiffres .ckc-val {
+	font-size: .85em;
+	color: #333;
+	white-space: nowrap;
+	font-variant-numeric: tabular-nums;
+}
+
+/* Repère vertical : valeur de comparaison (saison passée, moyenne nationale) */
+.club-en-chiffres .ckc-marker {
+	position: absolute;
+	top: -4px;
+	bottom: -4px;
+	width: 2px;
+	background: #333;
+	border-radius: 1px;
+}
+
+.club-en-chiffres .ckc-marker-key {
+	display: inline-block;
+	width: 2px;
+	height: .9em;
+	background: #333;
+	border-radius: 1px;
+	vertical-align: -0.1em;
+	margin: 0 2px;
+}
+
+.club-en-chiffres .ckc-legend { font-size: .8em; color: #666; margin: 8px 0 0; }
+.club-en-chiffres .ckc-note { font-size: .8em; color: #888; margin-top: 2.5em; }
+
+/* Encadré « message positif » (même famille visuelle que .avertissement-prive) */
+.club-en-chiffres .ckc-highlight {
+	position: relative;
+	margin: 1.2em 0 1.4em;
+	padding: .8em 1em .8em 2.9em;
+	background: #f0f7f1;
+	border-left: 5px solid #57a05a;
+	border-radius: 0 6px 6px 0;
+	color: #38663e;
+}
+
+.club-en-chiffres .ckc-highlight strong { color: #2c5232; }
+
+.club-en-chiffres .ckc-highlight::before {
+	content: "✔";
+	position: absolute;
+	left: .95em;
+	top: .75em;
+	color: #57a05a;
+	font-size: 1.1em;
+	font-weight: 700;
+}
+
+/* Couleurs de ceintures (la blanche a besoin d'un liseré pour rester visible) */
+.club-en-chiffres .ckc-b-blanche { background: #fcfcfc; box-shadow: inset 0 0 0 1px #c9c9c9; }
+.club-en-chiffres .ckc-b-jaune { background: #e9c152; }
+.club-en-chiffres .ckc-b-orange { background: #de602e; }
+.club-en-chiffres .ckc-b-verte { background: #57a05a; }
+.club-en-chiffres .ckc-b-bleue { background: #4a7fc1; }
+.club-en-chiffres .ckc-b-marron { background: #8a5a33; }
+.club-en-chiffres .ckc-b-noire { background: #26221f; }
+
+/* Barre empilée 100 % (renouvellement), segments séparés par un jour blanc */
+.club-en-chiffres .ckc-stack {
+	display: flex;
+	gap: 2px;
+	height: 22px;
+	border-radius: 4px;
+	overflow: hidden;
+	margin: .8em 0 .2em;
+}
+
+.club-en-chiffres .ckc-stack > div { height: 100%; }
+.club-en-chiffres .ckc-seg-renew, .club-en-chiffres .ckc-sw-renew { background: #5b8fc7; }
+.club-en-chiffres .ckc-seg-new, .club-en-chiffres .ckc-sw-new { background: #C74350; }
+.club-en-chiffres .ckc-seg-nr, .club-en-chiffres .ckc-sw-nr { background: #c4c8cf; }
+
+.club-en-chiffres .ckc-swatch {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 2px;
+	vertical-align: -0.05em;
+	margin-right: 3px;
+}
+
+@media (max-width: 480px) {
+	.club-en-chiffres .ckc-row { grid-template-columns: 82px 1fr 78px; gap: 6px; }
+	.club-en-chiffres .ckc-row-label, .club-en-chiffres .ckc-val { font-size: .8em; }
+}
+
 /* Avertissement de confidentialité (page « Accès Membres ») */
 .avertissement-prive {
 	position: relative;
