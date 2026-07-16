@@ -26,8 +26,8 @@ LINKS = (
     ("Inscription en ligne", "https://www.helloasso.com/associations/co-sevres-karate/adhesions/inscription-saison-2026-2027"),
     ("Fiche d'inscription 2026-2027", "https://sevres-karate.fr/pdfs/fiche_inscription_coskarate_2026-2027.pdf"),
     
-    ("Federation Française de Karaté et Disciplines Associées", "http://www.ffkama.fr/"),
-    ("Ligue des Hauts-de-Seine de Karaté", "http://www.ffkarate.fr/liguehautsdeseine/"),
+    ("Federation Française de Karaté et Disciplines Associées", "https://www.ffkarate.fr/karate/"),
+    ("Ligue des Hauts-de-Seine de Karaté", "https://sites.ffkarate.fr/hautsdeseine/"),
     ("Japan Karate Association", "http://www.jka.or.jp/"),
     ("Club Olympique de Sèvres", "http://cosevres.fr/"),
     ("Les Érables", "http://leserables-salons.com/")
