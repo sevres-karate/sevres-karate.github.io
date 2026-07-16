@@ -9,6 +9,11 @@ Summary: Le Dōjō Kun (5 principes) et les 20 principes du Karaté-dō de Gichi
 
 # Le Code Moral du Karaté (Dōjō Kun)
 
+<div style="text-align: center; margin: 1em 0;">
+  <img src="/images/torii-miyajima.jpg" alt="Torii flottant du sanctuaire d'Itsukushima à Miyajima" style="max-width: 100%; height: auto; border-radius: 6px;">
+  <p style="font-size: 0.8em; margin-top: 0.3em;"><em>Le torii flottant de Miyajima — photo <a href="https://www.flickr.com/photos/41216460@N00/6105834363">rileyroxx</a>, <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></em></p>
+</div>
+
 Les **5 principes** énoncés par **Gichin Funakoshi** :
 
 1. **Chercher la perfection du caractère**
@@ -35,6 +40,11 @@ Contrôle de soi.*
 ---
 
 # Les 20 principes du Karaté-dō (Nijū Kun)
+
+<div style="text-align: center; margin: 1em 0;">
+  <img src="/images/karate-sunrise.jpg" alt="Silhouette d'un karatéka au lever du soleil" style="max-width: 100%; height: auto; border-radius: 6px;">
+  <p style="font-size: 0.8em; margin-top: 0.3em;"><em>« Le karaté ne se pratique pas seulement au dojo » — photo <a href="https://www.flickr.com/photos/17367470@N05/5398040497">bluesbby</a>, <a href="https://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></em></p>
+</div>
 
 Également énoncés par **Gichin Funakoshi** :
 
