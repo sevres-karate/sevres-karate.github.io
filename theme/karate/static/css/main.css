@@ -234,7 +234,8 @@ div.figure p.caption, figure p.caption { /* margin provided by figure */
 		z-index: 100;
 	}
 	#banner nav li.has-submenu:hover > ul.submenu,
-	#banner nav li.has-submenu:focus-within > ul.submenu {display: block;}
+	#banner nav li.has-submenu:focus-within > ul.submenu,
+	#banner nav li.has-submenu.open > ul.submenu {display: block;}
 	#banner nav ul.submenu li {float: none; display: block;}
 	#banner nav ul.submenu a:link, #banner nav ul.submenu a:visited {
 		display: block;
@@ -336,13 +337,26 @@ div.figure p.caption, figure p.caption { /* margin provided by figure */
 
 #extras a:hover, #extras a:active {color: #fff;}
 
-	/* Blogroll */
+	/* Blogroll : grille de 3 colonnes égales pour un alignement propre */
 	#extras .blogroll {
 		float: left;
-		max-width: 615px;
+		width: 615px;
+		max-width: 100%;
 	}
 
-	#extras .blogroll li {float: left; margin: 0 20px 0 0; max-width: 185px;}
+	#extras .blogroll ul {
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		gap: 0 20px;
+	}
+
+	#extras .blogroll li {margin: 0; display: flex;}
+
+	#extras .blogroll a:link, #extras .blogroll a:visited {
+		flex: 1;
+		display: flex;
+		align-items: flex-end;
+	}
 
 	/* Social */
 	#extras .social {

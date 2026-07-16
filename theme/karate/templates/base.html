@@ -115,6 +115,35 @@
         if (el) loadVideo(el);
     });
 })();
+(function () {
+    /* Menus déroulants : un clic sur « Le Club » ou « Karaté » ouvre le
+       sous-menu au lieu de charger la page (indispensable sur mobile,
+       où le survol n'existe pas). */
+    function closeAll() {
+        document.querySelectorAll('#banner nav li.has-submenu.open').forEach(function (li) {
+            li.classList.remove('open');
+            li.querySelector('a').setAttribute('aria-expanded', 'false');
+        });
+    }
+    document.querySelectorAll('#banner nav li.has-submenu > a').forEach(function (link) {
+        link.setAttribute('aria-haspopup', 'true');
+        link.setAttribute('aria-expanded', 'false');
+        link.addEventListener('click', function (e) {
+            e.preventDefault();
+            var li = link.parentNode;
+            var wasOpen = li.classList.contains('open');
+            closeAll();
+            if (!wasOpen) {
+                li.classList.add('open');
+                link.setAttribute('aria-expanded', 'true');
+            }
+        });
+    });
+    /* Un clic ailleurs sur la page referme le sous-menu ouvert. */
+    document.addEventListener('click', function (e) {
+        if (!e.target.closest('#banner nav li.has-submenu')) closeAll();
+    });
+})();
 </script>
 </body>
 </html>
