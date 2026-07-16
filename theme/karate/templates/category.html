@@ -1,2 +1,10 @@
 {% extends "index.html" %}
 {% block title %}{{ SITENAME|striptags }} - {{ category }}{% endblock %}
+{% block extra_head %}
+{# Catégorie à article unique : la page duplique l'article — on demande à
+   Google de n'indexer que l'article pour éviter les entrées en double. #}
+{% if articles|length == 1 %}
+        <link rel="canonical" href="{{ SITEURL }}/{{ articles[0].url }}" />
+        <meta name="robots" content="noindex, follow" />
+{% endif %}
+{% endblock %}
