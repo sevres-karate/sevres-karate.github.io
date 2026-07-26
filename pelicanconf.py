@@ -29,7 +29,6 @@ LINKS = (
     ("Fédération Française de Karaté", "https://www.ffkarate.fr/karate/"),
     ("Ligue des Hauts-de-Seine de Karaté", "https://sites.ffkarate.fr/hautsdeseine/"),
     ("Japan Karate Association", "http://www.jka.or.jp/"),
-    ("Club Olympique de Sèvres", "http://cosevres.fr/"),
     ("Les Érables", "http://leserables-salons.com/")
 
 )
