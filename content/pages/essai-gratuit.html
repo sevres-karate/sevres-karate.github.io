@@ -224,9 +224,8 @@
         <p class="eg-adresse">sevres.karate@gmail.com</p>
         <textarea id="eg-apercu" rows="9" readonly aria-label="Message à envoyer"></textarea>
         <div class="eg-btn-row">
-          <button type="button" id="eg-copier" class="eg-btn eg-btn-primary">Copier le message</button>
-          <a id="eg-gmail" class="eg-btn eg-btn-ghost" href="#" target="_blank" rel="noopener">Ouvrir dans Gmail</a>
-          <a id="eg-mailto" class="eg-btn eg-btn-ghost" href="#">Ouvrir ma messagerie</a>
+          <a id="eg-mailto" class="eg-btn eg-btn-primary" href="#">Ouvrir ma messagerie</a>
+          <button type="button" id="eg-copier" class="eg-btn eg-btn-ghost">Copier le message</button>
         </div>
         <p id="eg-confirmation" class="eg-confirmation" hidden></p>
       </div>
@@ -377,14 +376,6 @@
       if (mailto) {
         mailto.href = 'mailto:' + ADRESSE
           + '?subject=' + encodeURIComponent(OBJET)
-          + '&body=' + encodeURIComponent(texte);
-      }
-
-      var gmail = el('eg-gmail');
-      if (gmail) {
-        gmail.href = 'https://mail.google.com/mail/?view=cm&fs=1'
-          + '&to=' + encodeURIComponent(ADRESSE)
-          + '&su=' + encodeURIComponent(OBJET)
           + '&body=' + encodeURIComponent(texte);
       }
 
