@@ -6,6 +6,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="generator" content="Pelican" />
         <title>{% block title %}{{ SITENAME|striptags }}{%endblock%}</title>
+        {# Résumé et adresse canonique : ce sont eux que les moteurs de recherche
+           affichent sous le lien et retiennent comme URL de référence. #}
+        {% if page and page.summary %}<meta name="description" content="{{ page.summary|striptags|trim|e }}" />
+        {% elif article and article.summary %}<meta name="description" content="{{ article.summary|striptags|trim|e }}" />
+        {% endif %}
+        {% if page %}<link rel="canonical" href="{{ SITEURL }}/{{ page.url }}" />
+        {% elif article %}<link rel="canonical" href="{{ SITEURL }}/{{ article.url }}" />
+        {% endif %}
         <link rel="stylesheet" href="{{ SITEURL }}/{{ THEME_STATIC_DIR }}/css/{{ CSS_FILE }}" />
         {% if FEED_ALL_ATOM %}
         <link href="{{ FEED_DOMAIN }}/{% if FEED_ALL_ATOM_URL %}{{ FEED_ALL_ATOM_URL }}{% else %}{{ FEED_ALL_ATOM }}{% endif %}" type="application/atom+xml" rel="alternate" title="{{ SITENAME|striptags }} Atom Feed" />
@@ -20,9 +28,8 @@
 <body id="index" class="home">
 {% include 'github.html' %}
         <header id="banner" class="body">
-                {# Le titre du site mène à la page d'accueil de présentation, et
-                   non à la racine : celle-ci affiche les actualités du club. #}
-                <h1><a href="{{ SITEURL }}/pages/accueil.html">{{ SITENAME }}{% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a></h1>
+                {# La racine du site est la page d'accueil de présentation. #}
+                <h1><a href="{{ SITEURL }}/">{{ SITENAME }}{% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a></h1>
                 <nav><ul>
                 {% for title, link in MENUITEMS %}
                     <li><a href="{i{ link }}">{{ title }}</a></li>
@@ -30,9 +37,7 @@
                 {% if DISPLAY_CATEGORIES_ON_MENU -%}
                 {# Ordre du menu fixé explicitement : Le Club, Karaté, Horaires, Tarifs #}
                 {# (la catégorie « Actu » est intégrée au menu « Le Club ») #}
-                {# La racine du site affiche les actus : le menu « Le Club » y est
-                   donc actif lui aussi. #}
-                <li class="has-submenu{% if (category and category.name in ['Actu', 'Instructeurs', 'Le Club']) or (page_name is defined and page_name == 'index') %} active{% endif %}"><a href="{{ SITEURL }}/category/actu.html">Le Club</a>
+                <li class="has-submenu{% if category and category.name in ['Actu', 'Instructeurs', 'Le Club'] %} active{% endif %}"><a href="{{ SITEURL }}/category/actu.html">Le Club</a>
                     <ul class="submenu">
                         <li><a href="{{ SITEURL }}/category/actu.html">Actus</a></li>
                         <li><a href="{{ SITEURL }}/category/instructeurs.html">Instructeurs</a></li>

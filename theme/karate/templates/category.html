@@ -1,11 +1,9 @@
 {% extends "listing.html" %}
 {% block title %}{{ SITENAME|striptags }} - {{ category }}{% endblock %}
 {% block extra_head %}
-{# « Actu » est aussi ce qu'affiche la racine du site : les deux URL ont le
-   même contenu, on désigne la racine comme version de référence. #}
-{% if category.name == 'Actu' %}
-        <link rel="canonical" href="{{ SITEURL }}/" />
-{% endif %}
+{# La racine du site n'affiche plus les actus mais la page de présentation :
+   /category/actu.html est donc redevenue la seule adresse des actualités, et
+   ne doit plus renvoyer vers la racine comme version de référence. #}
 {# Catégorie à article unique : la page duplique l'article — on demande à
    Google de n'indexer que l'article pour éviter les entrées en double. #}
 {% if articles|length == 1 %}

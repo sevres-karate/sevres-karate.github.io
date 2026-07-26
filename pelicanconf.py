@@ -41,10 +41,12 @@ SOCIAL = (
 
 DEFAULT_PAGINATION = 10
 
-# La racine du site n'affiche plus tous les articles mais la seule catégorie
-# « Actu » (voir theme/karate/templates/index.html) : la paginer n'aurait pas
-# de sens, les pages index2.html et suivantes découperaient une liste qui n'est
-# pas celle affichée. Les autres gabarits gardent la pagination par défaut.
+# La racine du site est la page « Accueil » (content/pages/accueil.html, qui
+# porte save_as: index.html) : c'est elle que doivent servir les moteurs de
+# recherche. Le gabarit index.html du thème n'est donc plus généré — il
+# doublonnait la catégorie « Actu », toujours accessible par le menu.
+INDEX_SAVE_AS = ""
+
 PAGINATED_TEMPLATES = {
     "tag": None,
     "category": None,
@@ -59,12 +61,20 @@ STATIC_PATHS = [
     "extra/robots.txt",
     "extra/favicon.ico",
     "extra/membres.enc.json",
+    "extra/accueil_redirect.html",
 ]
+
+# content/extra/ ne contient que des fichiers recopiés tels quels ; sans cette
+# exclusion, Pelican essaie de lire accueil_redirect.html comme un article.
+ARTICLE_EXCLUDES = ["pages", "extra"]
 
 EXTRA_PATH_METADATA = {
     'extra/robots.txt': {'path': 'robots.txt'},
     'extra/favicon.ico': {'path': 'favicon.ico'},
     'extra/membres.enc.json': {'path': 'membres.enc.json'},
+    # L'accueil est passé de /pages/accueil.html à la racine : on garde une
+    # redirection à l'ancienne adresse (favoris, liens déjà indexés).
+    'extra/accueil_redirect.html': {'path': 'pages/accueil.html'},
 }
 
 # Uncomment following line if you want document-relative URLs when developing

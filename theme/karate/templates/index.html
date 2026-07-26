@@ -1,10 +1,10 @@
-{# Racine du site.
+{# Gabarit inutilisé : INDEX_SAVE_AS = "" dans pelicanconf.py.
 
-   Choix éditorial : on tombe directement sur les actualités du club
-   (catégorie « Actu », menu Le Club → Actus) plutôt que sur la liste de tous
-   les articles, qui reste consultable dans les archives.
-   La page d'accueil présentant le club est accessible par le titre
-   « Sèvres Karaté » en haut de page (/pages/accueil.html).
+   La racine du site est désormais la page « Accueil » présentant le club
+   (content/pages/accueil.html), pour que ce soit elle que servent les moteurs
+   de recherche. Les actualités restent accessibles par le menu
+   « Le Club → Actus » (/category/actu.html), que ce gabarit doublonnait.
+   Il est conservé au cas où l'on voudrait revenir en arrière.
 
    La catégorie est retrouvée dans `categories` (liste de couples
    catégorie / articles) plutôt que dans `articles` : ce dernier ne contient
