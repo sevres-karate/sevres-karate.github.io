@@ -1,0 +1,427 @@
+<html>
+<head>
+    <title>Essai gratuit</title>
+    <meta name="template" content="essai_gratuit" />
+    <meta name="summary" content="Réservez votre cours d'essai gratuit au CO Sèvres Karaté, inscrivez-vous pour la saison ou posez-nous vos questions. Sans engagement." />
+</head>
+<body>
+
+<!-- =========================================================
+     Page « Essai gratuit »
+     Habillage repris de la maquette « nous-rejoindre » : palette crème /
+     indigo / rouille, titres en serif, cartes arrondies. Tout est préfixé
+     par « .eg » pour que ces styles ne débordent pas sur le reste du site
+     (en-tête, menu, pied de page restent ceux du club).
+     ========================================================= -->
+<style>
+/* Fraunces et Inter sont hébergées sur le site (voir theme/karate/static/css/fonts.css) */
+
+.eg, .eg *, .eg *::before, .eg *::after { box-sizing: border-box; }
+
+.eg {
+  --ink:        #241c19;
+  --ink-soft:   #5a4f49;
+  --cream:      #faf6ef;
+  --cream-deep: #f1e9dc;
+  --sand:       #e8dcc8;
+  /* Couleurs reprises du reste du site plutôt que celles de la maquette :
+     l'indigo est celui de la barre de navigation, le rouge celui des titres
+     d'articles et des encadrés, le bleu celui de « Débuter / FAQ ». */
+  --indigo:     #231c4f;
+  --indigo-deep:#181139;
+  --rust:       #C74350;
+  --rust-deep:  #a3323e;
+  --gold:       #8fb4dd;
+
+  --radius:     14px;
+  --radius-lg:  24px;
+  --shadow:     0 10px 40px -12px rgba(36,28,25,.25);
+  --shadow-sm:  0 4px 16px -6px rgba(36,28,25,.2);
+
+  --font-display: "Fraunces", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+  font-family: var(--font-body);
+  color: var(--ink);
+  line-height: 1.65;
+  /* On déborde du rembourrage de #content pour que les bandeaux aillent
+     jusqu'aux bords du panneau blanc (qui les rogne, coins arrondis compris). */
+  margin: -20px;
+}
+
+.eg h1, .eg h2, .eg h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin: 0;
+  text-shadow: none;
+}
+.eg p { margin: 0; color: var(--ink); }
+.eg a { text-decoration: none; }
+.eg strong, .eg b { font-weight: 700; }
+
+.eg .eg-wrap { padding: 2.6rem 24px; }
+
+/* ---------- Bandeau d'accroche ---------- */
+.eg .eg-trybar {
+  background: var(--rust); color: #fff; text-align: center;
+  padding: .7rem 24px; font-weight: 600; font-size: .95rem;
+}
+
+/* ---------- Bandeau de titre ---------- */
+.eg .eg-hero { background: var(--cream-deep); }
+.eg .eg-hero h1 { font-size: clamp(1.9rem, 5vw, 2.8rem); }
+.eg .eg-hero p { color: var(--ink-soft); font-size: 1.08rem; margin-top: .9rem; max-width: 44ch; }
+
+.eg .eg-eyebrow {
+  display: inline-block; font-size: .78rem; text-transform: uppercase;
+  letter-spacing: .12em; color: var(--rust); font-weight: 700; margin-bottom: .7rem;
+}
+
+/* ---------- Boutons ---------- */
+.eg .eg-btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+  font-family: var(--font-body); font-weight: 600; font-size: .98rem;
+  padding: .8rem 1.5rem; border-radius: 100px; border: 2px solid transparent;
+  cursor: pointer; line-height: 1;
+  transition: transform .18s ease, box-shadow .18s ease, background .18s ease, border-color .18s ease;
+}
+.eg .eg-btn-primary { background: var(--rust); color: #fff; box-shadow: var(--shadow-sm); }
+.eg .eg-btn-primary:hover { background: var(--rust-deep); color: #fff; transform: translateY(-2px); }
+.eg .eg-btn-ghost { background: transparent; color: var(--ink); border-color: var(--sand); }
+.eg .eg-btn-ghost:hover { border-color: var(--ink); color: var(--ink); transform: translateY(-2px); }
+
+/* ---------- Colonnes ---------- */
+.eg .eg-split {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+  gap: 1.6rem; align-items: start;
+}
+
+/* ---------- Cartes ---------- */
+.eg .eg-card {
+  background: #fff; border-radius: var(--radius); padding: 1.6rem;
+  box-shadow: var(--shadow-sm); border: 1px solid var(--sand);
+  transition: transform .2s, box-shadow .2s;
+}
+.eg .eg-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+.eg .eg-card h3 { font-size: 1.25rem; margin-bottom: .4rem; }
+.eg .eg-card p { color: var(--ink-soft); font-size: .96rem; }
+.eg .eg-card-soft { background: var(--cream-deep); }
+.eg .eg-card-soft:hover { transform: none; box-shadow: var(--shadow-sm); }
+
+.eg .eg-form-card {
+  background: #fff; border-radius: var(--radius-lg); padding: 1.9rem;
+  box-shadow: var(--shadow); border: 1px solid var(--sand);
+}
+.eg .eg-form-card h2 { font-size: 1.55rem; margin-bottom: .4rem; }
+
+.eg .eg-field { margin-bottom: 1rem; }
+.eg .eg-field label { display: block; font-size: .85rem; font-weight: 600; margin-bottom: .35rem; }
+.eg .eg-field input, .eg .eg-field select, .eg .eg-field textarea {
+  width: 100%; padding: .72rem .9rem; border: 1.5px solid var(--sand);
+  border-radius: 10px; font-family: var(--font-body); font-size: 1rem;
+  background: var(--cream); color: var(--ink);
+}
+.eg .eg-field input:focus, .eg .eg-field select:focus, .eg .eg-field textarea:focus {
+  outline: none; border-color: var(--rust);
+}
+.eg .eg-note { font-size: .82rem; color: var(--ink-soft); margin-top: .8rem; }
+
+/* Message prêt à envoyer : affiché après clic, il ne dépend d'aucun logiciel
+   de messagerie — le visiteur peut simplement copier le texte. */
+.eg .eg-resultat {
+  margin-top: 1.2rem; padding-top: 1.2rem;
+  border-top: 1px dashed var(--sand);
+}
+.eg .eg-resultat-titre { font-weight: 600; font-size: .9rem; margin-bottom: .3rem; }
+.eg .eg-adresse {
+  font-weight: 700; color: var(--rust); font-size: 1.02rem;
+  word-break: break-all; margin-bottom: .7rem;
+}
+.eg #eg-apercu {
+  width: 100%; padding: .8rem .9rem; border: 1.5px solid var(--sand);
+  border-radius: 10px; font-family: var(--font-body); font-size: .88rem;
+  line-height: 1.5; background: var(--cream); color: var(--ink); resize: vertical;
+}
+.eg .eg-confirmation {
+  margin-top: .7rem; font-size: .86rem; font-weight: 600; color: #2f7a3f;
+}
+
+.eg .eg-btn-row { display: flex; gap: .7rem; flex-wrap: wrap; margin-top: 1rem; }
+
+/* ---------- Bandeau indigo ---------- */
+.eg .eg-indigo { background: var(--indigo); color: #fff; text-align: center; }
+.eg .eg-indigo h2 { color: #fff; font-size: clamp(1.5rem, 3vw, 2.1rem); margin-bottom: 1.4rem; }
+.eg .eg-indigo p { color: #d7dbe4; font-size: .92rem; }
+.eg .eg-indigo b { display: block; margin-bottom: .15rem; }
+.eg .eg-indigo .eg-eyebrow { color: var(--gold); }
+.eg .eg-trois {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 1.4rem;
+}
+.eg .eg-trois .eg-emoji { font-size: 2.1rem; margin-bottom: .4rem; }
+
+@media (max-width: 480px) {
+  .eg .eg-wrap { padding: 2rem 18px; }
+}
+</style>
+
+<div class="eg">
+
+<div class="eg-trybar">🥋 Le premier cours est <strong>gratuit</strong> et sans engagement</div>
+
+<div class="eg-hero">
+  <div class="eg-wrap">
+    <span class="eg-eyebrow">Nous rejoindre</span>
+    <h1>Trois façons de démarrer.</h1>
+    <p>Essayez d'abord, inscrivez-vous ensuite — ou posez-nous toutes vos questions. À vous de choisir.</p>
+  </div>
+</div>
+
+<div class="eg-wrap">
+  <div class="eg-split">
+
+    <!-- Option 1 : demande de cours d'essai -->
+    <div class="eg-form-card">
+      <span class="eg-eyebrow">Option 1 — la plus simple</span>
+      <h2>Réserver un cours d'essai gratuit</h2>
+      <p style="color:var(--ink-soft);font-size:.95rem;margin-bottom:1.4rem">
+        Remplissez ces quelques champs : votre messagerie s'ouvrira avec le message
+        déjà rédigé, il ne restera plus qu'à l'envoyer. Présentez-vous ensuite à un
+        des <a href="/horaires2025.html" style="color:var(--rust)">créneaux</a>
+        correspondant à votre niveau. Aucun engagement.
+      </p>
+
+      <div class="eg-field">
+        <label for="eg-nom">Prénom et nom</label>
+        <input id="eg-nom" type="text" placeholder="Votre prénom et votre nom">
+      </div>
+      <div class="eg-field">
+        <label for="eg-contact">E-mail ou téléphone</label>
+        <input id="eg-contact" type="text" placeholder="Pour vous recontacter">
+      </div>
+      <div class="eg-field">
+        <label for="eg-groupe">Qui souhaite essayer&nbsp;?</label>
+        <select id="eg-groupe">
+          <option>Adulte débutant(e)</option>
+          <option>Adulte (a déjà pratiqué)</option>
+          <option>Enfant de 7 à 14 ans</option>
+          <option>Baby de 5 à 6 ans</option>
+        </select>
+      </div>
+      <div class="eg-field">
+        <label for="eg-message">Un mot à ajouter&nbsp;? (facultatif)</label>
+        <textarea id="eg-message" rows="2" placeholder="Une question, une précision…"></textarea>
+      </div>
+
+      <button type="button" id="eg-preparer" class="eg-btn eg-btn-primary" style="width:100%">
+        Préparer ma demande d'essai
+      </button>
+
+      <div id="eg-resultat" class="eg-resultat" hidden>
+        <p class="eg-resultat-titre">Votre message est prêt. Envoyez-le à&nbsp;:</p>
+        <p class="eg-adresse">sevres.karate@gmail.com</p>
+        <textarea id="eg-apercu" rows="9" readonly aria-label="Message à envoyer"></textarea>
+        <div class="eg-btn-row">
+          <button type="button" id="eg-copier" class="eg-btn eg-btn-primary">Copier le message</button>
+          <a id="eg-gmail" class="eg-btn eg-btn-ghost" href="#" target="_blank" rel="noopener">Ouvrir dans Gmail</a>
+          <a id="eg-mailto" class="eg-btn eg-btn-ghost" href="#">Ouvrir ma messagerie</a>
+        </div>
+        <p id="eg-confirmation" class="eg-confirmation" hidden></p>
+      </div>
+
+      <p class="eg-note">
+        🔒 Rien n'est transmis depuis cette page&nbsp;: le message reste dans votre
+        navigateur jusqu'à ce que vous l'envoyiez vous-même.
+      </p>
+    </div>
+
+    <!-- Options 2 et 3 -->
+    <div style="display:grid;gap:1.4rem">
+
+      <div class="eg-card">
+        <span class="eg-eyebrow">Option 2</span>
+        <h3>S'inscrire pour la saison</h3>
+        <p>Déjà convaincu(e)&nbsp;? L'inscription 2026-2027 se fait en ligne en quelques minutes.</p>
+        <div class="eg-btn-row">
+          <a class="eg-btn eg-btn-primary" href="https://www.helloasso.com/associations/co-sevres-karate/adhesions/inscription-saison-2026-2027">Inscription en ligne</a>
+          <a class="eg-btn eg-btn-ghost" href="/pdfs/fiche_inscription_coskarate_2026-2027.pdf">Fiche PDF</a>
+        </div>
+      </div>
+
+      <div class="eg-card">
+        <span class="eg-eyebrow">Option 3</span>
+        <h3>Poser une question</h3>
+        <p>Un doute, une situation particulière&nbsp;? Écrivez-nous ou appelez-nous, on répond vite et sans blabla.</p>
+        <p style="margin-top:.7rem"><strong>Nicolas</strong> — 06.62.30.43.00<br>
+        <strong>Ludovic</strong> — 06.22.04.60.67</p>
+        <p class="eg-adresse" style="text-align:left;margin-top:.8rem">sevres.karate@gmail.com</p>
+        <div class="eg-btn-row">
+          <button type="button" id="eg-copier-adresse" class="eg-btn eg-btn-ghost">Copier l'adresse</button>
+          <a class="eg-btn eg-btn-ghost" href="mailto:sevres.karate@gmail.com">Ouvrir ma messagerie</a>
+        </div>
+        <p id="eg-confirmation-adresse" class="eg-confirmation" hidden></p>
+      </div>
+
+      <div class="eg-card eg-card-soft">
+        <h3 style="font-size:1.15rem">💶 Tarifs 2026-2027</h3>
+        <p style="margin-top:.5rem;color:var(--ink)">
+          <strong>Adulte (14 ans et plus)</strong> — 381 € sévrien / 396 € non-sévrien<br>
+          <strong>Enfant (7 à 13 ans)</strong> — 285 € / 300 €<br>
+          <strong>Baby (5 à 6 ans)</strong> — 216 € / 231 €
+        </p>
+        <p style="font-size:.85rem;color:var(--ink-soft);margin-top:.6rem">
+          Une cotisation donne accès à tous les créneaux de votre groupe.
+          <a href="/tarifs2024.html" style="color:var(--rust)">Voir le détail des tarifs</a> ·
+          <a href="/horaires2025.html" style="color:var(--rust)">les horaires</a>
+        </p>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="eg-indigo">
+  <div class="eg-wrap">
+    <span class="eg-eyebrow">À prévoir pour votre premier cours</span>
+    <h2>Trois choses, pas une de plus.</h2>
+    <div class="eg-trois">
+      <div>
+        <div class="eg-emoji">👕</div>
+        <b>Une tenue de sport</b>
+        <p>Confortable. Le kimono viendra plus tard.</p>
+      </div>
+      <div>
+        <div class="eg-emoji">💧</div>
+        <b>Une bouteille d'eau</b>
+        <p>On bouge, on transpire un peu.</p>
+      </div>
+      <div>
+        <div class="eg-emoji">😊</div>
+        <b>De la bonne humeur</b>
+        <p>Le reste, on s'en occupe.</p>
+      </div>
+    </div>
+    <p style="margin-top:1.6rem;color:#d7dbe4;font-size:.92rem">
+      Tous les cours ont lieu au gymnase des Cent-Gardes, 45 Grande Rue, 92310 Sèvres.
+    </p>
+  </div>
+</div>
+
+</div><!-- /.eg -->
+
+<script>
+(function () {
+  var ADRESSE = 'sevres.karate@gmail.com';
+  var OBJET = "Demande de cours d'essai gratuit";
+
+  function el(id) { return document.getElementById(id); }
+  function valeur(id) { var e = el(id); return e ? e.value.trim() : ''; }
+
+  /* Copie dans le presse-papier. L'API moderne exige une page sécurisée
+     (https ou 127.0.0.1) ; sinon on retombe sur l'ancienne méthode. */
+  function copier(texte) {
+    if (navigator.clipboard && window.isSecureContext) {
+      return navigator.clipboard.writeText(texte);
+    }
+    return new Promise(function (ok, ko) {
+      var z = document.createElement('textarea');
+      z.value = texte;
+      z.style.position = 'fixed';
+      z.style.opacity = '0';
+      document.body.appendChild(z);
+      z.select();
+      var reussi = false;
+      try { reussi = document.execCommand('copy'); } catch (e) { reussi = false; }
+      document.body.removeChild(z);
+      reussi ? ok() : ko();
+    });
+  }
+
+  function confirmer(cible, texte) {
+    if (!cible) return;
+    cible.textContent = texte;
+    cible.hidden = false;
+  }
+
+  function messageDemande() {
+    var lignes = [
+      'Bonjour,',
+      '',
+      "Je souhaite réserver un cours d'essai gratuit.",
+      '',
+      'Nom : ' + (valeur('eg-nom') || '—'),
+      'Contact : ' + (valeur('eg-contact') || '—'),
+      'Qui souhaite essayer : ' + valeur('eg-groupe')
+    ];
+    var mot = valeur('eg-message');
+    if (mot) { lignes.push('', mot); }
+    lignes.push('', "Merci d'avance !");
+    return lignes.join('\n');
+  }
+
+  /* Bouton principal : on affiche le message prêt à l'emploi. Volontairement,
+     rien ne dépend d'un logiciel de messagerie installé — le visiteur peut
+     toujours copier le texte, quel que soit son ordinateur ou son webmail. */
+  var preparer = el('eg-preparer');
+  if (preparer) {
+    preparer.addEventListener('click', function () {
+      var texte = messageDemande();
+      var resultat = el('eg-resultat');
+      var apercu = el('eg-apercu');
+
+      if (apercu) { apercu.value = texte; }
+
+      var mailto = el('eg-mailto');
+      if (mailto) {
+        mailto.href = 'mailto:' + ADRESSE
+          + '?subject=' + encodeURIComponent(OBJET)
+          + '&body=' + encodeURIComponent(texte);
+      }
+
+      var gmail = el('eg-gmail');
+      if (gmail) {
+        gmail.href = 'https://mail.google.com/mail/?view=cm&fs=1'
+          + '&to=' + encodeURIComponent(ADRESSE)
+          + '&su=' + encodeURIComponent(OBJET)
+          + '&body=' + encodeURIComponent(texte);
+      }
+
+      var confirmation = el('eg-confirmation');
+      if (confirmation) { confirmation.hidden = true; }
+
+      if (resultat) {
+        resultat.hidden = false;
+        resultat.scrollIntoView({ block: 'nearest', behavior: 'smooth' });
+      }
+    });
+  }
+
+  var copierMessage = el('eg-copier');
+  if (copierMessage) {
+    copierMessage.addEventListener('click', function () {
+      var apercu = el('eg-apercu');
+      copier(apercu ? apercu.value : '').then(function () {
+        confirmer(el('eg-confirmation'), '✓ Message copié — collez-le dans un nouvel e-mail adressé à ' + ADRESSE);
+      }, function () {
+        confirmer(el('eg-confirmation'), 'La copie automatique a échoué : sélectionnez le texte ci-dessus et copiez-le à la main.');
+      });
+    });
+  }
+
+  var copierAdresse = el('eg-copier-adresse');
+  if (copierAdresse) {
+    copierAdresse.addEventListener('click', function () {
+      copier(ADRESSE).then(function () {
+        confirmer(el('eg-confirmation-adresse'), '✓ Adresse copiée : ' + ADRESSE);
+      }, function () {
+        confirmer(el('eg-confirmation-adresse'), 'Copie impossible — notez l’adresse : ' + ADRESSE);
+      });
+    });
+  }
+})();
+</script>
+
+</body>
+</html>

@@ -52,11 +52,14 @@
                 {% endif %}
                 {% if DISPLAY_PAGES_ON_MENU -%}
                 {% for pg in pages %}
-                {% if pg.slug != 'acces-membres' %}
+                {# « Accès Membres » est déjà dans le menu « Le Club » ; « Essai gratuit »
+                   a son propre bouton, calé à droite juste après cette boucle. #}
+                {% if pg.slug not in ['acces-membres', 'essai-gratuit'] %}
                 <li{% if pg == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ pg.url }}">{{ pg.title }}</a></li>
                 {% endif %}
                 {% endfor %}
                 {% endif %}
+                <li class="nav-cta{% if page and page.slug == 'essai-gratuit' %} active{% endif %}"><a href="{{ SITEURL }}/pages/essai-gratuit.html">Essai gratuit</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
         {% block content %}

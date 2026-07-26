@@ -10,3 +10,28 @@
 		/* from https://fonts.gstatic.com/s/yanonekaffeesatz/v8/YDAoLskQQ5MOAgvHUQCcLfGwxTS8d1Q9KiDNCMKLFUM.woff2 */
 		url('../fonts/Yanone_Kaffeesatz_400.woff2') format('woff2');
 }
+
+/* Polices de la page « Essai gratuit », hébergées sur le site comme les autres
+   (aucun appel à Google Fonts). Ce sont des polices variables : un seul fichier
+   couvre toute la plage de graisses. Sous-ensemble latin uniquement — il inclut
+   tous les caractères du français, œ compris. Le navigateur ne les télécharge
+   que sur les pages qui les utilisent. */
+@font-face {
+	font-family: 'Fraunces';
+	font-style: normal;
+	font-weight: 400 700;
+	font-display: swap;
+	/* from https://fonts.gstatic.com/s/fraunces/v38/ (sous-ensemble latin) */
+	src: url('../fonts/Fraunces_latin_var.woff2') format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+	font-family: 'Inter';
+	font-style: normal;
+	font-weight: 400 700;
+	font-display: swap;
+	/* from https://fonts.gstatic.com/s/inter/ (sous-ensemble latin) */
+	src: url('../fonts/Inter_latin_var.woff2') format('woff2');
+	unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}

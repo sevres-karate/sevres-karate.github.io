@@ -249,7 +249,9 @@ div.figure p.caption, figure p.caption { /* margin provided by figure */
 		color: #fff;
 		display: inline-block;
 		height: 30px;
-		padding: 5px 1.5em;
+		/* Espacement resserré : avec le bouton « Essai gratuit », les 7 entrées
+		   ne tenaient plus sur une seule ligne dans les 800px de la barre. */
+		padding: 5px 1.05em;
 		text-decoration: none;
 	}
 	#banner nav a:hover, #banner nav a:active,
@@ -257,6 +259,19 @@ div.figure p.caption, figure p.caption { /* margin provided by figure */
 		background: #e72327;
 		color: #fff;
 		text-shadow: none !important;
+	}
+
+	/* Bouton d'appel à l'action (« Essai gratuit »), calé à droite du menu */
+	#banner nav li.nav-cta {float: right;}
+	#banner nav li.nav-cta a:link, #banner nav li.nav-cta a:visited {
+		background: #C74350;
+		color: #fff;
+		font-weight: bold;
+		border-radius: 5px;
+	}
+	#banner nav li.nav-cta a:hover, #banner nav li.nav-cta a:active,
+	#banner nav li.nav-cta.active > a:link, #banner nav li.nav-cta.active > a:visited {
+		background: #e72327;
 	}
 
 	#banner nav li:first-child a {
