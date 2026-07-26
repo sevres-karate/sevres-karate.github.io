@@ -31,20 +31,20 @@ Le club accueille tous les âges, avec trois grandes familles : les adultes, les
 
 <p class="ckc-highlight">Près de <strong>deux adhérents sur trois ont moins de 18 ans</strong> : le club forme la prochaine génération de karatékas.</p>
 
-**67 jeunes** de 5 à 18 ans s'entraînent au club, répartis entre les cours babys, enfants et ados.
+**70 jeunes** de 5 à 18 ans s'entraînent au club, répartis entre les cours babys, enfants et ados.
 
-<div class="ckc-chart" role="img" aria-label="Jeunes par âge (en % des 67 jeunes) : 5-7 ans 17 (25,4 %), 7-14 ans 44 (65,7 %), 14-18 ans 6 (9,0 %)">
-<div class="ckc-row"><span class="ckc-row-label">5 – 7 ans</span><div class="ckc-track"><div class="ckc-bar" style="width:38.6%"></div></div><span class="ckc-val">17 · 25,4&nbsp;%</span></div>
-<div class="ckc-row"><span class="ckc-row-label">7 – 14 ans</span><div class="ckc-track"><div class="ckc-bar" style="width:100%"></div></div><span class="ckc-val">44 · 65,7&nbsp;%</span></div>
-<div class="ckc-row"><span class="ckc-row-label">14 – 18 ans</span><div class="ckc-track"><div class="ckc-bar" style="width:13.6%"></div></div><span class="ckc-val">6 · 9,0&nbsp;%</span></div>
-<p class="ckc-legend">pourcentages calculés sur les 67 jeunes</p>
+<div class="ckc-chart" role="img" aria-label="Jeunes par âge (en % des 70 jeunes) : 5-7 ans 17 (24,3 %), 7-14 ans 47 (67,1 %), 14-18 ans 6 (8,6 %)">
+<div class="ckc-row"><span class="ckc-row-label">5 – 7 ans</span><div class="ckc-track"><div class="ckc-bar" style="width:36.2%"></div></div><span class="ckc-val">17 · 24,3&nbsp;%</span></div>
+<div class="ckc-row"><span class="ckc-row-label">7 – 14 ans</span><div class="ckc-track"><div class="ckc-bar" style="width:100%"></div></div><span class="ckc-val">47 · 67,1&nbsp;%</span></div>
+<div class="ckc-row"><span class="ckc-row-label">14 – 18 ans</span><div class="ckc-track"><div class="ckc-bar" style="width:12.8%"></div></div><span class="ckc-val">6 · 8,6&nbsp;%</span></div>
+<p class="ckc-legend">pourcentages calculés sur les 70 jeunes</p>
 </div>
 
 ## Des adultes de 18 à plus de 60 ans
 
-Le karaté se pratique à tout âge, et nos **37 adultes** le prouvent : toutes les décennies sont représentées sur le tatami, des étudiants aux vétérans.
+Le karaté se pratique à tout âge, et nos **40 adultes** le prouvent : toutes les décennies sont représentées sur le tatami, des étudiants aux vétérans.
 
-<div class="ckc-chart" role="img" aria-label="Adultes par âge (en % des 37 adultes) : 18-30 ans 7 (18,9 %), 30-40 ans 1 (2,7 %), 40-50 ans 9 (24,3 %), 50-60 ans 14 (37,8 %), plus de 60 ans 6 (16,2 %)">
+<div class="ckc-chart" role="img" aria-label="Adultes par âge (en % des 40 adultes) : 18-30 ans 18,9 %, 30-40 ans 2,7 %, 40-50 ans 24,3 %, 50-60 ans 37,8 %, plus de 60 ans 16,2 %">
 <div class="ckc-row"><span class="ckc-row-label">18 – 30 ans</span><div class="ckc-track"><div class="ckc-bar" style="width:50%"></div></div><span class="ckc-val">18,9&nbsp;%</span></div>
 <div class="ckc-row"><span class="ckc-row-label">30 – 40 ans</span><div class="ckc-track"><div class="ckc-bar" style="width:7.1%"></div></div><span class="ckc-val">2,7&nbsp;%</span></div>
 <div class="ckc-row"><span class="ckc-row-label">40 – 50 ans</span><div class="ckc-track"><div class="ckc-bar" style="width:64.3%"></div></div><span class="ckc-val">24,3&nbsp;%</span></div>
