@@ -1,0 +1,405 @@
+<html>
+<head>
+    <title>Accueil</title>
+    <meta name="template" content="accueil" />
+    <meta name="summary" content="Le CO Sèvres Karaté, club de karaté Shotokan à Sèvres (92) : premier cours d'essai gratuit, débutants bienvenus, enfants, ados et adultes." />
+</head>
+<body>
+
+<!-- =========================================================
+     Page « Accueil »
+     Structure reprise de la maquette « site de test/index.html »
+     (hero, pourquoi, débuter, chiffres, horaires, cours, contact),
+     mais habillée avec la palette et les polices de la page
+     « Essai gratuit » : crème / indigo #231c4f / rouille #C74350,
+     titres en Fraunces, texte en Inter.
+     Tout est préfixé par « .hp » pour que ces styles ne débordent
+     pas sur le reste du site (en-tête, menu, pied de page).
+     ========================================================= -->
+<style>
+/* Fraunces et Inter sont hébergées sur le site (voir theme/karate/static/css/fonts.css) */
+
+.hp, .hp *, .hp *::before, .hp *::after { box-sizing: border-box; }
+
+.hp {
+  --ink:        #241c19;
+  --ink-soft:   #5a4f49;
+  --cream:      #faf6ef;
+  --cream-deep: #f1e9dc;
+  --sand:       #e8dcc8;
+  --indigo:     #231c4f;
+  --indigo-deep:#181139;
+  --rust:       #C74350;
+  --rust-deep:  #a3323e;
+  --gold:       #8fb4dd;
+
+  --radius:     14px;
+  --radius-lg:  24px;
+  --shadow:     0 10px 40px -12px rgba(36,28,25,.25);
+  --shadow-sm:  0 4px 16px -6px rgba(36,28,25,.2);
+
+  --font-display: "Fraunces", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+  --font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+
+  font-family: var(--font-body);
+  color: var(--ink);
+  line-height: 1.65;
+  /* On déborde du rembourrage de #content pour que les bandeaux aillent
+     jusqu'aux bords du panneau blanc (qui les rogne, coins arrondis compris). */
+  margin: -20px;
+}
+
+.hp h1, .hp h2, .hp h3 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: var(--ink);
+  margin: 0;
+  text-shadow: none;
+}
+.hp p { margin: 0; color: var(--ink); }
+.hp img { max-width: 100%; display: block; }
+.hp strong, .hp b { font-weight: 700; }
+
+/* Le thème souligne et colore tous les liens (a:link/a:visited dans main.css) :
+   on neutralise ça ici, chaque lien de la page ayant son propre habillage. */
+.hp a, .hp a:link, .hp a:visited { color: inherit; text-decoration: none; text-shadow: none; padding: 0; }
+.hp a:hover, .hp a:active { background: transparent; text-shadow: none; }
+
+.hp .hp-wrap { padding: 3rem 24px; max-width: 1100px; margin: 0 auto; }
+
+.hp .hp-eyebrow {
+  display: inline-block; font-size: .78rem; text-transform: uppercase;
+  letter-spacing: .12em; color: var(--rust); font-weight: 700; margin-bottom: .7rem;
+}
+
+/* ---------- Boutons ---------- */
+.hp .hp-btn, .hp .hp-btn:link, .hp .hp-btn:visited {
+  display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+  font-family: var(--font-body); font-weight: 600; font-size: 1rem;
+  padding: .95rem 1.7rem; border-radius: 100px; border: 2px solid transparent;
+  cursor: pointer; line-height: 1; text-decoration: none;
+  transition: transform .18s ease, box-shadow .18s ease, background .18s ease, border-color .18s ease;
+}
+.hp .hp-btn-primary, .hp .hp-btn-primary:link, .hp .hp-btn-primary:visited {
+  background: var(--rust); color: #fff; box-shadow: var(--shadow-sm);
+}
+.hp .hp-btn-primary:hover { background: var(--rust-deep); color: #fff; transform: translateY(-2px); }
+.hp .hp-btn-ghost, .hp .hp-btn-ghost:link, .hp .hp-btn-ghost:visited {
+  background: transparent; color: var(--ink); border-color: var(--sand);
+}
+.hp .hp-btn-ghost:hover { border-color: var(--ink); color: var(--ink); transform: translateY(-2px); }
+.hp .hp-btn-light, .hp .hp-btn-light:link, .hp .hp-btn-light:visited {
+  background: #fff; color: var(--indigo-deep);
+}
+.hp .hp-btn-light:hover { color: var(--indigo-deep); transform: translateY(-2px); box-shadow: var(--shadow-sm); }
+.hp .hp-btn-row { display: flex; gap: .8rem; flex-wrap: wrap; }
+
+/* ---------- Bandeau d'accroche ---------- */
+.hp .hp-trybar {
+  background: var(--rust); color: #fff; text-align: center;
+  padding: .7rem 24px; font-weight: 600; font-size: .95rem;
+}
+.hp .hp-trybar a { color: #fff; text-decoration: underline; }
+.hp .hp-trybar a:hover { color: #fff; }
+
+/* ---------- Hero ---------- */
+.hp .hp-hero { position: relative; overflow: hidden; background: var(--indigo-deep); color: #fff; }
+.hp .hp-hero::before {
+  content: ""; position: absolute; inset: 0;
+  background: radial-gradient(circle at 80% 20%, rgba(199,67,80,.28), transparent 55%);
+}
+/* Les grilles de cette page utilisent auto-fit/minmax plutôt que des media
+   queries : le panneau de contenu du thème est bien plus étroit que la
+   fenêtre, une bascule sur la largeur d'écran arriverait beaucoup trop tard. */
+.hp .hp-hero-inner {
+  position: relative; display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2.4rem; align-items: center;
+}
+.hp .hp-hero h1 { color: #fff; font-size: clamp(2.1rem, 5vw, 3.4rem); }
+.hp .hp-hero .hp-eyebrow { color: var(--gold); }
+.hp .hp-hero .hp-lead { font-size: 1.12rem; color: #e9e2d6; margin: 1.1rem 0 1.7rem; max-width: 32rem; }
+.hp .hp-hero-note { margin-top: 1.2rem; font-size: .85rem; color: #b9c0cf; }
+.hp .hp-hero-photo {
+  border-radius: var(--radius-lg); overflow: hidden; aspect-ratio: 4/5;
+  box-shadow: 0 30px 60px -20px rgba(0,0,0,.6);
+}
+.hp .hp-hero-photo img { width: 100%; height: 100%; object-fit: cover; }
+.hp .hp-credit { margin-top: .6rem; font-size: .78rem; color: #8a93a5; }
+.hp .hp-credit a { color: #b9c0cf; text-decoration: underline; }
+.hp .hp-hero-photo { max-width: 400px; }
+
+/* ---------- Sections ---------- */
+.hp .hp-alt { background: var(--cream-deep); }
+.hp .hp-indigo { background: var(--indigo); color: #fff; }
+.hp .hp-indigo h2, .hp .hp-indigo h3 { color: #fff; }
+.hp .hp-indigo .hp-eyebrow { color: var(--gold); }
+.hp .hp-head { max-width: 42rem; margin-bottom: 2.2rem; }
+.hp .hp-head h2 { font-size: clamp(1.7rem, 3.5vw, 2.4rem); }
+.hp .hp-head p { color: var(--ink-soft); font-size: 1.06rem; margin-top: .8rem; }
+.hp .hp-indigo .hp-head p { color: #d7dbe4; }
+
+/* ---------- Grilles ---------- */
+.hp .hp-grid { display: grid; gap: 1.3rem; }
+/* 240px : dans le panneau de contenu du thème, les 4 cartes se rangent en
+   2 × 2 plutôt qu'en 3 + 1 bancal ; elles repassent sur une ligne en grand. */
+.hp .hp-grid-4 { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.hp .hp-grid-3 { grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); }
+
+.hp .hp-split {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2.4rem; align-items: center;
+}
+
+/* ---------- Cartes ---------- */
+.hp .hp-card {
+  background: #fff; border-radius: var(--radius); padding: 1.6rem;
+  box-shadow: var(--shadow-sm); border: 1px solid var(--sand);
+  transition: transform .2s, box-shadow .2s;
+}
+.hp .hp-card:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+.hp .hp-card h3 { font-size: 1.2rem; margin-bottom: .4rem; }
+.hp .hp-card p { color: var(--ink-soft); font-size: .96rem; }
+.hp .hp-ico {
+  width: 46px; height: 46px; border-radius: 12px; background: var(--cream-deep);
+  display: grid; place-items: center; margin-bottom: .9rem; font-size: 1.4rem;
+}
+
+/* ---------- Étapes numérotées ---------- */
+.hp .hp-steps { display: grid; gap: 1rem; }
+.hp .hp-step { display: flex; gap: .9rem; align-items: flex-start; }
+.hp .hp-step .hp-dot {
+  flex: 0 0 auto; width: 30px; height: 30px; border-radius: 50%;
+  background: var(--rust); color: #fff; display: grid; place-items: center;
+  font-weight: 700; font-size: .9rem;
+}
+.hp .hp-step p { color: var(--ink-soft); font-size: .97rem; }
+
+.hp .hp-media {
+  border-radius: var(--radius-lg); overflow: hidden; box-shadow: var(--shadow);
+}
+
+/* ---------- Chiffres ---------- */
+.hp .hp-stats {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.6rem 1rem; text-align: center;
+}
+.hp .hp-stats .hp-n { font-family: var(--font-display); font-size: 2.5rem; color: var(--gold); line-height: 1; }
+.hp .hp-stats .hp-l { font-size: .85rem; color: #d7dbe4; text-transform: uppercase; letter-spacing: .06em; margin-top: .4rem; }
+
+/* ---------- Tableau horaires ---------- */
+.hp .hp-table-card {
+  background: #fff; border-radius: var(--radius); overflow-x: auto;
+  box-shadow: var(--shadow-sm); border: 1px solid var(--sand);
+}
+.hp table { width: 100%; border-collapse: collapse; margin: 0; }
+.hp th, .hp td { padding: .8rem 1.1rem; text-align: left; font-size: .95rem; border: none; }
+.hp thead th {
+  background: var(--indigo); color: #fff; font-family: var(--font-body);
+  font-weight: 600; font-size: .82rem; text-transform: uppercase; letter-spacing: .04em;
+}
+.hp tbody tr:nth-child(even) { background: var(--cream); }
+.hp tbody tr.hp-highlight { background: #fbeee9; }
+.hp tbody tr.hp-highlight td:first-child { box-shadow: inset 3px 0 0 var(--rust); }
+.hp .hp-tag {
+  display: inline-block; font-size: .72rem; font-weight: 700; color: var(--rust);
+  background: #fbeee9; padding: .15rem .5rem; border-radius: 50px;
+}
+.hp .hp-lien { color: var(--rust); font-weight: 600; }
+.hp .hp-lien:hover { color: var(--rust-deep); text-decoration: underline; }
+
+/* ---------- Bandeau d'appel ---------- */
+.hp .hp-band {
+  background: linear-gradient(120deg, var(--rust), var(--rust-deep));
+  color: #fff; border-radius: var(--radius-lg); padding: 2.8rem; text-align: center;
+}
+.hp .hp-band h2 { color: #fff; font-size: clamp(1.6rem, 3vw, 2.2rem); }
+.hp .hp-band p { color: #ffe8e1; margin: .8rem auto 1.5rem; max-width: 36rem; }
+.hp .hp-band .hp-btn-row { justify-content: center; }
+@media (max-width: 560px) { .hp .hp-band { padding: 2rem 1.4rem; } }
+
+@media (max-width: 480px) {
+  .hp .hp-wrap { padding: 2.2rem 18px; }
+}
+</style>
+
+<div class="hp">
+
+<div class="hp-trybar">🥋 Premier cours d'essai <strong>gratuit</strong> toute la saison — <a href="/pages/essai-gratuit.html">réservez votre créneau</a></div>
+
+<!-- HERO -->
+<div class="hp-hero">
+  <div class="hp-wrap hp-hero-inner">
+    <div>
+      <span class="hp-eyebrow">● Club affilié FFKDA · Sèvres (92)</span>
+      <h1>Trouvez votre force,<br>à votre rythme.</h1>
+      <p class="hp-lead">Le karaté Shotokan pour les enfants, les ados et les adultes — débutant ou confirmé. On commence par un cours d'essai, sans engagement, dans une ambiance qui ressemble plus à une famille qu'à une salle de sport.</p>
+      <div class="hp-btn-row">
+        <a class="hp-btn hp-btn-primary" href="/pages/essai-gratuit.html">Réserver un cours d'essai gratuit</a>
+        <a class="hp-btn hp-btn-light" href="/horaires2025.html">Voir les horaires →</a>
+      </div>
+      <p class="hp-hero-note">Gymnase des Cent-Gardes · 45 Grande Rue, 92310 Sèvres · 4 créneaux adultes par semaine</p>
+    </div>
+    <div>
+      <div class="hp-hero-photo">
+        <img src="/images/pascal_2025_01.jpg" alt="Pascal Lescouët, responsable technique du club, en garde">
+      </div>
+      <p class="hp-credit">Photo <a href="https://annecharlottebarnouin.com/home">Anne-Charlotte Barnouin</a></p>
+    </div>
+  </div>
+</div>
+
+<!-- POURQUOI -->
+<div class="hp-wrap">
+  <div class="hp-head">
+    <span class="hp-eyebrow">Pourquoi pousser la porte du dojo</span>
+    <h2>Plus qu'un sport : de la confiance, pour de vrai.</h2>
+    <p>On vient au karaté pour mille raisons. Voici celles que nos adhérents nous citent le plus souvent.</p>
+  </div>
+  <div class="hp-grid hp-grid-4">
+    <div class="hp-card"><div class="hp-ico">🛡️</div><h3>Savoir se défendre</h3><p>Des gestes simples et efficaces, travaillés au calme, pour se sentir en sécurité au quotidien.</p></div>
+    <div class="hp-card"><div class="hp-ico">🧘</div><h3>Évacuer le stress</h3><p>Une heure rien que pour soi, qui muscle le corps autant qu'elle apaise la tête.</p></div>
+    <div class="hp-card"><div class="hp-ico">📈</div><h3>Progresser étape par étape</h3><p>Le système des ceintures donne des objectifs clairs et la fierté d'avancer à son rythme.</p></div>
+    <div class="hp-card"><div class="hp-ico">🤝</div><h3>Faire partie d'un groupe</h3><p>Cours à thème, stages, fête de fin d'année : on s'entraîne ensemble et on repart avec le sourire.</p></div>
+  </div>
+</div>
+
+<!-- DÉBUTER -->
+<div class="hp-alt">
+  <div class="hp-wrap hp-split">
+    <div>
+      <span class="hp-eyebrow">Jamais fait de karaté ?</span>
+      <h2 style="font-size:clamp(1.6rem,3.4vw,2.3rem)">C'est exactement pour vous.</h2>
+      <p style="color:var(--ink-soft);margin:1rem 0 1.5rem;font-size:1.06rem">Pas besoin d'être souple, sportif ou jeune. On démarre tous au même endroit : pieds nus sur le tatami, avec un professeur qui prend le temps. Voici comment se passe un premier cours.</p>
+      <div class="hp-steps">
+        <div class="hp-step"><span class="hp-dot">1</span><div><b>Vous arrivez en tenue de sport.</b><p>Pas besoin de kimono pour commencer — un t-shirt et un bas confortable suffisent.</p></div></div>
+        <div class="hp-step"><span class="hp-dot">2</span><div><b>On vous accueille et on vous présente.</b><p>Le professeur explique les bases, sans jargon ni pression.</p></div></div>
+        <div class="hp-step"><span class="hp-dot">3</span><div><b>Vous pratiquez à votre niveau.</b><p>Échauffement, déplacements, premières techniques — toujours contrôlées, jamais de coups portés.</p></div></div>
+        <div class="hp-step"><span class="hp-dot">4</span><div><b>Vous décidez ensuite.</b><p>Le cours d'essai est gratuit et sans aucun engagement.</p></div></div>
+      </div>
+      <div class="hp-btn-row" style="margin-top:1.8rem">
+        <a class="hp-btn hp-btn-primary" href="/pages/essai-gratuit.html">Je réserve mon essai</a>
+        <a class="hp-btn hp-btn-ghost" href="/debuter-faq.html">Débuter / FAQ</a>
+      </div>
+    </div>
+    <div>
+      <div class="hp-media">
+        <img src="/images/pascal_2026_mawashi.jpg" alt="Deux karatékas du club à l'entraînement" loading="lazy">
+      </div>
+      <p style="font-size:.8rem;color:var(--ink-soft);margin-top:.6rem">Envie de savoir à quoi ressemble une séance ? <a class="hp-lien" href="/deroulement-cours.html">Le déroulement d'un cours →</a></p>
+    </div>
+  </div>
+</div>
+
+<!-- CHIFFRES -->
+<div class="hp-indigo">
+  <div class="hp-wrap">
+    <div class="hp-stats">
+      <div><div class="hp-n">110</div><div class="hp-l">licenciés</div></div>
+      <div><div class="hp-n">5 → 60+</div><div class="hp-l">ans, tous bienvenus</div></div>
+      <div><div class="hp-n">29</div><div class="hp-l">ceintures noires</div></div>
+      <div><div class="hp-n">37 %</div><div class="hp-l">de femmes chez les adultes</div></div>
+    </div>
+    <p style="text-align:center;margin-top:1.6rem;font-size:.9rem;color:#d7dbe4">
+      Saison 2025-2026 — <a class="hp-lien" style="color:var(--gold)" href="/club-en-chiffres.html">le club en chiffres →</a>
+    </p>
+  </div>
+</div>
+
+<!-- COURS / HORAIRES -->
+<div class="hp-wrap">
+  <div class="hp-head">
+    <span class="hp-eyebrow">Nos cours</span>
+    <h2>Des créneaux pour chaque âge, chaque emploi du temps.</h2>
+    <p>Tous les cours ont lieu au gymnase des Cent-Gardes. Le créneau « débutants » du mercredi est pensé pour démarrer sereinement, même après le travail.</p>
+  </div>
+  <div class="hp-table-card">
+    <table>
+      <thead><tr><th>Groupe</th><th>Jour</th><th>Horaires</th><th>Niveau</th></tr></thead>
+      <tbody>
+        <tr class="hp-highlight"><td>Adultes (14 ans et +)</td><td>Mercredi</td><td>19h15 – 20h15</td><td><span class="hp-tag">Débutants bienvenus</span></td></tr>
+        <tr><td>Adultes (14 ans et +)</td><td>Lundi</td><td>19h15 – 20h45</td><td>Tous grades</td></tr>
+        <tr><td>Adultes (14 ans et +)</td><td>Samedi</td><td>10h15 – 11h30</td><td>Tous grades</td></tr>
+        <tr><td>Enfants (7 à 14 ans)</td><td>Lun · Mer · Sam</td><td>voir le détail</td><td>Par niveau</td></tr>
+        <tr><td>Baby (5 à 6 ans)</td><td>Samedi</td><td>11h30 – 12h15</td><td>Éveil</td></tr>
+      </tbody>
+    </table>
+  </div>
+  <p style="margin-top:1rem;color:var(--ink-soft);font-size:.94rem">
+    Un dimanche par mois, de 10h à 12h : cours à thème.
+    <a class="hp-lien" href="/horaires2025.html">Voir tous les horaires →</a>
+  </p>
+
+  <div class="hp-grid hp-grid-3" style="margin-top:2.4rem">
+    <div class="hp-card"><div class="hp-ico">👶</div><h3>Enfants &amp; ados</h3><p>Du Baby (5 ans) aux ados : motricité, respect, énergie canalisée — et de vraies réussites en compétition pour celles et ceux qui le souhaitent.</p></div>
+    <div class="hp-card"><div class="hp-ico">💪</div><h3>Adultes débutants</h3><p>Un créneau dédié le mercredi soir pour repartir de zéro, sans complexe et sans regard sur le niveau des autres.</p></div>
+    <div class="hp-card"><div class="hp-ico">🥋</div><h3>Adultes déjà pratiquants</h3><p>Quatre <a class="hp-lien" href="/category/instructeurs.html">professeurs</a> du 4<sup>e</sup> au 6<sup>e</sup> dan, dont le responsable des grades de la Ligue des Hauts-de-Seine, et 29 ceintures noires sur le tatami — plus d'un quart du club. De quoi progresser longtemps, quel que soit votre grade.</p></div>
+  </div>
+</div>
+
+<!-- PAROLES DE MEMBRES -->
+<div class="hp-alt">
+  <div class="hp-wrap">
+    <div class="hp-head" style="margin-bottom:1.6rem">
+      <span class="hp-eyebrow">Ils et elles l'ont fait</span>
+      <h2>On débute à tout âge — la preuve.</h2>
+      <p>Ceintures noires de fraîche date, adultes revenus au karaté après vingt ans, parents qui pratiquent avec leurs enfants : les membres du club racontent leur parcours.</p>
+    </div>
+    <div class="hp-btn-row">
+      <a class="hp-btn hp-btn-primary" href="/paroles-de-membres.html">Lire les paroles de membres</a>
+      <a class="hp-btn hp-btn-ghost" href="/category/instructeurs.html">Nos instructeurs</a>
+    </div>
+  </div>
+</div>
+
+<!-- APPEL FINAL -->
+<div class="hp-wrap">
+  <div class="hp-band">
+    <h2>Le plus dur, c'est de venir la première fois.</h2>
+    <p>Après, on s'occupe de tout. Réservez votre cours d'essai gratuit, inscrivez-vous pour la saison, ou écrivez-nous : on répond à toutes vos questions.</p>
+    <div class="hp-btn-row">
+      <a class="hp-btn hp-btn-light" href="/pages/essai-gratuit.html">Essai gratuit</a>
+      <a class="hp-btn hp-btn-light" href="/pages/inscription-en-ligne.html">Inscription en ligne</a>
+    </div>
+  </div>
+</div>
+
+<!-- INFOS PRATIQUES -->
+<div class="hp-alt">
+  <div class="hp-wrap hp-split">
+    <div>
+      <span class="hp-eyebrow">On vous attend</span>
+      <h2 style="font-size:clamp(1.6rem,3.4vw,2.2rem)">Infos pratiques</h2>
+      <p style="color:var(--ink-soft);margin-top:1rem;font-size:1.04rem">
+        <b>📍 Lieu —</b> Gymnase des Cent-Gardes, 45 Grande Rue, 92310 Sèvres<br>
+        <b>🚋 Accès —</b> Tramway T2 Brimborion · bus 169 / 171 / 179<br>
+        <b>✉️ Contact —</b> sevres.karate@gmail.com<br>
+        <b>📞 Téléphone —</b> Nicolas 06.62.30.43.00 · Ludovic 06.22.04.60.67
+      </p>
+      <div class="hp-btn-row" style="margin-top:1.4rem">
+        <a class="hp-btn hp-btn-ghost" href="mailto:sevres.karate@gmail.com">Nous écrire</a>
+        <a class="hp-btn hp-btn-ghost" href="https://www.facebook.com/p/CO-S%C3%A8vres-Karat%C3%A9-100066929041271/">Facebook</a>
+      </div>
+    </div>
+    <div>
+      <div class="hp-card">
+        <h3 style="margin-bottom:.9rem">💶 Tarifs 2026-2027</h3>
+        <p style="color:var(--ink)">
+          <b>Adulte (14 ans et plus)</b> — 381 € sévrien / 396 € non-sévrien<br>
+          <b>Enfant (7 à 13 ans)</b> — 285 € / 300 €<br>
+          <b>Baby (5 à 6 ans)</b> — 216 € / 231 €
+        </p>
+        <p style="font-size:.86rem;color:var(--ink-soft);margin-top:.8rem">
+          La licence FFKDA est incluse. Une cotisation donne accès à tous les créneaux de votre groupe.
+          <a class="hp-lien" href="/tarifs2024.html">Le détail des tarifs →</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+</body>
+</html>

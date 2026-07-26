@@ -41,6 +41,16 @@ SOCIAL = (
 
 DEFAULT_PAGINATION = 10
 
+# La racine du site n'affiche plus tous les articles mais la seule catégorie
+# « Actu » (voir theme/karate/templates/index.html) : la paginer n'aurait pas
+# de sens, les pages index2.html et suivantes découperaient une liste qui n'est
+# pas celle affichée. Les autres gabarits gardent la pagination par défaut.
+PAGINATED_TEMPLATES = {
+    "tag": None,
+    "category": None,
+    "author": None,
+}
+
 THEME = 'theme/karate'
 
 STATIC_PATHS = [

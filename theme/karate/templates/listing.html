@@ -1,0 +1,9 @@
+{# Gabarit de liste d'articles paginée : socle des pages catégorie, tag et
+   auteur. C'était le contenu de index.html avant que la racine du site
+   n'affiche la catégorie « Actu ». #}
+{% extends "base.html" %}
+{% from 'article_list.html' import render_articles with context %}
+{% block content_title %}{% endblock %}
+{% block content %}
+{{ render_articles(articles, articles_page) }}
+{% endblock content %}

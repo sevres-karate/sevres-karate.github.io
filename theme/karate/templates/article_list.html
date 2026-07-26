@@ -1,0 +1,63 @@
+{# Liste d'articles, partagée par la racine du site (index.html) et par les
+   pages catégorie / tag / auteur (listing.html).
+
+   `page` est l'objet de pagination (articles_page) ou None quand le gabarit
+   n'est pas paginé — c'est le cas de la racine. Sans pagination, on est
+   toujours « sur la première page » : les articles sont affichés en entier,
+   comportement historique du thème. #}
+{% macro render_articles(items, page) %}
+{% if items %}
+    {% for article in items|sort(attribute='date', reverse=True) %}
+
+        {# First item #}
+        {% if not page or not page.has_previous() %}
+            <aside id="content" class="body">
+                {# La classe = slug : permet aux styles propres à un article
+                   (ex. « club-en-chiffres ») de s'appliquer aussi quand il est
+                   affiché en entier ici (accueil / page catégorie). #}
+                <article class="{{ article.slug }}">
+                    <h1 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
+                    {{ article.content }}{% include 'article_infos_light.html' %}{% include 'comments.html' %}
+                </article>
+            </aside>
+        {# other items #}
+        {% else %}
+            <li><article class="hentry">
+                <header>
+                    <h1><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
+                           title="Permalink vers {{ article.title|striptags }}">{{ article.title }}</a></h1>
+                </header>
+
+                <div class="entry-content">
+                {{ article.summary }}
+                <a class="readmore" href="{{ SITEURL }}/{{ article.url }}">lire la suite</a>
+                    {% include 'article_infos_light.html' %}
+                {% include 'comments.html' %}
+                </div><!-- /.entry-content -->
+            </article></li>
+        {% endif %}
+        {% if loop.last %}
+            {% if loop.length > 1 or (page and page.has_other_pages()) %}
+                </ol><!-- /#posts-list -->
+                {% if page and page.has_other_pages() %}
+                    {% include 'pagination.html' %}
+                {% endif %}
+                </section><!-- /#content -->
+            {% endif %}
+        {% endif %}
+    {% endfor %}
+{% else %}
+<section id="content" class="body">
+    {% if pages %}
+    <h2>Pages</h2>
+    <ul>
+    {% for page in pages %}
+        <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
+    {% endfor %}
+    </ul>
+    {% else %}
+    <p>Aucun contenu disponible.</p>
+    {% endif %}
+</section>
+{% endif %}
+{% endmacro %}

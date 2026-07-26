@@ -20,7 +20,9 @@
 <body id="index" class="home">
 {% include 'github.html' %}
         <header id="banner" class="body">
-                <h1><a href="{{ SITEURL }}/">{{ SITENAME }}{% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a></h1>
+                {# Le titre du site mène à la page d'accueil de présentation, et
+                   non à la racine : celle-ci affiche les actualités du club. #}
+                <h1><a href="{{ SITEURL }}/pages/accueil.html">{{ SITENAME }}{% if SITESUBTITLE %} <strong>{{ SITESUBTITLE }}</strong>{% endif %}</a></h1>
                 <nav><ul>
                 {% for title, link in MENUITEMS %}
                     <li><a href="{i{ link }}">{{ title }}</a></li>
@@ -28,7 +30,9 @@
                 {% if DISPLAY_CATEGORIES_ON_MENU -%}
                 {# Ordre du menu fixé explicitement : Le Club, Karaté, Horaires, Tarifs #}
                 {# (la catégorie « Actu » est intégrée au menu « Le Club ») #}
-                <li class="has-submenu{% if category and category.name in ['Actu', 'Instructeurs', 'Le Club'] %} active{% endif %}"><a href="{{ SITEURL }}/category/actu.html">Le Club</a>
+                {# La racine du site affiche les actus : le menu « Le Club » y est
+                   donc actif lui aussi. #}
+                <li class="has-submenu{% if (category and category.name in ['Actu', 'Instructeurs', 'Le Club']) or (page_name is defined and page_name == 'index') %} active{% endif %}"><a href="{{ SITEURL }}/category/actu.html">Le Club</a>
                     <ul class="submenu">
                         <li><a href="{{ SITEURL }}/category/actu.html">Actus</a></li>
                         <li><a href="{{ SITEURL }}/category/instructeurs.html">Instructeurs</a></li>
@@ -53,8 +57,9 @@
                 {% if DISPLAY_PAGES_ON_MENU -%}
                 {% for pg in pages %}
                 {# « Accès Membres » est déjà dans le menu « Le Club » ; « Essai gratuit »
-                   a son propre bouton, calé à droite juste après cette boucle. #}
-                {% if pg.slug not in ['acces-membres', 'essai-gratuit'] %}
+                   a son propre bouton, calé à droite juste après cette boucle ;
+                   « Accueil » s'atteint par le titre du site, en haut à gauche. #}
+                {% if pg.slug not in ['acces-membres', 'essai-gratuit', 'accueil'] %}
                 <li{% if pg == page %} class="active"{% endif %}><a href="{{ SITEURL }}/{{ pg.url }}">{{ pg.title }}</a></li>
                 {% endif %}
                 {% endfor %}

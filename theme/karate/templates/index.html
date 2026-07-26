@@ -1,58 +1,21 @@
+{# Racine du site.
+
+   Choix éditorial : on tombe directement sur les actualités du club
+   (catégorie « Actu », menu Le Club → Actus) plutôt que sur la liste de tous
+   les articles, qui reste consultable dans les archives.
+   La page d'accueil présentant le club est accessible par le titre
+   « Sèvres Karaté » en haut de page (/pages/accueil.html).
+
+   La catégorie est retrouvée dans `categories` (liste de couples
+   catégorie / articles) plutôt que dans `articles` : ce dernier ne contient
+   pas forcément tous les articles d'Actu selon la pagination. #}
 {% extends "base.html" %}
-{% block content_title %}{% endblock %}
+{% from 'article_list.html' import render_articles with context %}
+{% block title %}{{ SITENAME|striptags }} - Actus{% endblock %}
 {% block content %}
-{% if articles %}
-    {% for article in articles|sort(attribute='date', reverse=True) %}
-
-        {# First item #}
-        {% if not articles_page.has_previous() %}
-            <aside id="content" class="body">
-                {# La classe = slug : permet aux styles propres à un article
-                   (ex. « club-en-chiffres ») de s'appliquer aussi quand il est
-                   affiché en entier ici (accueil / page catégorie). #}
-                <article class="{{ article.slug }}">
-                    <h1 class="entry-title"><a href="{{ SITEURL }}/{{ article.url }}">{{ article.title }}</a></h1>
-                    {{ article.content }}{% include 'article_infos_light.html' %}{% include 'comments.html' %}
-                </article>
-            </aside>
-        {# other items #}
-        {% else %}
-            <li><article class="hentry">
-                <header>
-                    <h1><a href="{{ SITEURL }}/{{ article.url }}" rel="bookmark"
-                           title="Permalink vers {{ article.title|striptags }}">{{ article.title }}</a></h1>
-                </header>
-
-                <div class="entry-content">
-                {{ article.summary }}
-                <a class="readmore" href="{{ SITEURL }}/{{ article.url }}">lire la suite</a>
-                    {% include 'article_infos_light.html' %}
-                {% include 'comments.html' %}
-                </div><!-- /.entry-content -->
-            </article></li>
-        {% endif %}
-        {% if loop.last %}
-            {% if loop.length > 1 or articles_page.has_other_pages() %}
-                </ol><!-- /#posts-list -->
-                {% if articles_page.has_other_pages() %}
-                    {% include 'pagination.html' %}
-                {% endif %}
-                </section><!-- /#content -->
-            {% endif %}
-        {% endif %}
-    {% endfor %}
-{% else %}
-<section id="content" class="body">
-    {% if pages %}
-    <h2>Pages</h2>
-    <ul>
-    {% for page in pages %}
-        <li><a href="{{ SITEURL }}/{{ page.url }}">{{ page.title }}</a></li>
-    {% endfor %}
-    </ul>
-    {% else %}
-    <p>Aucun contenu disponible.</p>
-    {% endif %}
-</section>
-{% endif %}
+{% set ns = namespace(actu=[]) %}
+{% for cat, cat_articles in categories %}
+    {% if cat.name == 'Actu' %}{% set ns.actu = cat_articles %}{% endif %}
+{% endfor %}
+{{ render_articles(ns.actu, None) }}
 {% endblock content %}
