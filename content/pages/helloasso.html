@@ -12,7 +12,40 @@ Que vous soyez débutant ou confirmé, enfant ou adulte, nous serons ravis de vo
 
 <p><strong>N'attendez plus : cliquez sur le bouton ci-dessous pour rejoindre le club !</strong></p>
 
-<iframe id="haWidget" allowtransparency="true" src="https://www.helloasso.com/associations/co-sevres-karate/adhesions/inscription-saison-2026-2027/widget-bouton" style="width: 100%; height: 70px; border: none;"></iframe>
+<!-- Bouton repris de la page « Essai gratuit » (option 2). Les styles sont
+     recopiés ici, préfixés « .ha- », pour rester indépendants de cette page
+     et ne pas déborder sur le reste du site. -->
+<style>
+.ha-cta-row { display: flex; gap: .7rem; flex-wrap: wrap; justify-content: center; margin: 1.8rem 0 2rem; }
+/* Le thème définit « a:link, a:visited { color: #C74350; padding: 0 1px;
+   text-decoration: underline } » (main.css) : sans les pseudo-classes ici, le
+   texte du bouton resterait rouille et souligné hors survol. D'où la liste de
+   sélecteurs répétée sur chaque règle, y compris dans le media query. */
+.ha-cta, .ha-cta:link, .ha-cta:visited, .ha-cta:hover, .ha-cta:active, .ha-cta:focus {
+  display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-weight: 600; font-size: 1.15rem;
+  min-height: 58px;
+  padding: 1.05rem 2.6rem; border-radius: 100px; border: 2px solid transparent;
+  background: #C74350; color: #fff;
+  text-decoration: none; text-shadow: none;
+  box-shadow: 0 8px 26px -10px rgba(36,28,25,.35);
+  cursor: pointer; line-height: 1;
+  transition: transform .18s ease, box-shadow .18s ease, background .18s ease;
+}
+.ha-cta:hover, .ha-cta:active { background: #a3323e; transform: translateY(-2px); }
+
+/* Sur mobile, le bouton prend toute la largeur pour rester bien cliquable. */
+@media (max-width: 480px) {
+  .ha-cta, .ha-cta:link, .ha-cta:visited, .ha-cta:hover, .ha-cta:active, .ha-cta:focus {
+    width: 100%; font-size: 1.08rem; min-height: 54px; padding: .95rem 1.4rem;
+  }
+}
+</style>
+
+<div class="ha-cta-row">
+  <a class="ha-cta" href="https://www.helloasso.com/associations/co-sevres-karate/adhesions/inscription-saison-2026-2027">Inscription en ligne</a>
+</div>
 
 <p>Vous préférez un autre mode de paiement ou vous avez une question ? Venez nous voir aux horaires
 des cours ou écrivez-nous à <a href="mailto:sevres.karate@gmail.com">sevres.karate@gmail.com</a>.
