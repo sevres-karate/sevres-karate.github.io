@@ -873,6 +873,18 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 	font-weight: 700;
 }
 
+/* En dessous de ~640px les fiches s'empilent sur une seule colonne : le fond
+   très clair ne suffit plus à séparer un membre du suivant. On aère
+   l'espacement et on marque chaque fiche d'un liseré, comme ailleurs sur le
+   site. Au-dessus (ordinateur), la grille à deux colonnes reste inchangée. */
+@media (max-width: 640px) {
+	.le-bureau .bur-grid { gap: 22px; }
+	.le-bureau .bur-card {
+		border-left: 4px solid #5b8fc7;
+		border-radius: 0 8px 8px 0;
+	}
+}
+
 @media (max-width: 480px) {
 	.le-bureau .bur-photo { flex-basis: 88px; width: 88px; height: 88px; }
 	.le-bureau .bur-photo-vide { font-size: 2.1em; }
