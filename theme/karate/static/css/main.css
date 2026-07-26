@@ -766,3 +766,114 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 	font-size: 1.15em;
 	font-weight: 700;
 }
+
+/* Page « Le bureau » : fiches des membres du bureau */
+.le-bureau .bur-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 16px;
+	margin: 1.6em 0 2em;
+}
+
+.le-bureau .bur-card {
+	display: flex;
+	gap: 14px;
+	background: #f6f7fa;
+	border-radius: 8px;
+	padding: 14px 16px;
+}
+
+/* Vignette carrée : accueille la photo quand elle est disponible, et
+   affiche les initiales en attendant (voir tools/README-photos-bureau.txt).
+   Pas d'overflow:hidden ici : c'est l'image elle-même qui porte l'arrondi,
+   ce qui lui permet de déborder de la fiche une fois agrandie au survol. */
+.le-bureau .bur-photo {
+	flex: 0 0 120px;
+	width: 120px;
+	height: 120px;
+	border-radius: 50%;
+	background: #dfe4ec;
+}
+
+.le-bureau .bur-photo img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+	border: 0;
+	border-radius: 50%;
+	position: relative;
+	cursor: zoom-in;
+	transition: transform .2s ease, border-radius .2s ease, box-shadow .2s ease;
+}
+
+/* Survol : la photo s'agrandit sur place et redevient un carré arrondi —
+   ce qui dévoile au passage les coins masqués par le cercle. L'agrandissement
+   part du bord gauche pour rester dans la largeur de la page. */
+.le-bureau .bur-photo img:hover {
+	transform: scale(2.3);
+	transform-origin: left center;
+	border-radius: 8px;
+	box-shadow: 0 8px 26px rgba(0, 0, 0, .32);
+	z-index: 20;
+}
+
+.le-bureau .bur-photo-vide {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #dfe4ec;
+	color: #5b8fc7;
+	font-family: 'Yanone Kaffeesatz', arial, sans-serif;
+	font-size: 2.9em;
+	line-height: 1;
+	letter-spacing: .02em;
+	user-select: none;
+}
+
+.le-bureau .bur-body { min-width: 0; }
+.le-bureau .bur-body p { margin: 0; }
+
+.le-bureau .bur-role {
+	font-family: 'Yanone Kaffeesatz', arial, sans-serif;
+	font-size: 1.35em;
+	line-height: 1.1;
+	color: #5b8fc7;
+	text-transform: uppercase;
+	letter-spacing: .03em;
+}
+
+.le-bureau .bur-nom {
+	font-size: 1.1em;
+	font-weight: bold;
+	color: #231c4f;
+	margin: .1em 0 .35em !important;
+}
+
+.le-bureau .bur-missions {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	font-size: .9em;
+	color: #444;
+}
+
+.le-bureau .bur-missions li {
+	position: relative;
+	padding-left: 1em;
+	margin: .18em 0;
+	line-height: 1.35;
+}
+
+.le-bureau .bur-missions li::before {
+	content: "·";
+	position: absolute;
+	left: .2em;
+	color: #5b8fc7;
+	font-weight: 700;
+}
+
+@media (max-width: 480px) {
+	.le-bureau .bur-photo { flex-basis: 88px; width: 88px; height: 88px; }
+	.le-bureau .bur-photo-vide { font-size: 2.1em; }
+}

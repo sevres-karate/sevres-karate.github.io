@@ -1,5 +1,5 @@
 Title: Le club en chiffres
-Date: 2026-07-10 00:00
+Date: 2026-07-10 01:00
 Modified: 2026-07-16 00:00
 Category: Le Club
 Tags: karate, sevres, cos, statistiques, adherents, licencies
