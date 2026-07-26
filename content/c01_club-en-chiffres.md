@@ -1,16 +1,16 @@
 Title: Le club en chiffres
 Date: 2026-07-10 01:00
-Modified: 2026-07-16 00:00
+Modified: 2026-07-26 00:00
 Category: Le Club
 Tags: karate, sevres, cos, statistiques, adherents, licencies
 Slug: club-en-chiffres
 Authors: Sèvres Karaté
 Summary: Le CO Sèvres Karaté en chiffres — adhérents, âges, grades et ceintures noires pour la saison 2025-2026
 
-Le CO Sèvres Karaté, c'est **109 licenciés** pour la saison 2025-2026 : des babys de 5 ans aux vétérans de plus de 60 ans, débutants comme ceintures noires jusqu'au 6<sup>e</sup> dan. Voici le portrait du club en quelques chiffres.
+Le CO Sèvres Karaté, c'est **110 licenciés** pour la saison 2025-2026 : des babys de 5 ans aux vétérans de plus de 60 ans, débutants comme ceintures noires jusqu'au 6<sup>e</sup> dan. Voici le portrait du club en quelques chiffres.
 
 <div class="ckc-tiles">
-<div class="ckc-tile"><p class="ckc-label">Adhérents</p><p class="ckc-value">109</p><p class="ckc-sub">toutes les générations, de 5 à plus de 60 ans</p></div>
+<div class="ckc-tile"><p class="ckc-label">Adhérents</p><p class="ckc-value">110</p><p class="ckc-sub">toutes les générations, de 5 à plus de 60 ans</p></div>
 <div class="ckc-tile"><p class="ckc-label">Femmes</p><p class="ckc-value">30&nbsp;%</p><p class="ckc-sub">et 37&nbsp;% chez les adultes</p></div>
 <div class="ckc-tile"><p class="ckc-label">Ceintures noires</p><p class="ckc-value">29</p><p class="ckc-sub">plus d'un quart du club</p></div>
 <div class="ckc-tile"><p class="ckc-label">Nouveaux adhérents</p><p class="ckc-value">31</p><p class="ckc-sub">un club qui attire&nbsp;: 28&nbsp;% de l'effectif</p></div>
@@ -20,10 +20,10 @@ Le CO Sèvres Karaté, c'est **109 licenciés** pour la saison 2025-2026 : des b
 
 Le club accueille tous les âges, avec trois grandes familles : les adultes, les enfants et les babys (5-7 ans).
 
-<div class="ckc-chart" role="img" aria-label="Répartition des adhérents : adultes 51 (46,8 %), enfants 44 (40,4 %), babys 14 (12,8 %)">
-<div class="ckc-row"><span class="ckc-row-label">Adultes</span><div class="ckc-track"><div class="ckc-bar" style="width:46.8%"></div><span class="ckc-marker" style="left:45.7%" title="Saison 2024-2025 : 45,7 %"></span></div><span class="ckc-val">51 · 46,8&nbsp;%</span></div>
-<div class="ckc-row"><span class="ckc-row-label">Enfants</span><div class="ckc-track"><div class="ckc-bar" style="width:40.4%"></div><span class="ckc-marker" style="left:38.0%" title="Saison 2024-2025 : 38,0 %"></span></div><span class="ckc-val">44 · 40,4&nbsp;%</span></div>
-<div class="ckc-row"><span class="ckc-row-label">Babys</span><div class="ckc-track"><div class="ckc-bar" style="width:12.8%"></div><span class="ckc-marker" style="left:16.3%" title="Saison 2024-2025 : 16,3 %"></span></div><span class="ckc-val">14 · 12,8&nbsp;%</span></div>
+<div class="ckc-chart" role="img" aria-label="Répartition des adhérents : adultes 51 (46,4 %), enfants 45 (40,9 %), babys 14 (12,7 %)">
+<div class="ckc-row"><span class="ckc-row-label">Adultes</span><div class="ckc-track"><div class="ckc-bar" style="width:46.4%"></div><span class="ckc-marker" style="left:45.7%" title="Saison 2024-2025 : 45,7 %"></span></div><span class="ckc-val">51 · 46,4&nbsp;%</span></div>
+<div class="ckc-row"><span class="ckc-row-label">Enfants</span><div class="ckc-track"><div class="ckc-bar" style="width:40.9%"></div><span class="ckc-marker" style="left:38.0%" title="Saison 2024-2025 : 38,0 %"></span></div><span class="ckc-val">45 · 40,9&nbsp;%</span></div>
+<div class="ckc-row"><span class="ckc-row-label">Babys</span><div class="ckc-track"><div class="ckc-bar" style="width:12.7%"></div><span class="ckc-marker" style="left:16.3%" title="Saison 2024-2025 : 16,3 %"></span></div><span class="ckc-val">14 · 12,7&nbsp;%</span></div>
 <p class="ckc-legend"><span class="ckc-marker-key"></span> niveau de la saison 2024-2025</p>
 </div>
 
@@ -31,13 +31,13 @@ Le club accueille tous les âges, avec trois grandes familles : les adultes, les
 
 <p class="ckc-highlight">Près de <strong>deux adhérents sur trois ont moins de 18 ans</strong> : le club forme la prochaine génération de karatékas.</p>
 
-**66 jeunes** de 5 à 18 ans s'entraînent au club, répartis entre les cours babys, enfants et ados.
+**67 jeunes** de 5 à 18 ans s'entraînent au club, répartis entre les cours babys, enfants et ados.
 
-<div class="ckc-chart" role="img" aria-label="Jeunes par âge (en % des 66 jeunes) : 5-7 ans 17 (25,8 %), 7-14 ans 44 (66,7 %), 14-18 ans 5 (7,6 %)">
-<div class="ckc-row"><span class="ckc-row-label">5 – 7 ans</span><div class="ckc-track"><div class="ckc-bar" style="width:38.6%"></div></div><span class="ckc-val">17 · 25,8&nbsp;%</span></div>
-<div class="ckc-row"><span class="ckc-row-label">7 – 14 ans</span><div class="ckc-track"><div class="ckc-bar" style="width:100%"></div></div><span class="ckc-val">44 · 66,7&nbsp;%</span></div>
-<div class="ckc-row"><span class="ckc-row-label">14 – 18 ans</span><div class="ckc-track"><div class="ckc-bar" style="width:11.4%"></div></div><span class="ckc-val">5 · 7,6&nbsp;%</span></div>
-<p class="ckc-legend">pourcentages calculés sur les 66 jeunes</p>
+<div class="ckc-chart" role="img" aria-label="Jeunes par âge (en % des 67 jeunes) : 5-7 ans 17 (25,4 %), 7-14 ans 44 (65,7 %), 14-18 ans 6 (9,0 %)">
+<div class="ckc-row"><span class="ckc-row-label">5 – 7 ans</span><div class="ckc-track"><div class="ckc-bar" style="width:38.6%"></div></div><span class="ckc-val">17 · 25,4&nbsp;%</span></div>
+<div class="ckc-row"><span class="ckc-row-label">7 – 14 ans</span><div class="ckc-track"><div class="ckc-bar" style="width:100%"></div></div><span class="ckc-val">44 · 65,7&nbsp;%</span></div>
+<div class="ckc-row"><span class="ckc-row-label">14 – 18 ans</span><div class="ckc-track"><div class="ckc-bar" style="width:13.6%"></div></div><span class="ckc-val">6 · 9,0&nbsp;%</span></div>
+<p class="ckc-legend">pourcentages calculés sur les 67 jeunes</p>
 </div>
 
 ## Des adultes de 18 à plus de 60 ans
@@ -110,6 +110,6 @@ Du blanc des débutants au noir des gradés, tous les niveaux s'entraînent au c
 <p class="ckc-legend"><span class="ckc-swatch ckc-sw-renew"></span> Réinscriptions&nbsp;: 77 (70,6&nbsp;%) &nbsp;·&nbsp; <span class="ckc-swatch ckc-sw-new"></span> Nouveaux&nbsp;: 31 (28,4&nbsp;%) &nbsp;·&nbsp; <span class="ckc-swatch ckc-sw-nr"></span> Non renseigné&nbsp;: 1</p>
 </div>
 
-<p class="ckc-note">Source&nbsp;: registre des licenciés du club, saison 2025-2026 (109 adhérents). Moyenne nationale hommes/femmes&nbsp;: Fédération Française de Karaté.</p>
+<p class="ckc-note">Source&nbsp;: registre des licenciés du club, saison 2025-2026 (110 adhérents). Moyenne nationale hommes/femmes&nbsp;: Fédération Française de Karaté.</p>
 
 Envie de rejoindre l'aventure&nbsp;? Consultez les [horaires]({filename}/a2024_horaires2024.md), les [tarifs]({filename}/b2024_tarifs2024.md) ou notre [guide du débutant]({filename}/k05_debuter-faq.md)&nbsp;! Et si vous êtes déjà convaincu, vous pouvez aussi [vous inscrire en ligne]({filename}/pages/helloasso.html) en quelques minutes — on vous attend sur le tatami, le 1<sup>er</sup> cours d'essai est gratuit&nbsp;!
