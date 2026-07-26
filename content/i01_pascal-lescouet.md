@@ -29,7 +29,6 @@ Pascal continue à s'entraîner et se perfectionner depuis plus de 10 ans sous l
 ## Résultats
 
 Dès son arrivée à Sèvres, il va participer à de nombreuses compétitions régionales, nationales et même internationales. Membre de l'équipe Nationale JKA, il participe à des tournois internationaux, des championnats d'Europe JKA et coupe du Monde JKA.
-Pascal LESCOUET
 
 Il obtiendra de nombreux titres de champion des Hauts-de-Seine FFKAMA, ainsi que des résultats nationaux et internationaux dans les compétitions JKA et sera membre de l'équipe National JKA.
 
