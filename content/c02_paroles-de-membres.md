@@ -6,8 +6,6 @@ Slug: paroles-de-membres
 Authors: Sèvres Karaté
 Summary: Les mots de nos adhérents — discours, témoignages et moments partagés au club, à commencer par les passages de grade de Karim et de Pierre, tous deux 2e dan
 
-# Paroles de membres
-
 Un club, ce sont d'abord des femmes et des hommes qui partagent le tatami
 saison après saison. Cette page leur est consacrée : leurs mots, leurs
 souvenirs, leurs grands moments. Bonne lecture — et bon visionnage&nbsp;!
