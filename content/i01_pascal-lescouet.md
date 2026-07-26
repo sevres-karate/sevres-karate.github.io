@@ -9,7 +9,17 @@ Summary: Présentation de Pascal Lescouët, instructeur au COS Karaté
 
 ## Pascal Lescouët - 6ème DAN FFKDA
 
-![Alt Pascal]({static}/images/pascal.gif)
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px;">
+  <img src="/images/pascal_2025_01.jpg" alt="Pascal Lescouët en garde" style="width: 100%; height: auto; border-radius: 6px;" loading="lazy">
+  <img src="/images/pascal_2025_02.jpg" alt="Pascal Lescouët en position, bras tendu" style="width: 100%; height: auto; border-radius: 6px;" loading="lazy">
+  <img src="/images/pascal_2025_03.jpg" alt="Pascal Lescouët exécutant une technique de jambe" style="width: 100%; height: auto; border-radius: 6px;" loading="lazy">
+</div>
+
+<div style="margin-top: 10px;">
+  <img src="/images/pascal_2026_kumite.jpg" alt="Pascal Lescouët travaillant avec une partenaire" style="width: 100%; height: auto; border-radius: 6px;" loading="lazy">
+</div>
+
+<p style="font-size: .85em; color: #888; margin-top: .5em;">Photos réalisées par <a href="https://annecharlottebarnouin.com/home">Anne-Charlotte Barnouin</a> — Instagram <a href="https://www.instagram.com/annecharlottecorp/">@annecharlottecorp</a></p>
 
 ## Historique
 
@@ -25,6 +35,10 @@ Enseignant depuis plus de 23 ans, Pascal a également été formateur des futurs
 
 Examinateur pour les passages de grades 1er, 2e, 3e et 4e DAN, il est depuis septembre 2012 le Responsable des Grades pour la Ligue des Hauts-de-Seine.
 Pascal continue à s'entraîner et se perfectionner depuis plus de 10 ans sous la direction de Senseï Yuichi SATO (8e DAN JKA et FFKDA), expert japonais.
+
+<div style="text-align: center; margin: 1.4em 0;">
+  <img src="/images/pascal_sensei.jpg" alt="Pascal Lescouët aux côtés d'un maître japonais" style="max-width: 300px; width: 100%; height: auto; border-radius: 6px;" loading="lazy">
+</div>
 
 ## Résultats
 
