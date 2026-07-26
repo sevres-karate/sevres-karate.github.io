@@ -31,7 +31,7 @@ Les **5 principes** énoncés par **Gichin Funakoshi** :
 5. **Réfréner tout comportement violent, s'abstenir de conduites impulsives**
    *Hitotsu, kekki no yu wo imashimuru koto*
 
-En France, la **FFKDA** reprend souvent ces valeurs sous 7 mots :
+En France, la **FFK - Fédération Française de Karaté** reprend souvent ces valeurs sous 7 mots :
 *Honneur, Fidélité, Sincérité, Courage, Bonté / Bienveillance, Modestie, Respect,
 Contrôle de soi.*
 

@@ -7,7 +7,7 @@ Slug: nicolas-blot
 Authors: Sèvres Karaté 
 Summary: Présentation de Nicolas Blot, instructeur au COS Karaté
 
-# Nicolas Blot - 4e DAN FFKDA
+# Nicolas Blot - 4e DAN FFK
 
 ## Historique
 

@@ -7,7 +7,7 @@ Slug: cristelle-lauvergnat
 Authors: Sèvres Karaté 
 Summary: Présentation de Cristelle Lauvergnat, instructrice au COS Karaté
 
-# Cristelle Lauvergnat - 5e DAN FFKDA
+# Cristelle Lauvergnat - 5e DAN FFK
 
 ## Historique
 

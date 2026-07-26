@@ -7,13 +7,13 @@ Slug: jose-da-silva
 Authors: Sèvres Karaté 
 Summary: Présentation de José Da Silva, instructeur au COS Karaté
 
-# José DA SILVA CASTRO - 5e DAN FFKDA
+# José DA SILVA CASTRO - 5e DAN FFK
 
 ![Alt José]({static}/images/jose.gif)
 
 ## Historique
 
-José a débuté le Karaté en septembre 1986, à l’âge de 16 ans, au CO Sèvres Karaté. Il est resté fidèle au club et à Pascal, son sempaï, depuis ses débuts. Son professeur de l’époque, M. Yves BELLEGARDE (4e DAN JKA et FFKDA), élève direct de Marcel LE ROLLAND, est aujourd’hui directeur technique de la SECTION ARTS MARTIAUX de St Brieuc - TAISHO DOJO agréé Japan Karate Association. Il s’est également régulièrement entraîné aux clubs MASSENA 13, DOJO 5, Cercle Christian TISSIER (avec Pierre BERTHIER et Jean-Louis MOREL, tous deux 7e DAN FFKDA)…
+José a débuté le Karaté en septembre 1986, à l’âge de 16 ans, au CO Sèvres Karaté. Il est resté fidèle au club et à Pascal, son sempaï, depuis ses débuts. Son professeur de l’époque, M. Yves BELLEGARDE (4e DAN JKA et FFK), élève direct de Marcel LE ROLLAND, est aujourd’hui directeur technique de la SECTION ARTS MARTIAUX de St Brieuc - TAISHO DOJO agréé Japan Karate Association. Il s’est également régulièrement entraîné aux clubs MASSENA 13, DOJO 5, Cercle Christian TISSIER (avec Pierre BERTHIER et Jean-Louis MOREL, tous deux 7e DAN FFK)…
 
 Il a suivi les stages des plus grands experts japonais et JKA avec les senseïs ABE, ASAI, NISHIYAMA, ENOEDA, OCHI, AYARA, ISAKA, MIYAZAKI, KAWAWADA.
 
@@ -24,7 +24,7 @@ Il a obtenu son 1er DAN à l’âge de 19 ans, en 1989, et son Brevet d’Etat e
 Il a repris la totalité de l’enseignement du CO Sèvres Karaté avec son Sempaï, Pascal, depuis 1995, et enseigne ainsi depuis plus de 23 ans.
 
 José a été entraîneur de l’équipe kata des Hauts-de-Seine de 2001 à 2006 et est arbitre de Ligue. Il est examinateur pour les passages de grades 1er, 2e, 3e et 4e DAN à la Ligue des Hauts-de-Seine.
-José continue à s'entraîner et se perfectionner depuis plus de 10 ans sous la direction de Senseï Yuichi SATO (8e DAN JKA et FFKDA), expert japonais.
+José continue à s'entraîner et se perfectionner depuis plus de 10 ans sous la direction de Senseï Yuichi SATO (8e DAN JKA et FFK), expert japonais.
 
  
 ## Résultats
@@ -44,5 +44,5 @@ José DA SILVA CASTRO
 - 1994 : Participation à la coupe d’Europe ETKF à Passau (Allemagne) et du monde ITKF à Trévise (Italie)
 
 
-- 5e DAN karaté FFKDA 
+- 5e DAN karaté FFK 
 - 1er DAN kendo

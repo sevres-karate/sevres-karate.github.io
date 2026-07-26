@@ -7,7 +7,7 @@ Slug: pascal-lescouet
 Authors: Sèvres Karaté 
 Summary: Présentation de Pascal Lescouët, instructeur au COS Karaté
 
-## Pascal Lescouët - 6ème DAN FFKDA
+## Pascal Lescouët - 6ème DAN FFK
 
 <div>
   <img src="/images/pascal_2026_kumite.jpg" alt="Pascal Lescouët travaillant avec une partenaire" style="width: 100%; height: auto; border-radius: 6px;">
@@ -38,7 +38,7 @@ Il a obtenu son 1er DAN en 1983, à l’âge de 18 ans et son Brevet d’Etat en
 Enseignant depuis plus de 23 ans, Pascal a également été formateur des futurs professeurs au sein de l'école des cadres des Hauts-de-Seine de 2001 à 2006.
 
 Examinateur pour les passages de grades 1er, 2e, 3e et 4e DAN, il est depuis septembre 2012 le Responsable des Grades pour la Ligue des Hauts-de-Seine.
-Pascal continue à s'entraîner et se perfectionner depuis plus de 10 ans sous la direction de Senseï Yuichi SATO (8e DAN JKA et FFKDA), expert japonais.
+Pascal continue à s'entraîner et se perfectionner depuis plus de 10 ans sous la direction de Senseï Yuichi SATO (8e DAN JKA et FFK), expert japonais.
 
 <div style="text-align: center; margin: 1.4em 0;">
   <img src="/images/pascal_sensei.jpg" alt="Pascal Lescouët aux côtés d'un maître japonais" style="max-width: 300px; width: 100%; height: auto; border-radius: 6px;" loading="lazy">
