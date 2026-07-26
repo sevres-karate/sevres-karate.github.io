@@ -210,6 +210,23 @@
 .hp .hp-lien { color: var(--rust); font-weight: 600; }
 .hp .hp-lien:hover { color: var(--rust-deep); text-decoration: underline; }
 
+/* ---------- Liens mis en avant (renvois vers les pages détaillées) ---------- */
+.hp .hp-linkout, .hp .hp-linkout:link, .hp .hp-linkout:visited {
+  display: inline-flex; align-items: center; gap: .5rem;
+  font-weight: 700; font-size: 1.05rem; line-height: 1.3;
+  color: var(--rust); border-bottom: 2px solid rgba(199,67,80,.35);
+  padding-bottom: .15rem;
+  transition: color .18s ease, border-color .18s ease;
+}
+.hp .hp-linkout:hover { color: var(--rust-deep); border-bottom-color: var(--rust-deep); }
+.hp .hp-linkout .hp-arrow { transition: transform .18s ease; }
+.hp .hp-linkout:hover .hp-arrow { transform: translateX(4px); }
+/* Variante pour le bandeau indigo */
+.hp .hp-linkout-light, .hp .hp-linkout-light:link, .hp .hp-linkout-light:visited {
+  color: var(--gold); border-bottom-color: rgba(143,180,221,.45);
+}
+.hp .hp-linkout-light:hover { color: #fff; border-bottom-color: #fff; }
+
 /* ---------- Bandeau d'appel ---------- */
 .hp .hp-band {
   background: linear-gradient(120deg, var(--rust), var(--rust-deep));
@@ -235,12 +252,12 @@
     <div>
       <span class="hp-eyebrow">● Club affilié FFKDA · Sèvres (92)</span>
       <h1>Trouvez votre force,<br>à votre rythme.</h1>
-      <p class="hp-lead">Le karaté Shotokan pour les enfants, les ados et les adultes — débutant ou confirmé. On commence par un cours d'essai, sans engagement, dans une ambiance qui ressemble plus à une famille qu'à une salle de sport.</p>
+      <p class="hp-lead">Le karaté Shotokan s'adresse aux enfants, aux ados et aux adultes, débutants comme confirmés. On commence par un cours d'essai, sans engagement, dans une ambiance sportive et bienveillante, où l'on s'encourage plus qu'on ne se compare.</p>
       <div class="hp-btn-row">
         <a class="hp-btn hp-btn-primary" href="/pages/essai-gratuit.html">Réserver un cours d'essai gratuit</a>
         <a class="hp-btn hp-btn-light" href="/horaires2025.html">Voir les horaires →</a>
       </div>
-      <p class="hp-hero-note">Gymnase des Cent-Gardes · 45 Grande Rue, 92310 Sèvres · 4 créneaux adultes par semaine</p>
+      <p class="hp-hero-note">Gymnase des Cent-Gardes · 45 Grande Rue, 92310 Sèvres · 3 créneaux adultes par semaine</p>
     </div>
     <div>
       <div class="hp-hero-photo">
@@ -260,7 +277,7 @@
   </div>
   <div class="hp-grid hp-grid-4">
     <div class="hp-card"><div class="hp-ico">🛡️</div><h3>Savoir se défendre</h3><p>Des gestes simples et efficaces, travaillés au calme, pour se sentir en sécurité au quotidien.</p></div>
-    <div class="hp-card"><div class="hp-ico">🧘</div><h3>Évacuer le stress</h3><p>Une heure rien que pour soi, qui muscle le corps autant qu'elle apaise la tête.</p></div>
+    <div class="hp-card"><div class="hp-ico">🧘</div><h3>Évacuer le stress</h3><p>Du temps rien que pour soi, qui muscle le corps autant qu'il apaise la tête.</p></div>
     <div class="hp-card"><div class="hp-ico">📈</div><h3>Progresser étape par étape</h3><p>Le système des ceintures donne des objectifs clairs et la fierté d'avancer à son rythme.</p></div>
     <div class="hp-card"><div class="hp-ico">🤝</div><h3>Faire partie d'un groupe</h3><p>Cours à thème, stages, fête de fin d'année : on s'entraîne ensemble et on repart avec le sourire.</p></div>
   </div>
@@ -288,7 +305,8 @@
       <div class="hp-media">
         <img src="/images/pascal_2026_mawashi.jpg" alt="Deux karatékas du club à l'entraînement" loading="lazy">
       </div>
-      <p style="font-size:.8rem;color:var(--ink-soft);margin-top:.6rem">Envie de savoir à quoi ressemble une séance ? <a class="hp-lien" href="/deroulement-cours.html">Le déroulement d'un cours →</a></p>
+      <p style="font-size:.95rem;color:var(--ink-soft);margin-top:1rem">Envie de savoir à quoi ressemble une séance ?</p>
+      <p style="margin-top:.5rem"><a class="hp-linkout" href="/deroulement-cours.html">Le déroulement d'un cours <span class="hp-arrow">→</span></a></p>
     </div>
   </div>
 </div>
@@ -302,8 +320,9 @@
       <div><div class="hp-n">29</div><div class="hp-l">ceintures noires</div></div>
       <div><div class="hp-n">37 %</div><div class="hp-l">de femmes chez les adultes</div></div>
     </div>
-    <p style="text-align:center;margin-top:1.6rem;font-size:.9rem;color:#d7dbe4">
-      Saison 2025-2026 — <a class="hp-lien" style="color:var(--gold)" href="/club-en-chiffres.html">le club en chiffres →</a>
+    <p style="text-align:center;margin-top:1.8rem;font-size:.9rem;color:#d7dbe4">Saison 2025-2026</p>
+    <p style="text-align:center;margin-top:.6rem">
+      <a class="hp-linkout hp-linkout-light" href="/club-en-chiffres.html">Le club en chiffres <span class="hp-arrow">→</span></a>
     </p>
   </div>
 </div>
@@ -329,7 +348,9 @@
   </div>
   <p style="margin-top:1rem;color:var(--ink-soft);font-size:.94rem">
     Un dimanche par mois, de 10h à 12h : cours à thème.
-    <a class="hp-lien" href="/horaires2025.html">Voir tous les horaires →</a>
+  </p>
+  <p style="margin-top:.7rem">
+    <a class="hp-linkout" href="/horaires2025.html">Voir tous les horaires <span class="hp-arrow">→</span></a>
   </p>
 
   <div class="hp-grid hp-grid-3" style="margin-top:2.4rem">
