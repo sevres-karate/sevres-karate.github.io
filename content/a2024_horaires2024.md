@@ -20,7 +20,7 @@ Tous les cours se déroulent au __gymnase des Cent-Gardes__, 45 Grande Rue, 9231
 
 *L'enfant doit avoir 5 ans révolus à la date d'inscription
 
-## Enfants - 7 à 14 ans
+## Enfants - 7 à 13 ans
 | Jour | Horaires      | Niveau                    | Salle |
 | ----------- |---------------|---------------------------| ----------- | 
 | Lundi | 18h00 - 19h00 | Tous grades               | Tatami niveau -2 |
@@ -28,7 +28,7 @@ Tous les cours se déroulent au __gymnase des Cent-Gardes__, 45 Grande Rue, 9231
 | Mercredi | 18h15 - 19h00 | Ceintures orange et plus  | Tatami niveau -2 |
 | Samedi | 12h15 - 13h15 | Tous grades | Parquet niveau -1 |
 
-## Adultes - 14 et plus
+## Adultes - 14 ans et plus
 | Jour | Horaires      | Niveau      | Salle | 
 | ----------- |---------------|-------------| ----------- | 
 | Lundi | 19h15 - 20h45 | Tous grades | Parquet niveau -1 |
