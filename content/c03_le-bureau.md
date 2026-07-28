@@ -21,7 +21,7 @@ sont là pour ça&nbsp;!
 <div class="bur-grid">
 
 <div class="bur-card">
-<div class="bur-photo bur-photo-vide" aria-hidden="true">BM</div>
+<div class="bur-photo"><img src="/images/bureau/bruno-moustacchi.jpg" alt="Bruno Moustacchi" loading="lazy"></div>
 <div class="bur-body">
 <p class="bur-role">Président</p>
 <p class="bur-nom">Bruno Moustacchi</p>
