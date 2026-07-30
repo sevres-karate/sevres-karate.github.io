@@ -87,5 +87,5 @@ Les commandements pour le salut :
 |Six | Roku [lok]        |
 |Sept | Shichi [chitchi]  |
 |Huit | Hachi [hatchi]    |
-|Neuf | kyū [kiou]        |
-|Dix | Jū [Djiou]        | 
+|Neuf | kyu [kiou]        |
+|Dix | Ju [Djiou]        | 

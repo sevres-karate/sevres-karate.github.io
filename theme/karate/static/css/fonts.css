@@ -15,7 +15,14 @@
    (aucun appel à Google Fonts). Ce sont des polices variables : un seul fichier
    couvre toute la plage de graisses. Sous-ensemble latin uniquement — il inclut
    tous les caractères du français, œ compris. Le navigateur ne les télécharge
-   que sur les pages qui les utilisent. */
+   que sur les pages qui les utilisent.
+
+   ATTENTION — caractères NON couverts : les voyelles longues japonaises
+   ō (U+014D) et ū (U+016B) sont absentes de ces deux fichiers, et exclues de
+   l'unicode-range ci-dessous. Si un texte en contient, le navigateur va les
+   chercher dans une police de secours : la lettre s'affiche dans un autre
+   caractère typographique et le trait paraît mal placé. Écrire donc « Dojo
+   Kun », « Niju Kun », « Karaté-do », « kyu » — sans macron. */
 @font-face {
 	font-family: 'Fraunces';
 	font-style: normal;
