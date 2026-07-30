@@ -14,13 +14,24 @@
 @import url("typogrify.css");
 @import url("fonts.css");
 
+/***** Polices *****/
+/* Mêmes polices que les pages « Accueil » et « Essai gratuit », pour que tout
+   le site ait la même typographie : Fraunces pour les titres, Inter pour le
+   texte courant. Les deux sont hébergées sur le site (voir fonts.css).
+   Les pages « Accueil » et « Essai gratuit » redéfinissent ces mêmes valeurs
+   dans leur propre feuille de style : elles restent inchangées. */
+:root {
+	--font-display: "Fraunces", "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+	--font-body: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+}
+
 /***** Global *****/
 /* Body */
 body {
     background: linear-gradient(to right, #de602e, #e9c152);
     color: #657fb2;
     font-size: 87.5%; /* Base font size: 14px */
-    font-family: 'Trebuchet MS', Trebuchet, 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: var(--font-body);
     line-height: 1.429;
     margin: 0;
     padding: 0;
@@ -36,10 +47,14 @@ h5 {font-size: 1.143em}	/* 16px */
 h6 {font-size: 1em}		/* 14px */
 
 h1, h2, h3, h4, h5, h6 {
-	font-weight: 400;
+	/* 600 et non 400 : c'est la graisse des titres des pages « Accueil » et
+	   « Essai gratuit ». Fraunces est une police variable, un seul fichier
+	   couvre la plage 400-700. */
+	font-weight: 600;
 	line-height: 1.1;
+	letter-spacing: -0.01em;
 	margin-bottom: .8em;
-    font-family: 'Yanone Kaffeesatz', arial, serif;
+    font-family: var(--font-display);
 }
 
 h3, h4, h5, h6 { margin-top: .8em; }
@@ -177,7 +192,10 @@ div.figure p.caption, figure p.caption { /* margin provided by figure */
 
 	/* Banner */
 	#banner h1 {
-		font-size: 3.571em;
+		/* 2.6em au lieu de 3.571em : l'ancienne police (Yanone Kaffeesatz)
+		   était très étroite, Fraunces est bien plus large — à taille égale
+		   le titre du site débordait de la barre de menu. */
+		font-size: 2.6em;
 		line-height: 1.0;
 		margin-bottom: .3em;
 	}
@@ -420,7 +438,9 @@ div.figure p.caption, figure p.caption { /* margin provided by figure */
 li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 #content > .hentry {padding: 1em 0;}
 .hentry img{display : none ;}
-.entry-title {font-size: 3em; margin-bottom: 10px; margin-top: 0;}
+/* 2.1em au lieu de 3em : voir la remarque sur #banner h1 — Fraunces occupe
+   beaucoup plus de largeur que l'ancienne police étroite. */
+.entry-title {font-size: 2.1em; margin-bottom: 10px; margin-top: 0;}
 .entry-title a:link, .entry-title a:visited {text-decoration: none; color: #333;}
 .entry-title a:visited {background-color: #fff;}
 
@@ -617,17 +637,22 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 }
 
 .club-en-chiffres .ckc-tile p { margin: 0; }
+/* Petit intitulé en capitales : même traitement que les « eyebrow » des pages
+   « Accueil » et « Essai gratuit » — police de texte, grasse et espacée. */
 .club-en-chiffres .ckc-tile .ckc-label {
-	font-family: 'Yanone Kaffeesatz', arial, sans-serif;
-	font-size: 1.45em;
-	line-height: 1.1;
+	font-family: var(--font-body);
+	font-size: 1em;
+	font-weight: 700;
+	line-height: 1.2;
 	color: #5b8fc7; /* le bleu des barres des graphiques */
 	text-transform: uppercase;
-	letter-spacing: .03em;
+	letter-spacing: .1em;
 }
 .club-en-chiffres .ckc-tile .ckc-value {
-	font-family: 'Yanone Kaffeesatz', arial, sans-serif;
-	font-size: 2.9em;
+	font-family: var(--font-display);
+	/* 2.3em au lieu de 2.9em : les chiffres de Fraunces sont plus larges que
+	   ceux de l'ancienne police étroite. */
+	font-size: 2.3em;
 	line-height: 1.05;
 	color: #231c4f;
 	margin: .04em 0;
@@ -839,8 +864,8 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 	justify-content: center;
 	background: #dfe4ec;
 	color: #5b8fc7;
-	font-family: 'Yanone Kaffeesatz', arial, sans-serif;
-	font-size: 2.9em;
+	font-family: var(--font-display);
+	font-size: 2.3em;
 	line-height: 1;
 	letter-spacing: .02em;
 	user-select: none;
@@ -849,13 +874,15 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 .le-bureau .bur-body { min-width: 0; }
 .le-bureau .bur-body p { margin: 0; }
 
+/* Comme .ckc-label : intitulé en capitales, dans la police de texte. */
 .le-bureau .bur-role {
-	font-family: 'Yanone Kaffeesatz', arial, sans-serif;
-	font-size: 1.35em;
-	line-height: 1.1;
+	font-family: var(--font-body);
+	font-size: .95em;
+	font-weight: 700;
+	line-height: 1.2;
 	color: #5b8fc7;
 	text-transform: uppercase;
-	letter-spacing: .03em;
+	letter-spacing: .1em;
 }
 
 .le-bureau .bur-nom {
