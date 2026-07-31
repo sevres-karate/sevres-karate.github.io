@@ -1071,18 +1071,73 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 
 .horaires2025 .hor-why strong { color: #24512c; }
 
-/* Téléphone : le tableau à 4 colonnes est plus large qu'un écran de téléphone : sans
-   précaution il élargit toute la page, qui se met alors à défiler
-   horizontalement (c'est le cas aujourd'hui sur les autres pages du site).
-   `display: block` + `overflow-x: auto` enferme le défilement DANS le tableau :
-   le reste de la page reste à la largeur de l'écran. */
+/* ---- Téléphone -------------------------------------------------------------
+   Sur un écran étroit, un tableau de 4 colonnes est illisible : chaque cellule
+   se casse sur deux lignes et l'œil ne suit plus les lignes. On abandonne donc
+   la mise en tableau et on affiche UNE FICHE PAR COURS, sur deux lignes :
+
+       LUNDI                18h00 - 19h00      <- jour + horaire (l'essentiel)
+       Tous grades       Tatami niveau -2      <- niveau + salle (le détail)
+
+   Techniquement : chaque <tr> devient une grille de 2 colonnes. Les cellules
+   se placent d'elles-mêmes, ce qui marche aussi bien pour le tableau Baby
+   (3 colonnes : jour, horaire, salle) que pour les deux autres (4 colonnes).
+   L'en-tête est masqué : « Lundi » et « 18h00 » se passent d'étiquette. */
 @media (max-width: 560px) {
-	.horaires2025 .entry-content table {
-		display: block;
-		overflow-x: auto;
-		-webkit-overflow-scrolling: touch;
-		font-size: .88em;
+	.horaires2025 .entry-content table,
+	.horaires2025 .entry-content tbody { display: block; width: 100%; }
+	.horaires2025 .entry-content thead { display: none; }
+
+	.horaires2025 .entry-content tbody tr {
+		display: grid;
+		grid-template-columns: 1fr auto;
+		gap: 1px 10px;
+		margin-bottom: 7px;
+		padding: .55em .8em .6em;
+		background: #f6f7fa;
+		border-left: 4px solid #5b8fc7;
+		border-radius: 0 6px 6px 0;
 	}
-	.horaires2025 .entry-content thead th,
-	.horaires2025 .entry-content tbody td { padding: .5em .45em; }
+
+	/* Le fond est désormais porté par la fiche, plus par les cellules. */
+	.horaires2025 .entry-content tbody tr:nth-child(even) td { background: none; }
+
+	.horaires2025 .entry-content tbody td {
+		display: block;
+		padding: 0;
+		border: 0;
+	}
+
+	/* 1re cellule = le jour, 2e = l'horaire : la ligne que l'on lit en premier. */
+	.horaires2025 .entry-content tbody td:first-child {
+		font-size: 1.05em;
+		text-transform: uppercase;
+		letter-spacing: .04em;
+	}
+	.horaires2025 .entry-content tbody td:nth-child(2) {
+		font-size: 1.05em;
+		text-align: right;
+		white-space: nowrap;
+	}
+
+	/* Les cellules suivantes (niveau, salle) forment la 2e ligne, en retrait. */
+	.horaires2025 .entry-content tbody td:nth-child(n+3) {
+		font-size: .92em;
+		font-weight: normal;
+		color: #5a6272;
+	}
+	.horaires2025 .entry-content tbody td:nth-child(4) { text-align: right; }
+
+	/* Tuiles d'accroche : deux par ligne, mais la valeur doit tenir sans se
+	   casser en trois morceaux. */
+	.horaires2025 .hor-tiles { gap: 10px; }
+	.horaires2025 .hor-tile { padding: 10px 12px 12px; }
+	.horaires2025 .hor-value { font-size: 1.4em; }
+	.horaires2025 .hor-label { font-size: .85em; letter-spacing: .06em; }
+	.horaires2025 .hor-sub { font-size: .85em; }
+
+	/* Encadrés « Pourquoi ce créneau ? » : on récupère de la largeur de texte
+	   en resserrant la marge réservée au ✓. */
+	.horaires2025 .hor-why { padding: .8em .9em .9em 2.4em; }
+	.horaires2025 .hor-why::before { left: .75em; }
 }
