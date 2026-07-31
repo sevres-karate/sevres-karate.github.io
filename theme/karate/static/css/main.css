@@ -931,3 +931,158 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 	.le-bureau .bur-photo { flex-basis: 88px; width: 88px; height: 88px; }
 	.le-bureau .bur-photo-vide { font-size: 2.1em; }
 }
+
+/* ===== Page « Horaires » =====================================================
+   Objectif : ne pas se contenter d'afficher trois tableaux, mais montrer
+   POURQUOI ces créneaux sont pratiques (école, travail, vie de famille).
+   Deux briques : les tuiles d'accroche (.hor-tile) et l'encadré « pourquoi ce
+   créneau » sous chaque tableau (.hor-why), plus l'habillage des tableaux
+   d'horaires. Tout est scopé sur .horaires2025 = slug de la page.
+   ------------------------------------------------------------------------- */
+
+/* Tuiles d'accroche — même famille visuelle que « Le club en chiffres », mais
+   ici la valeur est un mot et non un nombre : elle est donc plus petite. */
+.horaires2025 .hor-tiles {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+	gap: 12px;
+	margin: 1.6em 0 2.2em;
+}
+
+.horaires2025 .hor-tile {
+	background: #f6f7fa;
+	border-radius: 8px;
+	padding: 12px 16px 14px;
+}
+
+.horaires2025 .hor-tile p { margin: 0; }
+
+.horaires2025 .hor-label {
+	font-family: var(--font-body);
+	font-size: .95em;
+	font-weight: 700;
+	line-height: 1.2;
+	color: #5b8fc7;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+}
+
+.horaires2025 .hor-value {
+	font-family: var(--font-display);
+	font-size: 1.75em;
+	line-height: 1.1;
+	color: #231c4f;
+	margin: .1em 0 !important;
+}
+
+.horaires2025 .hor-sub {
+	font-size: .9em;
+	color: #444;
+	line-height: 1.3;
+	margin-top: .3em !important;
+}
+
+/* Les tableaux d'horaires : c'est l'information que les visiteurs viennent
+   chercher, elle mérite mieux que du texte nu. En-tête coloré, une ligne sur
+   deux grisée, et l'heure mise en avant. */
+.horaires2025 .entry-content table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: .8em 0 1.2em;
+	font-size: .95em;
+}
+
+.horaires2025 .entry-content thead th {
+	background: #5b8fc7;
+	color: #fff;
+	font-family: var(--font-body);
+	font-weight: 700;
+	font-size: .82em;
+	text-transform: uppercase;
+	letter-spacing: .06em;
+	padding: .6em .7em;
+}
+
+.horaires2025 .entry-content tbody td {
+	padding: .55em .7em;
+	border-bottom: 1px solid #e6e8ee;
+	color: #333;
+}
+
+.horaires2025 .entry-content tbody tr:nth-child(even) td { background: #f6f7fa; }
+
+/* 1re colonne = le jour, 2e = l'horaire : les deux repères que l'œil cherche. */
+.horaires2025 .entry-content tbody td:first-child { font-weight: 700; color: #231c4f; }
+.horaires2025 .entry-content tbody td:nth-child(2) { font-weight: 700; color: #3c6f9e; }
+
+/* Encadré « Pourquoi ce créneau ? » — vert, comme les messages positifs
+   ailleurs sur le site (.ckc-highlight), pour se distinguer nettement du
+   tableau qui le précède. */
+.horaires2025 .hor-why {
+	position: relative;
+	margin: .4em 0 2.4em;
+	padding: .9em 1.2em 1em 3.1em;
+	background: #f0f7f2;
+	border-left: 5px solid #57a05a;
+	border-radius: 0 6px 6px 0;
+}
+
+.horaires2025 .hor-why::before {
+	content: "✓";
+	position: absolute;
+	left: 1em;
+	top: .85em;
+	color: #57a05a;
+	font-size: 1.1em;
+	font-weight: 700;
+}
+
+.horaires2025 .hor-why-title {
+	font-family: var(--font-body);
+	font-size: .82em;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	color: #38663e;
+	margin: 0 0 .5em !important;
+}
+
+.horaires2025 .hor-why ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+.horaires2025 .hor-why li {
+	position: relative;
+	padding-left: 1em;
+	margin: .35em 0;
+	line-height: 1.4;
+	color: #2f4636;
+}
+
+.horaires2025 .hor-why li::before {
+	content: "·";
+	position: absolute;
+	left: .2em;
+	color: #57a05a;
+	font-weight: 700;
+}
+
+.horaires2025 .hor-why strong { color: #24512c; }
+
+/* Téléphone : le tableau à 4 colonnes est plus large qu'un écran de téléphone : sans
+   précaution il élargit toute la page, qui se met alors à défiler
+   horizontalement (c'est le cas aujourd'hui sur les autres pages du site).
+   `display: block` + `overflow-x: auto` enferme le défilement DANS le tableau :
+   le reste de la page reste à la largeur de l'écran. */
+@media (max-width: 560px) {
+	.horaires2025 .entry-content table {
+		display: block;
+		overflow-x: auto;
+		-webkit-overflow-scrolling: touch;
+		font-size: .88em;
+	}
+	.horaires2025 .entry-content thead th,
+	.horaires2025 .entry-content tbody td { padding: .5em .45em; }
+}
