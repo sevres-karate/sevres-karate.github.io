@@ -33,7 +33,7 @@ sont là pour ça&nbsp;!
 </div>
 
 <div class="bur-card">
-<div class="bur-photo"><img src="/images/bureau/nicolas-demirdjian.jpg" alt="Nicolas Demirdjian" loading="lazy"></div>
+<div class="bur-photo"><img src="/images/bureau/nicolas_demirdjian.jpg" alt="Nicolas Demirdjian" loading="lazy"></div>
 <div class="bur-body">
 <p class="bur-role">Secrétaire</p>
 <p class="bur-nom">Nicolas Demirdjian</p>
