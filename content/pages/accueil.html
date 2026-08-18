@@ -119,6 +119,11 @@
    queries : le panneau de contenu du thème est bien plus étroit que la
    fenêtre, une bascule sur la largeur d'écran arriverait beaucoup trop tard. */
 .hp .hp-hero-inner { position: relative; max-width: 46rem; padding-bottom: 2.2rem; }
+/* Le bandeau est coupe en trois (titre / photo / texte) : on rapproche le
+   titre de la photo, et le texte de la photo, sans doubler les marges. */
+.hp .hp-hero-top { padding-bottom: 1.7rem; }
+.hp .hp-hero-bottom { padding-top: 1.9rem; }
+.hp .hp-hero-bottom .hp-lead { margin-top: 0; }
 .hp .hp-hero h1 { color: #fff; font-size: clamp(2.1rem, 5vw, 3.4rem); }
 .hp .hp-hero .hp-eyebrow { color: var(--gold); }
 .hp .hp-hero .hp-lead { font-size: 1.12rem; color: #e9e2d6; margin: 1.1rem 0 1.7rem; max-width: 32rem; }
@@ -169,6 +174,25 @@
   width: 46px; height: 46px; border-radius: 12px; background: var(--cream-deep);
   display: grid; place-items: center; margin-bottom: .9rem; font-size: 1.4rem;
 }
+
+/* ---------- Cartes illustrees (photo en tete) ---------- */
+/* La photo va d'un bord a l'autre : le rembourrage passe sur le corps de texte. */
+.hp .hp-card-photo { padding: 0; overflow: hidden; display: flex; flex-direction: column; }
+.hp .hp-card-photo > img { width: 100%; aspect-ratio: 4/3; object-fit: cover; }
+.hp .hp-card-photo .hp-card-body { padding: 1.25rem 1.4rem 1.5rem; }
+
+/* ---------- Galerie photos ---------- */
+/* Meme logique que les autres grilles : auto-fit plutot que media queries,
+   le panneau de contenu du theme etant plus etroit que la fenetre. */
+.hp .hp-gal { display: grid; grid-template-columns: repeat(auto-fit, minmax(210px, 1fr)); gap: 1rem; }
+.hp .hp-gal figure {
+  margin: 0; background: #fff; border-radius: var(--radius); overflow: hidden;
+  border: 1px solid var(--sand); box-shadow: var(--shadow-sm);
+  transition: transform .2s, box-shadow .2s;
+}
+.hp .hp-gal figure:hover { transform: translateY(-4px); box-shadow: var(--shadow); }
+.hp .hp-gal img { width: 100%; aspect-ratio: 4/3; object-fit: cover; }
+.hp .hp-gal figcaption { padding: .6rem .85rem .75rem; font-size: .84rem; color: var(--ink-soft); }
 
 /* ---------- Étapes numérotées ---------- */
 .hp .hp-steps { display: grid; gap: 1rem; }
@@ -251,21 +275,21 @@
 
 <!-- HERO -->
 <div class="hp-hero">
-  <div class="hp-wrap hp-hero-inner">
-    <div>
-      <span class="hp-eyebrow">● Club affilié FFK - Fédération Française de Karaté · Sèvres (92)</span>
-      <h1>Trouvez votre force,<br>à votre rythme.</h1>
-      <p class="hp-lead">Le karaté Shotokan s'adresse aux enfants, aux ados et aux adultes, débutants comme confirmés. On commence par un cours d'essai, sans engagement, dans une ambiance sportive et bienveillante, où l'on s'encourage plus qu'on ne se compare.</p>
-      <div class="hp-btn-row">
-        <a class="hp-btn hp-btn-primary" href="/pages/essai-gratuit.html">Réserver un cours d'essai gratuit</a>
-        <a class="hp-btn hp-btn-light" href="/horaires2025.html">Voir les horaires →</a>
-      </div>
-      <p class="hp-hero-note">Gymnase des Cent-Gardes · 45 Grande Rue, 92310 Sèvres · 3 créneaux adultes par semaine</p>
-    </div>
+  <div class="hp-wrap hp-hero-inner hp-hero-top">
+    <span class="hp-eyebrow">● Club affilié FFK - Fédération Française de Karaté · Sèvres (92)</span>
+    <h1>Trouvez votre force,<br>à votre rythme.</h1>
   </div>
   <div class="hp-hero-photo-wide">
-    <img src="/images/fete2026_99_final.jpg" alt="Les adhérents du club, enfants et adultes, réunis sur le tatami lors de la fête de fin d'année">
+    <img src="/images/web/fete2026_99_final.jpg" alt="Les adhérents du club, enfants et adultes, réunis sur le tatami lors de la fête de fin d'année">
     <p class="hp-credit">Le club au complet, fête de fin d'année 2026</p>
+  </div>
+  <div class="hp-wrap hp-hero-inner hp-hero-bottom">
+    <p class="hp-lead">Le karaté Shotokan s'adresse aux enfants, aux ados et aux adultes, débutants comme confirmés. On commence par un cours d'essai, sans engagement, dans une ambiance sportive et bienveillante, où l'on s'encourage plus qu'on ne se compare.</p>
+    <div class="hp-btn-row">
+      <a class="hp-btn hp-btn-primary" href="/pages/essai-gratuit.html">Réserver un cours d'essai gratuit</a>
+      <a class="hp-btn hp-btn-light" href="/horaires2025.html">Voir les horaires →</a>
+    </div>
+    <p class="hp-hero-note">Gymnase des Cent-Gardes · 45 Grande Rue, 92310 Sèvres · 3 créneaux adultes par semaine</p>
   </div>
 </div>
 
@@ -277,10 +301,22 @@
     <p>On vient au karaté pour mille raisons. Voici celles que nos adhérents nous citent le plus souvent.</p>
   </div>
   <div class="hp-grid hp-grid-4">
-    <div class="hp-card"><div class="hp-ico">🛡️</div><h3>Savoir se défendre</h3><p>Des gestes simples et efficaces, travaillés au calme, pour se sentir en sécurité au quotidien.</p></div>
-    <div class="hp-card"><div class="hp-ico">🧘</div><h3>Évacuer le stress</h3><p>Du temps rien que pour soi, qui muscle le corps autant qu'il apaise la tête.</p></div>
-    <div class="hp-card"><div class="hp-ico">📈</div><h3>Progresser étape par étape</h3><p>Le système des ceintures donne des objectifs clairs et la fierté d'avancer à son rythme.</p></div>
-    <div class="hp-card"><div class="hp-ico">🤝</div><h3>Faire partie d'un groupe</h3><p>Cours à thème, stages, fête de fin d'année : on s'entraîne ensemble et on repart avec le sourire.</p></div>
+    <div class="hp-card hp-card-photo">
+      <img src="/images/web/pascal_2026_kumite.jpg" alt="Deux karatékas du club travaillant une parade" loading="lazy">
+      <div class="hp-card-body"><h3>Savoir se défendre</h3><p>Des gestes simples et efficaces, travaillés au calme, pour se sentir en sécurité au quotidien.</p></div>
+    </div>
+    <div class="hp-card hp-card-photo">
+      <img src="/images/web/fete2026_demo_05.jpg" alt="Un pratiquant concentré sur une technique de poing" loading="lazy">
+      <div class="hp-card-body"><h3>Évacuer le stress</h3><p>Du temps rien que pour soi, qui muscle le corps autant qu'il apaise la tête.</p></div>
+    </div>
+    <div class="hp-card hp-card-photo">
+      <img src="/images/web/fete2026_demo_03.jpg" alt="Une pratiquante face à son professeur pendant une démonstration" loading="lazy">
+      <div class="hp-card-body"><h3>Progresser étape par étape</h3><p>Le système des ceintures donne des objectifs clairs et la fierté d'avancer à son rythme.</p></div>
+    </div>
+    <div class="hp-card hp-card-photo">
+      <img src="/images/web/fete2026_pot_06.jpg" alt="Adhérents et familles réunis autour d'une table lors de la fête du club" loading="lazy">
+      <div class="hp-card-body"><h3>Faire partie d'un groupe</h3><p>Cours à thème, stages, fête de fin d'année : on s'entraîne ensemble et on repart avec le sourire.</p></div>
+    </div>
   </div>
 </div>
 
@@ -304,7 +340,7 @@
     </div>
     <div>
       <div class="hp-media">
-        <img src="/images/pascal_2026_mawashi.jpg" alt="Deux karatékas du club à l'entraînement" loading="lazy">
+        <img src="/images/web/pascal_2026_mawashi.jpg" alt="Deux karatékas du club à l'entraînement" loading="lazy">
       </div>
       <p style="font-size:.95rem;color:var(--ink-soft);margin-top:1rem">Envie de savoir à quoi ressemble une séance ?</p>
       <p style="margin-top:.5rem"><a class="hp-linkout" href="/deroulement-cours.html">Le déroulement d'un cours <span class="hp-arrow">→</span></a></p>
@@ -355,23 +391,71 @@
   </p>
 
   <div class="hp-grid hp-grid-3" style="margin-top:2.4rem">
-    <div class="hp-card"><div class="hp-ico">👶</div><h3>Enfants &amp; ados</h3><p>Du Baby (5 ans) aux ados : motricité, respect, énergie canalisée — et de vraies réussites en compétition pour celles et ceux qui le souhaitent.</p></div>
-    <div class="hp-card"><div class="hp-ico">💪</div><h3>Adultes débutants</h3><p>Un créneau dédié le mercredi soir pour repartir de zéro, sans complexe et sans regard sur le niveau des autres.</p></div>
-    <div class="hp-card"><div class="hp-ico">🥋</div><h3>Adultes déjà pratiquants</h3><p>Quatre <a class="hp-lien" href="/category/instructeurs.html">professeurs</a> du 4<sup>e</sup> au 6<sup>e</sup> dan, dont le responsable des grades de la Ligue des Hauts-de-Seine, et 29 ceintures noires sur le tatami — plus d'un quart du club. De quoi progresser longtemps, quel que soit votre grade.</p></div>
+    <div class="hp-card hp-card-photo">
+      <img src="/images/web/nos_competiteurs.jpg" alt="Les jeunes compétiteurs du club avec leurs diplômes et leurs médailles" loading="lazy">
+      <div class="hp-card-body"><h3>Enfants &amp; ados</h3><p>Du Baby (5 ans) aux ados : motricité, respect, énergie canalisée — et de vraies réussites en compétition pour celles et ceux qui le souhaitent.</p></div>
+    </div>
+    <div class="hp-card hp-card-photo">
+      <img src="/images/web/pascal_2025_01.jpg" alt="Un karatéka en position de garde" style="object-position: center 15%" loading="lazy">
+      <div class="hp-card-body"><h3>Adultes débutants</h3><p>Un créneau dédié le mercredi soir pour repartir de zéro, sans complexe et sans regard sur le niveau des autres.</p></div>
+    </div>
+    <div class="hp-card hp-card-photo">
+      <img src="/images/web/fete2026_demo_06.jpg" alt="Un pratiquant confirmé exécutant une technique de kata" loading="lazy">
+      <div class="hp-card-body"><h3>Adultes déjà pratiquants</h3><p>Quatre <a class="hp-lien" href="/category/instructeurs.html">professeurs</a> du 4<sup>e</sup> au 6<sup>e</sup> dan, dont le responsable des grades de la Ligue des Hauts-de-Seine, et 29 ceintures noires sur le tatami — plus d'un quart du club. De quoi progresser longtemps, quel que soit votre grade.</p></div>
+    </div>
+  </div>
+</div>
+
+<!-- GALERIE : la vie du club -->
+<div class="hp-alt">
+  <div class="hp-wrap">
+    <div class="hp-head" style="margin-bottom:1.6rem">
+      <span class="hp-eyebrow">La vie du club</span>
+      <h2>Le tatami, et tout ce qu'il y a autour.</h2>
+      <p>Démonstrations, cours à thème, compétitions, fête de fin d'année : quelques images de la saison au gymnase des Cent-Gardes.</p>
+    </div>
+    <div class="hp-gal">
+      <figure>
+        <img src="/images/web/fete2026_00_ouverture.jpg" alt="Les adultes et les enfants du club alignés pour l'ouverture de la fête de fin d'année" loading="lazy">
+        <figcaption>Le salut d'ouverture, tous grades réunis</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/web/fete2026_demo_04.jpg" alt="Un pratiquant exécutant un coup de pied pendant une démonstration" loading="lazy">
+        <figcaption>Démonstration de technique</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/web/fete2026_demo_07.jpg" alt="Un professeur expliquant un mouvement devant le groupe" loading="lazy">
+        <figcaption>Le professeur explique, le groupe observe</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/web/fete2026_pot_01.jpg" alt="Enfants et parents autour du buffet de la fête du club" loading="lazy">
+        <figcaption>Le pot de fin d'année</figcaption>
+      </figure>
+      <figure>
+        <img src="/images/web/fete2026_pot_07.jpg" alt="Adhérents du club discutant un verre à la main" loading="lazy">
+        <figcaption>On refait le cours…</figcaption>
+      </figure>
+    </div>
+    <p style="margin-top:1.6rem">
+      <a class="hp-linkout" href="/category/actu.html">Toutes les actualités du club <span class="hp-arrow">→</span></a>
+    </p>
   </div>
 </div>
 
 <!-- PAROLES DE MEMBRES -->
-<div class="hp-alt">
-  <div class="hp-wrap">
-    <div class="hp-head" style="margin-bottom:1.6rem">
-      <span class="hp-eyebrow">Ils et elles l'ont fait</span>
-      <h2>On débute à tout âge — la preuve.</h2>
-      <p>Ceintures noires de fraîche date, adultes revenus au karaté après vingt ans, parents qui pratiquent avec leurs enfants : les membres du club racontent leur parcours.</p>
-    </div>
+<div class="hp-wrap hp-split">
+  <div>
+    <span class="hp-eyebrow">Ils et elles l'ont fait</span>
+    <h2 style="font-size:clamp(1.6rem,3.4vw,2.3rem)">On débute à tout âge — la preuve.</h2>
+    <p style="color:var(--ink-soft);margin:1rem 0 1.5rem;font-size:1.06rem">Ceintures noires de fraîche date, adultes revenus au karaté après vingt ans, parents qui pratiquent avec leurs enfants : les membres du club racontent leur parcours.</p>
     <div class="hp-btn-row">
       <a class="hp-btn hp-btn-primary" href="/paroles-de-membres.html">Lire les paroles de membres</a>
       <a class="hp-btn hp-btn-ghost" href="/category/instructeurs.html">Nos instructeurs</a>
+    </div>
+  </div>
+  <div>
+    <div class="hp-media">
+      <img src="/images/web/fete2026_pot_02.jpg" alt="Deux adhérents du club souriants lors de la fête de fin d'année" loading="lazy">
     </div>
   </div>
 </div>
