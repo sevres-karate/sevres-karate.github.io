@@ -1174,3 +1174,53 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 	box-shadow: 0 3px 12px -7px rgba(35, 28, 79, .45);
 }
 .nicolas-blot p.nb-final strong { color: #2f5f9e; }
+
+
+/* ==========================================================================
+   Paroles de membres : temoignages video presentes en deux colonnes
+   (texte + video). Les videos de Clementine et de Neely sont des Shorts au
+   format CARRE (1:1) — d'ou la variante .video-square, la regle generique
+   .video-wrapper etant en 16:9.
+   ========================================================================== */
+.video-wrapper.video-square {
+	padding-bottom: 100%;   /* ratio 1:1 */
+	max-width: 420px;
+}
+
+/* Texte et video cote a cote ; une seule colonne quand la place manque.
+   Le titre est dans la colonne de texte : les deux colonnes demarrent a la
+   meme hauteur, le texte ne flotte plus au milieu du vide. */
+.paroles-de-membres .pdm-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+	gap: 1.2em 2em;
+	align-items: center;
+	margin-bottom: 3em;
+}
+.paroles-de-membres .pdm-texte h2 {
+	margin: 0 0 .55em;
+	color: #2f5f9e;
+}
+/* Petit trait sous le nom : marque le debut du temoignage sans encadrer. */
+.paroles-de-membres .pdm-texte h2::after {
+	content: "";
+	display: block;
+	width: 46px;
+	height: 3px;
+	margin-top: .4em;
+	border-radius: 2px;
+	background: #5b8fc7;
+}
+.paroles-de-membres .pdm-texte p {
+	font-size: 1.07em;
+	line-height: 1.75;
+	color: #4d6b9e;
+	margin-bottom: .9em;
+}
+.paroles-de-membres .pdm-texte strong { color: #2f5f9e; font-weight: 700; }
+.paroles-de-membres .pdm-grid .video-wrapper {
+	margin: 0 auto;
+	max-width: 340px;
+	width: 100%;
+	border-radius: 8px;
+}

@@ -181,6 +181,22 @@
 .hp .hp-card-photo > img { width: 100%; aspect-ratio: 4/3; object-fit: cover; }
 .hp .hp-card-photo .hp-card-body { padding: 1.25rem 1.4rem 1.5rem; }
 
+/* ---------- Temoignages video ---------- */
+/* Les deux Shorts du club sont au format carre : la mise en page vient de
+   .video-square (main.css), on ne regle ici que la disposition. */
+.hp .hp-videos {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 1.6rem; max-width: 720px;
+}
+.hp .hp-videos figure { margin: 0; }
+.hp .hp-videos .video-wrapper {
+  margin: 0; max-width: 100%; border-radius: var(--radius); box-shadow: var(--shadow-sm);
+}
+.hp .hp-videos figcaption {
+  margin-top: .75rem; font-size: .97rem; color: var(--ink-soft);
+}
+.hp .hp-videos figcaption b { color: var(--ink); }
+
 /* ---------- Galerie photos ---------- */
 /* Meme logique que les autres grilles : auto-fit plutot que media queries,
    le panneau de contenu du theme etant plus etroit que la fenetre. */
@@ -443,20 +459,34 @@
 </div>
 
 <!-- PAROLES DE MEMBRES -->
-<div class="hp-wrap hp-split">
-  <div>
+<div class="hp-wrap">
+  <div class="hp-head" style="margin-bottom:1.8rem">
     <span class="hp-eyebrow">Ils et elles l'ont fait</span>
-    <h2 style="font-size:clamp(1.6rem,3.4vw,2.3rem)">On débute à tout âge — la preuve.</h2>
-    <p style="color:var(--ink-soft);margin:1rem 0 1.5rem;font-size:1.06rem">Ceintures noires de fraîche date, adultes revenus au karaté après vingt ans, parents qui pratiquent avec leurs enfants : les membres du club racontent leur parcours.</p>
-    <div class="hp-btn-row">
-      <a class="hp-btn hp-btn-primary" href="/paroles-de-membres.html">Lire les paroles de membres</a>
-      <a class="hp-btn hp-btn-ghost" href="/category/instructeurs.html">Nos instructeurs</a>
-    </div>
+    <h2>On débute à tout âge — la preuve.</h2>
+    <p>Ceintures noires de fraîche date, adultes revenus au karaté après vingt ans, parents qui pratiquent avec leurs enfants : les membres du club racontent leur parcours. Deux membres du club ont pris la parole devant la caméra.</p>
   </div>
-  <div>
-    <div class="hp-media">
-      <img src="/images/web/fete2026_pot_02.jpg" alt="Deux adhérents du club souriants lors de la fête de fin d'année" loading="lazy">
-    </div>
+  <div class="hp-media" style="max-width:720px;margin-bottom:1.7rem">
+    <img src="/images/web/fete2026_pot_02.jpg" alt="Deux adhérents du club souriants lors de la fête de fin d'année" loading="lazy">
+  </div>
+  <div class="hp-videos">
+    <figure>
+      <div class="video-wrapper video-facade video-square" data-embed="GFW2hKaRg7Y?rel=0&amp;modestbranding=1" data-title="Clémentine, 1er dan — paroles de membre">
+        <img src="/images/web/paroles_clementine.jpg" alt="Clémentine racontant son expérience du karaté" loading="lazy">
+        <button type="button" class="video-play" aria-label="Lire la vidéo : le témoignage de Clémentine"></button>
+      </div>
+      <figcaption><b>Clémentine</b> — 1<sup>er</sup> dan : ce que le karaté lui apporte</figcaption>
+    </figure>
+    <figure>
+      <div class="video-wrapper video-facade video-square" data-embed="ugmpJA3PJUE?rel=0&amp;modestbranding=1" data-title="Neely, ceinture bleue — paroles de membre">
+        <img src="/images/web/paroles_neely.jpg" alt="Neely racontant son expérience du karaté" loading="lazy">
+        <button type="button" class="video-play" aria-label="Lire la vidéo : le témoignage de Neely"></button>
+      </div>
+      <figcaption><b>Neely</b> — ceinture bleue : en plein parcours</figcaption>
+    </figure>
+  </div>
+  <div class="hp-btn-row" style="margin-top:1.9rem">
+    <a class="hp-btn hp-btn-primary" href="/paroles-de-membres.html">Lire les paroles de membres</a>
+    <a class="hp-btn hp-btn-ghost" href="/category/instructeurs.html">Nos instructeurs</a>
   </div>
 </div>
 
