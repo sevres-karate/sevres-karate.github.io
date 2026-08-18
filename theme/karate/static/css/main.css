@@ -1173,6 +1173,71 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 .jose-da-silva strong,
 .pascal-lescouet strong { color: #2f5f9e; font-weight: 700; }
 
+/* --------------------------------------------------------------------------
+   Fiche de Pascal : texte et photos alternes (une photo a cote de chaque
+   bloc de texte, une image pleine largeur en ouverture et en fermeture).
+   Les blocs sont du HTML brut dans le markdown, donc identiques sur la
+   fiche seule et sur la page « Instructeurs ».
+   -------------------------------------------------------------------------- */
+.pascal-lescouet .fiche-large {
+	margin: 0 0 2em;
+}
+.pascal-lescouet .fiche-large img {
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+	display: block;
+}
+.pascal-lescouet .fiche-large figcaption {
+	font-size: .85em;
+	color: #888;
+	margin-top: .5em;
+}
+
+.pascal-lescouet .fiche-duo {
+	display: grid;
+	/* Le texte garde la part du lion : les lignes restent longues, la photo
+	   accompagne sans retrecir la lecture. */
+	grid-template-columns: minmax(0, 2.5fr) minmax(0, 1fr);
+	gap: 1.2em 1.8em;
+	align-items: center;
+	margin: 0 0 2.4em;
+}
+/* Photo a gauche une fois sur deux : le regard zigzague, la page respire. */
+.pascal-lescouet .fiche-duo.photo-gauche {
+	grid-template-columns: minmax(0, 1fr) minmax(0, 2.5fr);
+}
+.pascal-lescouet .fiche-duo.photo-gauche .fiche-duo-media {
+	order: -1;
+}
+.pascal-lescouet .fiche-duo-media img {
+	display: block;
+	margin: 0 auto;
+	max-width: 100%;
+	max-height: 340px;   /* les portraits sont hauts : on les bride */
+	width: auto;
+	height: auto;
+	border-radius: 8px;
+}
+.pascal-lescouet .fiche-duo p:last-child,
+.pascal-lescouet .fiche-duo ul:last-child {
+	margin-bottom: 0;
+}
+
+/* Telephone et petites tablettes : une seule colonne, le texte d'abord. */
+@media screen and (max-width: 720px) {
+	.pascal-lescouet .fiche-duo,
+	.pascal-lescouet .fiche-duo.photo-gauche {
+		grid-template-columns: 1fr;
+	}
+	.pascal-lescouet .fiche-duo.photo-gauche .fiche-duo-media {
+		order: 0;
+	}
+	.pascal-lescouet .fiche-duo-media img {
+		max-height: 60vh;
+	}
+}
+
 /* Palmares (Jose, Pascal) : meme couleur et meme aeration que les
    paragraphes, en liste. */
 .jose-da-silva .entry-content ul,
