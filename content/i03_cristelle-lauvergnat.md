@@ -1,24 +1,28 @@
 Title: Cristelle Lauvergnat
 Date: 2024-09-01 00:02
-Modified: 2024-09-01 00:02
+Modified: 2026-08-18 00:00
 Category: Instructeurs
 Tags: karate, sevres, cos, instructeurs, lauvergnat
 Slug: cristelle-lauvergnat
 Authors: Sèvres Karaté 
 Summary: Présentation de Cristelle Lauvergnat, instructrice au COS Karaté
 
-# Cristelle Lauvergnat - 5e DAN FFK
+# Cristelle Lauvergnat — 5e DAN FFK, Brevet d'État
 
-## Historique
+Cristelle est une **pure enfant du club** : elle a poussé la porte du CO Sèvres Karaté en **1993, à 12 ans**, formée par **Pascal Lescouët** et **José Castro Da Silva**. **Plus de trente ans de pratique** plus tard, elle y transmet à son tour ce qu'elle y a reçu.
 
-Cristelle a débuté le Karaté en 1993 à l'âge de 12 ans au CO Sèvres Karaté avec Pascal Lescouët et José Castro Da Silva.
+Sa progression technique s'est construite sans raccourci : **1er DAN en 1999**, puis **4e DAN en 2015** et **5e DAN en 2023** — un grade qui témoigne d'un travail de fond mené sur toute une vie de karatéka.
 
-Elle obtient son 1er DAN en 1999 à l'âge de 18 ans, son Diplôme d'Instructeur Fédéral en 2006 puis son Brevet d'Etat en 2008. Sa progression l'a mené à passer son 4ème en 2015 et son 5ème en 2023.
+Elle a également nourri cette pratique par la **compétition**, aux niveaux **départemental, régional et national**, sous les couleurs de la **FFKAMA** comme de la **JKA**, et a **représenté les Hauts-de-Seine en 2000**.
 
-Elle enseigne auprès des enfants depuis 2006.
+Ce niveau technique est reconnu bien au-delà du dojo. Depuis de nombreuses années, Cristelle siège comme **juge aux examens de passage de DAN du département**, ainsi qu'aux **examens du DAF et du DIF** — les diplômes qui habilitent les futurs enseignants.
 
-## Résultats
+Elle est donc de celles qui **évaluent les ceintures noires et les professeurs des Hauts-de-Seine** : une légitimité que la Ligue lui reconnaît chaque année.
 
-Participations à des compétitions départementales, régionales ou nationales (FFKAMA et JKA)
+Côté enseignement, Cristelle n'improvise rien. Diplômée **Instructeur Fédéral en 2006** et titulaire du **Brevet d'État en 2008**, elle **encadre les enfants depuis vingt ans** et intervient également **auprès des adultes**.
 
-Membre de l'équipe des Hauts-de-Seine en 2000. 
+Cette double expérience se voit dans sa pédagogie : elle sait **adapter son exigence à chaque public**, repérer ce qui bloque, et faire progresser aussi bien l'enfant timide que l'adulte qui débute ou le compétiteur confirmé.
+
+Sa curiosité l'a par ailleurs menée au-delà du karaté : elle pratique aussi le **krav maga** et le **kali**. Cette ouverture enrichit directement ses cours — travail des **distances**, des **saisies**, de la **réaction**, applications concrètes des techniques — sans jamais diluer la **rigueur du Shotokan**.
+
+<p class="fiche-conclusion"><strong>Ce que cela signifie pour vous :</strong> que vous inscriviez votre enfant ou que vous débutiez vous-même à l'âge adulte, vous êtes encadré par une <strong>enseignante diplômée d'État</strong>, de très haut niveau technique, qui <strong>enseigne depuis deux décennies</strong>, forme et évalue les cadres du département, et connaît le club de l'intérieur.</p>

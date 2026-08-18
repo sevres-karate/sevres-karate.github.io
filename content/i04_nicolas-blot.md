@@ -25,4 +25,4 @@ Diplômé **Instructeur Fédéral** à l'école des cadres des Hauts-de-Seine, i
 
 Il met aujourd'hui ce parcours au service des plus jeunes : **beaucoup de patience**, un **vocabulaire adapté aux 4-10 ans**, et derrière chaque exercice une **technique juste**, apprise auprès de ceux qui la tiennent des Japonais eux-mêmes.
 
-<p class="nb-final"><strong>Ce que cela signifie pour vous :</strong> votre enfant fait ses premiers pas encadré par un <strong>karatéka de très haut niveau</strong>, formé dans ce club et par ces professeurs, qui sait exactement d'où l'on part et où l'on peut aller.</p>
+<p class="fiche-conclusion"><strong>Ce que cela signifie pour vous :</strong> votre enfant fait ses premiers pas encadré par un <strong>karatéka de très haut niveau</strong>, formé dans ce club et par ces professeurs, qui sait exactement d'où l'on part et où l'on peut aller.</p>

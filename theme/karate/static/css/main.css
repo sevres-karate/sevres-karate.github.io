@@ -1144,13 +1144,18 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 
 
 /* ==========================================================================
-   Fiche instructeur « Nicolas Blot » (.nicolas-blot = slug pose sur <article>)
+   Fiches instructeurs reecrites (la classe posee sur <article> est le slug).
    Texte plus aere et plus lisible : lignes plus courtes, interligne plus
-   genereux, mots importants en gras indigo. Le paragraphe de conclusion
-   reprend l'habillage « carte » de la page Debuter / FAQ.
+   genereux, mots importants en bleu soutenu — pas de noir. Le paragraphe de
+   conclusion est encadre.
+   Les selecteurs couvrent les DEUX gabarits ou une fiche s'affiche :
+   article.html (fiche seule, texte dans .entry-content) et article_list.html
+   (page « Instructeurs », texte enfant direct de <article>).
    ========================================================================== */
 .nicolas-blot .entry-content p,
-.nicolas-blot > p {
+.nicolas-blot > p,
+.cristelle-lauvergnat .entry-content p,
+.cristelle-lauvergnat > p {
 	max-width: 40em;
 	font-size: 1.07em;
 	line-height: 1.75;
@@ -1159,11 +1164,13 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 	   recommande sur fond blanc : on garde le meme bleu, en plus fonce. */
 	color: #4d6b9e;
 }
-.nicolas-blot strong { color: #2f5f9e; font-weight: 700; }
+.nicolas-blot strong,
+.cristelle-lauvergnat strong { color: #2f5f9e; font-weight: 700; }
 
 /* Conclusion : vrai encadre (cadre sur les quatre cotes) pour qu'elle se
    detache nettement du reste de la fiche. */
-.nicolas-blot p.nb-final {
+.nicolas-blot p.fiche-conclusion,
+.cristelle-lauvergnat p.fiche-conclusion {
 	background: #f0f5fb;
 	border: 1px solid #c3d8ef;
 	border-left: 5px solid #5b8fc7;
@@ -1173,7 +1180,6 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 	margin-bottom: 2em;
 	box-shadow: 0 3px 12px -7px rgba(35, 28, 79, .45);
 }
-.nicolas-blot p.nb-final strong { color: #2f5f9e; }
 
 
 /* ==========================================================================
