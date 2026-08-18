@@ -1141,3 +1141,36 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 	.horaires2025 .hor-why { padding: .8em .9em .9em 2.4em; }
 	.horaires2025 .hor-why::before { left: .75em; }
 }
+
+
+/* ==========================================================================
+   Fiche instructeur « Nicolas Blot » (.nicolas-blot = slug pose sur <article>)
+   Texte plus aere et plus lisible : lignes plus courtes, interligne plus
+   genereux, mots importants en gras indigo. Le paragraphe de conclusion
+   reprend l'habillage « carte » de la page Debuter / FAQ.
+   ========================================================================== */
+.nicolas-blot .entry-content p,
+.nicolas-blot > p {
+	max-width: 40em;
+	font-size: 1.07em;
+	line-height: 1.75;
+	margin-bottom: 1.15em;
+	/* Le bleu clair du theme (#657fb2) passe sous le seuil de contraste
+	   recommande sur fond blanc : on garde le meme bleu, en plus fonce. */
+	color: #4d6b9e;
+}
+.nicolas-blot strong { color: #2f5f9e; font-weight: 700; }
+
+/* Conclusion : vrai encadre (cadre sur les quatre cotes) pour qu'elle se
+   detache nettement du reste de la fiche. */
+.nicolas-blot p.nb-final {
+	background: #f0f5fb;
+	border: 1px solid #c3d8ef;
+	border-left: 5px solid #5b8fc7;
+	border-radius: 8px;
+	padding: 1.15em 1.35em;
+	margin-top: 2.2em;
+	margin-bottom: 2em;
+	box-shadow: 0 3px 12px -7px rgba(35, 28, 79, .45);
+}
+.nicolas-blot p.nb-final strong { color: #2f5f9e; }
