@@ -1157,7 +1157,9 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 .cristelle-lauvergnat .entry-content p,
 .cristelle-lauvergnat > p,
 .jose-da-silva .entry-content p,
-.jose-da-silva > p {
+.jose-da-silva > p,
+.pascal-lescouet .entry-content p,
+.pascal-lescouet > p {
 	max-width: 40em;
 	font-size: 1.07em;
 	line-height: 1.75;
@@ -1168,19 +1170,24 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 }
 .nicolas-blot strong,
 .cristelle-lauvergnat strong,
-.jose-da-silva strong { color: #2f5f9e; font-weight: 700; }
+.jose-da-silva strong,
+.pascal-lescouet strong { color: #2f5f9e; font-weight: 700; }
 
-/* Palmares de Jose : meme couleur et meme aeration que les paragraphes, en
-   liste. La fiche de Jose est la seule a en contenir une. */
+/* Palmares (Jose, Pascal) : meme couleur et meme aeration que les
+   paragraphes, en liste. */
 .jose-da-silva .entry-content ul,
-.jose-da-silva > ul {
+.jose-da-silva > ul,
+.pascal-lescouet .entry-content ul,
+.pascal-lescouet > ul {
 	max-width: 40em;
 	margin: 0 0 1.6em;
 	padding-left: 1.2em;
 	list-style: none;
 }
 .jose-da-silva .entry-content ul li,
-.jose-da-silva > ul li {
+.jose-da-silva > ul li,
+.pascal-lescouet .entry-content ul li,
+.pascal-lescouet > ul li {
 	position: relative;
 	font-size: 1.07em;
 	line-height: 1.6;
@@ -1188,7 +1195,9 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 	color: #4d6b9e;
 }
 .jose-da-silva .entry-content ul li::before,
-.jose-da-silva > ul li::before {
+.jose-da-silva > ul li::before,
+.pascal-lescouet .entry-content ul li::before,
+.pascal-lescouet > ul li::before {
 	content: "";
 	position: absolute;
 	left: -1.2em;
@@ -1203,7 +1212,8 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
    detache nettement du reste de la fiche. */
 .nicolas-blot p.fiche-conclusion,
 .cristelle-lauvergnat p.fiche-conclusion,
-.jose-da-silva p.fiche-conclusion {
+.jose-da-silva p.fiche-conclusion,
+.pascal-lescouet p.fiche-conclusion {
 	background: #f0f5fb;
 	border: 1px solid #c3d8ef;
 	border-left: 5px solid #5b8fc7;
