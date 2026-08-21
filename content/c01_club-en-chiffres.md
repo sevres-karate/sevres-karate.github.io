@@ -18,7 +18,7 @@ Le CO Sèvres Karaté, c'est **110 licenciés** pour la saison 2025-2026 : des b
 
 ## Qui sont nos adhérents ?
 
-Le club accueille tous les âges, avec trois grandes familles : les adultes, les enfants et les babys (5-7 ans).
+Le club accueille tous les âges, avec trois grandes familles : les adultes, les enfants et les babys (5-6 ans).
 
 <div class="ckc-chart" role="img" aria-label="Répartition des adhérents : adultes 51 (46,4 %), enfants 45 (40,9 %), babys 14 (12,7 %)">
 <div class="ckc-row"><span class="ckc-row-label">Adultes</span><div class="ckc-track"><div class="ckc-bar" style="width:46.4%"></div><span class="ckc-marker" style="left:45.7%" title="Saison 2024-2025 : 45,7 %"></span></div><span class="ckc-val">51 · 46,4&nbsp;%</span></div>
@@ -33,9 +33,9 @@ Le club accueille tous les âges, avec trois grandes familles : les adultes, les
 
 **70 jeunes** de 5 à 18 ans s'entraînent au club, répartis entre les cours babys, enfants et ados.
 
-<div class="ckc-chart" role="img" aria-label="Jeunes par âge (en % des 70 jeunes) : 5-7 ans 17 (24,3 %), 7-14 ans 47 (67,1 %), 14-18 ans 6 (8,6 %)">
-<div class="ckc-row"><span class="ckc-row-label">5 – 7 ans</span><div class="ckc-track"><div class="ckc-bar" style="width:36.2%"></div></div><span class="ckc-val">17 · 24,3&nbsp;%</span></div>
-<div class="ckc-row"><span class="ckc-row-label">7 – 14 ans</span><div class="ckc-track"><div class="ckc-bar" style="width:100%"></div></div><span class="ckc-val">47 · 67,1&nbsp;%</span></div>
+<div class="ckc-chart" role="img" aria-label="Jeunes par âge (en % des 70 jeunes) : 5-6 ans 17 (24,3 %), 7-13 ans 47 (67,1 %), 14-18 ans 6 (8,6 %)">
+<div class="ckc-row"><span class="ckc-row-label">5 – 6 ans</span><div class="ckc-track"><div class="ckc-bar" style="width:36.2%"></div></div><span class="ckc-val">17 · 24,3&nbsp;%</span></div>
+<div class="ckc-row"><span class="ckc-row-label">7 – 13 ans</span><div class="ckc-track"><div class="ckc-bar" style="width:100%"></div></div><span class="ckc-val">47 · 67,1&nbsp;%</span></div>
 <div class="ckc-row"><span class="ckc-row-label">14 – 18 ans</span><div class="ckc-track"><div class="ckc-bar" style="width:12.8%"></div></div><span class="ckc-val">6 · 8,6&nbsp;%</span></div>
 <p class="ckc-legend">pourcentages calculés sur les 70 jeunes</p>
 </div>
@@ -46,9 +46,9 @@ Le karaté se pratique à tout âge, et nos **40 adultes** le prouvent : toutes 
 
 <div class="ckc-chart" role="img" aria-label="Adultes par âge (en % des 40 adultes) : 18-30 ans 18,9 %, 30-40 ans 2,7 %, 40-50 ans 24,3 %, 50-60 ans 37,8 %, plus de 60 ans 16,2 %">
 <div class="ckc-row"><span class="ckc-row-label">18 – 30 ans</span><div class="ckc-track"><div class="ckc-bar" style="width:50%"></div></div><span class="ckc-val">18,9&nbsp;%</span></div>
-<div class="ckc-row"><span class="ckc-row-label">30 – 40 ans</span><div class="ckc-track"><div class="ckc-bar" style="width:7.1%"></div></div><span class="ckc-val">2,7&nbsp;%</span></div>
-<div class="ckc-row"><span class="ckc-row-label">40 – 50 ans</span><div class="ckc-track"><div class="ckc-bar" style="width:64.3%"></div></div><span class="ckc-val">24,3&nbsp;%</span></div>
-<div class="ckc-row"><span class="ckc-row-label">50 – 60 ans</span><div class="ckc-track"><div class="ckc-bar" style="width:100%"></div></div><span class="ckc-val">37,8&nbsp;%</span></div>
+<div class="ckc-row"><span class="ckc-row-label">31 – 40 ans</span><div class="ckc-track"><div class="ckc-bar" style="width:7.1%"></div></div><span class="ckc-val">2,7&nbsp;%</span></div>
+<div class="ckc-row"><span class="ckc-row-label">41 – 50 ans</span><div class="ckc-track"><div class="ckc-bar" style="width:64.3%"></div></div><span class="ckc-val">24,3&nbsp;%</span></div>
+<div class="ckc-row"><span class="ckc-row-label">51 – 60 ans</span><div class="ckc-track"><div class="ckc-bar" style="width:100%"></div></div><span class="ckc-val">37,8&nbsp;%</span></div>
 <div class="ckc-row"><span class="ckc-row-label">60 ans et +</span><div class="ckc-track"><div class="ckc-bar" style="width:42.9%"></div></div><span class="ckc-val">16,2&nbsp;%</span></div>
 </div>
 
