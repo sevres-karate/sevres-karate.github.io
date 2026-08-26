@@ -1,5 +1,5 @@
-AUTHOR = 'Sèvres Karaté'
-SITENAME = 'Sèvres Karaté'
+AUTHOR = 'Sèvres Karaté 92'
+SITENAME = 'Sèvres Karaté 92'
 SITESUBTITLE = 'Le karaté pour tous'
 
 PATH = "content/"

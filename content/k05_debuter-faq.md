@@ -4,7 +4,7 @@ Modified: 2026-07-14 00:00
 Category: Karaté
 Tags: karate, sevres, cos, debutant, faq
 Slug: debuter-faq
-Authors: Sèvres Karaté
+Authors: Sèvres Karaté 92
 Summary: Toutes les réponses aux questions que se posent les futurs karatékas avant de franchir la porte du dojo
 
 # Envie de débuter ? On répond à tout !

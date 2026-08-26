@@ -3,7 +3,7 @@ Date: 2026-07-10 12:00
 Category: Karaté
 Tags: karate, sevres, cos, controle, kumite
 Slug: controle
-Authors: Sèvres Karaté
+Authors: Sèvres Karaté 92
 Summary: Pourquoi le contrôle est au cœur du karaté : gage d'efficacité, respect absolu du partenaire, et marque des pratiquants confirmés
 
 # Le contrôle

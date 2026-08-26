@@ -4,7 +4,7 @@ Modified: 2026-08-18 00:00
 Category: Instructeurs
 Tags: karate, sevres, cos, instructeurs, dasilva
 Slug: jose-da-silva
-Authors: Sèvres Karaté 
+Authors: Sèvres Karaté 92
 Summary: Présentation de José Da Silva, instructeur au COS Karaté
 
 # José Da Silva Castro — 5e DAN FFK, Brevet d'État, 1er DAN Kendo

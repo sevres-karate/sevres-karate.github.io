@@ -4,7 +4,7 @@ Modified: 2026-08-18 00:00
 Category: Instructeurs
 Tags: karate, sevres, cos, instructeurs, lauvergnat
 Slug: cristelle-lauvergnat
-Authors: Sèvres Karaté 
+Authors: Sèvres Karaté 92
 Summary: Présentation de Cristelle Lauvergnat, instructrice au COS Karaté
 
 # Cristelle Lauvergnat — 5e DAN FFK, Brevet d'État

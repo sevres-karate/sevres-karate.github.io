@@ -4,7 +4,7 @@ Modified: 2024-09-27 00:00
 Category: Actu
 Tags: cours
 Slug: cours-special-maman-enfant
-Authors: Sèvres Karaté 
+Authors: Sèvres Karaté 92
 Summary: Cours spécial mamans/enfants le Dimanche 29 Septembre de 10h15 à 11h30 suivi d'un pot
 
 Bonjour à tous,

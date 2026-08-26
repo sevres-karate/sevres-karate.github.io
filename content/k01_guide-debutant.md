@@ -4,7 +4,7 @@ Modified: 2024-08-30 00:00
 Category: Karaté
 Tags: karate, sevres, cos, culture, debutant
 Slug: guide-debutant
-Authors: Sèvres Karaté 
+Authors: Sèvres Karaté 92
 Summary: Les principes à connaître en tant que débutant
 
 # Je débute le karaté...

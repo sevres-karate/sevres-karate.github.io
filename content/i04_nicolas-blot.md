@@ -4,7 +4,7 @@ Modified: 2026-08-18 00:00
 Category: Instructeurs
 Tags: karate, sevres, cos, instructeurs, blot
 Slug: nicolas-blot
-Authors: Sèvres Karaté 
+Authors: Sèvres Karaté 92
 Summary: Présentation de Nicolas Blot, instructeur au COS Karaté
 
 # Nicolas Blot — 4e DAN FFK, Instructeur Fédéral

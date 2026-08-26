@@ -3,7 +3,7 @@ Date: 2026-07-26 10:00
 Category: Le Club
 Tags: karate, sevres, cos, membres, ceinture noire, dan, temoignages
 Slug: paroles-de-membres
-Authors: Sèvres Karaté
+Authors: Sèvres Karaté 92
 Summary: Les mots de nos adhérents — témoignages, discours et moments partagés au club : Clémentine (1er dan) et Neely (ceinture bleue) racontent ce que le karaté leur apporte, et retour sur les passages de grade de Karim et de Pierre, tous deux 2e dan
 
 Un club, ce sont d'abord des femmes et des hommes qui partagent le tatami

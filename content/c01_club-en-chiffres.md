@@ -4,7 +4,7 @@ Modified: 2026-07-26 00:00
 Category: Le Club
 Tags: karate, sevres, cos, statistiques, adherents, licencies
 Slug: club-en-chiffres
-Authors: Sèvres Karaté
+Authors: Sèvres Karaté 92
 Summary: Le CO Sèvres Karaté en chiffres — adhérents, âges, grades et ceintures noires pour la saison 2025-2026
 
 Le CO Sèvres Karaté, c'est **110 licenciés** pour la saison 2025-2026 : des babys de 5 ans aux vétérans de plus de 60 ans, débutants comme ceintures noires jusqu'au 6<sup>e</sup> dan. Voici le portrait du club en quelques chiffres.

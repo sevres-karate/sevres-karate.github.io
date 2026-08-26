@@ -4,7 +4,7 @@ Modified: 2026-04-08 00:00
 Category: Actu
 Tags: compétitions
 Slug: resultats-competition-open-ppb
-Authors: Sèvres Karaté
+Authors: Sèvres Karaté 92
 Summary: Résultats compétition du dimanche 29 mars 2026
 
 Dimanche 29 mars 2026 a eu lieu l'Open Départemental de kumite et kata à Gennevilliers. Parmi plus de 200 inscrits, nos quatre compétiteurs se sont brillamment illustrés.

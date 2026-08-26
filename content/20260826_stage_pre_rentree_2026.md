@@ -4,7 +4,7 @@ Modified: 2026-08-26 00:00
 Category: Actu
 Tags: stage
 Slug: stage-pre-rentree-2026
-Authors: Sèvres Karaté
+Authors: Sèvres Karaté 92
 Summary: Trois cours de reprise avec José les 31 août, 2 et 4 septembre, de 19h00 à 20h45 : préparation physique, kata et bunkai pour attaquer la saison en pleine forme.
 
 Les tatamis nous ont manqué ! Avant même le premier cours de la saison,

@@ -4,7 +4,7 @@ Modified: 2024-08-30 00:00
 Category: Karaté
 Tags: karate, sevres, cos, cours, debutant
 Slug: deroulement-cours
-Authors: Sèvres Karaté
+Authors: Sèvres Karaté 92
 Summary: Comment se déroule un cours de karaté au club, étape par étape
 
 # Le déroulement d'un cours

@@ -3,7 +3,7 @@ Date: 2026-04-15
 Category: Actu
 Tags: stage
 Slug: stage-self-defense
-Authors: Sèvres Karaté
+Authors: Sèvres Karaté 92
 Summary: Stage self-defense du 19 avril 2026
 
 <div style="text-align: center;">

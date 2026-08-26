@@ -4,7 +4,7 @@ Modified: 2024-08-30 00:00
 Category: Karaté
 Tags: karate, sevres, cos, culture, katas
 Slug: katas
-Authors: Sèvres Karaté 
+Authors: Sèvres Karaté 92
 Summary: Liste des katas du karaté Shotokan
 
 # Les katas

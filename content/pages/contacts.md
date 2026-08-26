@@ -4,7 +4,7 @@ Modified: 2024-09-01 00:00
 Category: Contacts
 Tags: contacts
 Slug: contacts
-Authors: Sèvres Karaté 
+Authors: Sèvres Karaté 92
 Summary: Vous avez besoins d'informations complémentaires ?
 
 Tous les renseignements peuvent être obtenus  sur place aux horaires des cours ou par téléphone. 

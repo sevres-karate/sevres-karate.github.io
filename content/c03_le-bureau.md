@@ -3,7 +3,7 @@ Date: 2026-07-10 00:30
 Category: Le Club
 Tags: karate, sevres, cos, bureau, association, benevoles
 Slug: le-bureau
-Authors: Sèvres Karaté
+Authors: Sèvres Karaté 92
 Summary: Qui fait tourner le club en coulisses ? Découvrez les six bénévoles du bureau 2026-2027 du CO Sèvres Karaté et le rôle de chacun
 
 <!-- Ajout des photos : voir tools/README-photos-bureau.txt -->

@@ -4,7 +4,7 @@ Modified: 2026-08-18 00:00
 Category: Instructeurs
 Tags: karate, sevres, cos, instructeurs, lescouet
 Slug: pascal-lescouet
-Authors: Sèvres Karaté 
+Authors: Sèvres Karaté 92
 Summary: Présentation de Pascal Lescouët, instructeur au COS Karaté
 
 # Pascal Lescouët — 6e DAN, Brevet d'État, Responsable des Grades de la Ligue des Hauts-de-Seine

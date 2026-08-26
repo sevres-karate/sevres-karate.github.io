@@ -4,7 +4,7 @@ Modified: 2026-07-31 00:00
 Category: Horaires
 Tags: horaires
 Slug: horaires2025
-Authors: Sèvres Karaté 
+Authors: Sèvres Karaté 92
 Summary: Les horaires des cours de Karaté pour la saison 2026-2027 — des créneaux pensés pour l'école, le travail et la vie de famille
 
 Nos horaires ne sont pas le fruit du hasard : ils sont construits chaque saison pour **s'adapter à la vie réelle des familles** — l'école, le travail, les week-ends. Résultat : quel que soit votre âge et votre emploi du temps, il y a un créneau pour vous.

@@ -4,7 +4,7 @@ Modified: 2024-08-30 00:00
 Category: Karaté
 Tags: karate, sevres, cos, culture, dojo-kun, funakoshi
 Slug: code-moral
-Authors: Sèvres Karaté
+Authors: Sèvres Karaté 92
 Summary: Le Dojo Kun (5 principes) et les 20 principes du Karaté-do de Gichin Funakoshi
 
 # Le Code Moral du Karaté (Dojo Kun)
