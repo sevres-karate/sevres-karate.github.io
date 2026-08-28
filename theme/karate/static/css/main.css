@@ -1444,6 +1444,17 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 	box-shadow: 0 4px 16px -6px rgba(36,28,25,.2);
 }
 .ip-card p { color: var(--ip-ink); }
-.ip-note { font-size: .88em; color: var(--ip-ink-soft); margin-top: .8em !important; }
+/* Ces deux règles sont qualifiées par .ip-card : sans cela « .ip-card p »
+   ci-dessus, plus spécifique, leur reprenait la couleur. */
+.ip-card .ip-note { font-size: .88em; color: var(--ip-ink-soft); margin-top: .8em; }
 .ip-lien:link, .ip-lien:visited { color: var(--ip-rust); font-weight: 600; }
 .ip-lien:hover, .ip-lien:active { color: var(--ip-rust-deep); text-decoration: underline; }
+
+/* Avantages mis en avant dans la carte tarifs (paiement fractionné, remise) :
+   rouille et gras, comme sur la carte de la page d'accueil. */
+.ip-card .ip-avantages {
+	margin-top: .7em;
+	font-size: .95em;
+	font-weight: 600;
+	color: var(--ip-rust);
+}
