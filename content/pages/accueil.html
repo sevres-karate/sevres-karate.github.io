@@ -109,6 +109,13 @@
 .hp .hp-trybar a { color: #fff; text-decoration: underline; }
 .hp .hp-trybar a:hover { color: #fff; }
 
+/* Bandeau d'annonce de rentrée, juste au-dessus du bandeau « essai gratuit ».
+   Fond indigo pour ne pas se confondre avec la barre rouille qui le suit. */
+.hp .hp-rentree {
+  background: var(--indigo); color: #fff; text-align: center;
+  padding: .7rem 24px; font-weight: 600; font-size: .95rem;
+}
+
 /* ---------- Hero ---------- */
 .hp .hp-hero { position: relative; overflow: hidden; background: var(--indigo-deep); color: #fff; }
 .hp .hp-hero::before {
@@ -287,6 +294,7 @@
 
 <div class="hp">
 
+<div class="hp-rentree">📅 Reprise des cours le <strong>lundi 7 septembre</strong></div>
 <div class="hp-trybar">🥋 Premier cours d'essai <strong>gratuit</strong> toute la saison — <a href="/pages/essai-gratuit.html">réservez votre créneau</a></div>
 
 <!-- HERO -->

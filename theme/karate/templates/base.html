@@ -72,6 +72,17 @@
                 <li class="nav-cta{% if page and page.slug == 'essai-gratuit' %} active{% endif %}"><a href="{{ SITEURL }}/pages/essai-gratuit.html">Essai gratuit</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
+        {# Bandeau d'annonce de rentrée. L'accueil a le sien, intégré à son
+           habillage (voir content/pages/accueil.html) ; ici on le pose sur les
+           pages Horaires, Tarifs, Contacts, Inscription en ligne et Essai gratuit —
+           celles que consultent les familles qui préparent la reprise. #}
+        {% set rentree_categories = ['Horaires', 'Tarifs'] %}
+        {% set rentree_pages = ['contacts', 'inscription-en-ligne', 'essai-gratuit'] %}
+        {% if (category and category.name in rentree_categories)
+              or (article and article.category and article.category.name in rentree_categories)
+              or (page and page.slug in rentree_pages) %}
+        <div class="rentree-bar">&#128197; Reprise des cours le <strong>lundi 7 septembre</strong></div>
+        {% endif %}
         {% block content %}
         {% endblock %}
         <section id="extras" class="body">

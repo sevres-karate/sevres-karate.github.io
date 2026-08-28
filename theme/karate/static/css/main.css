@@ -1338,3 +1338,23 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 	width: 100%;
 	border-radius: 8px;
 }
+
+/*
+	Bandeau de rentrée
+	Posé entre la barre de menu et le contenu (voir base.html). Reprend
+	l'indigo du menu et sa largeur, en pastille arrondie séparée par un
+	petit écart pour qu'il ne se confonde pas avec la barre de navigation.
+*****************/
+.rentree-bar {
+	max-width: 800px;
+	margin: -1.2em auto 2em auto;
+	padding: .7em 24px;
+	background: #231c4f;
+	color: #fff;
+	text-align: center;
+	font-weight: 600;
+	line-height: 1.4;
+	border-radius: 5px;
+	border-bottom: 3px solid #C74350;
+}
+.rentree-bar strong { font-weight: 700; }
