@@ -72,19 +72,30 @@
                 <li class="nav-cta{% if page and page.slug == 'essai-gratuit' %} active{% endif %}"><a href="{{ SITEURL }}/pages/essai-gratuit.html">Essai gratuit</a></li>
                 </ul></nav>
         </header><!-- /#banner -->
-        {# Bandeau d'annonce de rentrée. L'accueil a le sien, intégré à son
-           habillage (voir content/pages/accueil.html) ; ici on le pose sur les
-           pages Horaires, Tarifs, Contacts, Inscription en ligne et Essai gratuit —
-           celles que consultent les familles qui préparent la reprise. #}
-        {% set rentree_categories = ['Horaires', 'Tarifs'] %}
-        {% set rentree_pages = ['contacts', 'inscription-en-ligne', 'essai-gratuit'] %}
-        {% if (category and category.name in rentree_categories)
-              or (article and article.category and article.category.name in rentree_categories)
-              or (page and page.slug in rentree_pages) %}
+        {# Pages « préparer sa venue » : Horaires, Tarifs, Contacts, Inscription
+           en ligne et Essai gratuit. Elles reçoivent le bandeau de rentrée
+           au-dessus du contenu et le bloc « On vous attend » en dessous.
+           L'accueil a déjà les deux, intégrés à son habillage (voir
+           content/pages/accueil.html) : il n'est pas dans la liste. #}
+        {% set reprise_categories = ['Horaires', 'Tarifs'] %}
+        {% set reprise_pages = ['contacts', 'inscription-en-ligne', 'essai-gratuit'] %}
+        {% set reprise = (category and category.name in reprise_categories)
+                         or (article and article.category and article.category.name in reprise_categories)
+                         or (page and page.slug in reprise_pages) %}
+        {% if reprise %}
         <div class="rentree-bar">&#128197; Reprise des cours le <strong>lundi 7 septembre</strong></div>
         {% endif %}
         {% block content %}
         {% endblock %}
+        {# Sur les pages Tarifs et sur « Essai gratuit », la carte de rappel des
+           tarifs ferait doublon avec le contenu de la page : on ne garde alors
+           que les infos pratiques. #}
+        {% if reprise %}
+        {% set masquer_tarifs = (category and category.name == 'Tarifs')
+                                or (article and article.category and article.category.name == 'Tarifs')
+                                or (page and page.slug == 'essai-gratuit') %}
+        {% include 'infos_pratiques.html' %}
+        {% endif %}
         <section id="extras" class="body">
         {% if LINKS %}
                 <div class="blogroll">

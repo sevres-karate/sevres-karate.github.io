@@ -1358,3 +1358,92 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 	border-bottom: 3px solid #C74350;
 }
 .rentree-bar strong { font-weight: 700; }
+
+/*
+	Bloc « On vous attend » (infos pratiques)
+	Repris du bas de la page d'accueil, mais autonome : il ne dépend pas des
+	variables « --… » déclarées dans l'enveloppe .hp de cette page-là.
+	Aligné sur #content : 760px + 20px de rembourrage = 800px, comme le menu.
+*****************/
+.ip {
+	--ip-ink:       #241c19;
+	--ip-ink-soft:  #5a4f49;
+	--ip-cream:     #f1e9dc;
+	--ip-sand:      #e8dcc8;
+	--ip-rust:      #C74350;
+	--ip-rust-deep: #a3323e;
+
+	max-width: 760px;
+	margin: 0 auto 2em auto;
+	padding: 2em 20px;
+	background: var(--ip-cream);
+	color: var(--ip-ink);
+	border-radius: 10px;
+	line-height: 1.6;
+}
+.ip h2, .ip h3 {
+	font-family: var(--font-display);
+	color: var(--ip-ink);
+	text-shadow: none;
+	margin: 0;
+}
+.ip h2 { font-size: 1.9em; line-height: 1.1; }
+.ip h3 { font-size: 1.25em; margin-bottom: .6em; }
+.ip p { margin: 0; }
+
+/* Le thème colore et souligne tous les liens : on reprend la main ici. */
+.ip a:link, .ip a:visited { padding: 0; text-decoration: none; text-shadow: none; }
+.ip a:hover, .ip a:active { background: transparent; text-shadow: none; }
+
+.ip-split {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+	gap: 2em;
+	align-items: center;
+}
+
+.ip-eyebrow {
+	display: inline-block;
+	font-size: .78em;
+	text-transform: uppercase;
+	letter-spacing: .12em;
+	color: var(--ip-rust);
+	font-weight: 700;
+	margin-bottom: .7em;
+}
+
+.ip-infos { color: var(--ip-ink-soft); margin-top: 1em; }
+.ip-infos b { color: var(--ip-ink); }
+
+/* Lien Google Maps : libellé explicite et souligné, comme sur l'accueil. */
+.ip-map:link, .ip-map:visited {
+	color: var(--ip-rust); font-weight: 600; white-space: nowrap;
+	text-decoration: underline; text-underline-offset: 2px;
+}
+.ip-map:hover, .ip-map:active { color: var(--ip-rust-deep); text-decoration: underline; }
+
+.ip-btn-row { display: flex; gap: .8em; flex-wrap: wrap; margin-top: 1.4em; }
+.ip-btn:link, .ip-btn:visited {
+	display: inline-flex; align-items: center; justify-content: center;
+	font-weight: 600; line-height: 1;
+	padding: .9em 1.6em;
+	border: 2px solid var(--ip-sand); border-radius: 100px;
+	background: transparent; color: var(--ip-ink);
+	transition: transform .18s ease, border-color .18s ease;
+}
+.ip-btn:hover, .ip-btn:active {
+	border-color: var(--ip-ink); color: var(--ip-ink);
+	transform: translateY(-2px);
+}
+
+.ip-card {
+	background: #fff;
+	border: 1px solid var(--ip-sand);
+	border-radius: 14px;
+	padding: 1.6em;
+	box-shadow: 0 4px 16px -6px rgba(36,28,25,.2);
+}
+.ip-card p { color: var(--ip-ink); }
+.ip-note { font-size: .88em; color: var(--ip-ink-soft); margin-top: .8em !important; }
+.ip-lien:link, .ip-lien:visited { color: var(--ip-rust); font-weight: 600; }
+.ip-lien:hover, .ip-lien:active { color: var(--ip-rust-deep); text-decoration: underline; }
