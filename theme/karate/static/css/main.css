@@ -1174,26 +1174,40 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 .pascal-lescouet strong { color: #2f5f9e; font-weight: 700; }
 
 /* --------------------------------------------------------------------------
-   Fiche de Pascal : texte et photos alternes (une photo a cote de chaque
-   bloc de texte, une image pleine largeur en ouverture et en fermeture).
+   Fiches de Pascal et de Jose : texte et photos alternes (une photo a cote
+   de chaque bloc de texte, une image en ouverture et en fermeture).
    Les blocs sont du HTML brut dans le markdown, donc identiques sur la
    fiche seule et sur la page « Instructeurs ».
    -------------------------------------------------------------------------- */
+.jose-da-silva .fiche-large,
 .pascal-lescouet .fiche-large {
 	margin: 0 0 2em;
 }
+.jose-da-silva .fiche-large img,
 .pascal-lescouet .fiche-large img {
 	width: 100%;
 	height: auto;
 	border-radius: 8px;
 	display: block;
 }
+/* Variante pour une image d'ouverture au format portrait ou carre : pleine
+   largeur, elle ecraserait le haut de la fiche. On la bride en hauteur et on
+   la centre. */
+.jose-da-silva .fiche-large-portrait img,
+.pascal-lescouet .fiche-large-portrait img {
+	width: auto;
+	max-width: 100%;
+	max-height: 620px;
+	margin: 0 auto;
+}
+.jose-da-silva .fiche-large figcaption,
 .pascal-lescouet .fiche-large figcaption {
 	font-size: .85em;
 	color: #888;
 	margin-top: .5em;
 }
 
+.jose-da-silva .fiche-duo,
 .pascal-lescouet .fiche-duo {
 	display: grid;
 	/* Le texte garde la part du lion : les lignes restent longues, la photo
@@ -1204,12 +1218,15 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 	margin: 0 0 2.4em;
 }
 /* Photo a gauche une fois sur deux : le regard zigzague, la page respire. */
+.jose-da-silva .fiche-duo.photo-gauche,
 .pascal-lescouet .fiche-duo.photo-gauche {
 	grid-template-columns: minmax(0, 1fr) minmax(0, 2.5fr);
 }
+.jose-da-silva .fiche-duo.photo-gauche .fiche-duo-media,
 .pascal-lescouet .fiche-duo.photo-gauche .fiche-duo-media {
 	order: -1;
 }
+.jose-da-silva .fiche-duo-media img,
 .pascal-lescouet .fiche-duo-media img {
 	display: block;
 	margin: 0 auto;
@@ -1219,6 +1236,8 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 	height: auto;
 	border-radius: 8px;
 }
+.jose-da-silva .fiche-duo p:last-child,
+.jose-da-silva .fiche-duo ul:last-child,
 .pascal-lescouet .fiche-duo p:last-child,
 .pascal-lescouet .fiche-duo ul:last-child {
 	margin-bottom: 0;
@@ -1226,13 +1245,17 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 
 /* Telephone et petites tablettes : une seule colonne, le texte d'abord. */
 @media screen and (max-width: 720px) {
+	.jose-da-silva .fiche-duo,
+	.jose-da-silva .fiche-duo.photo-gauche,
 	.pascal-lescouet .fiche-duo,
 	.pascal-lescouet .fiche-duo.photo-gauche {
 		grid-template-columns: 1fr;
 	}
+	.jose-da-silva .fiche-duo.photo-gauche .fiche-duo-media,
 	.pascal-lescouet .fiche-duo.photo-gauche .fiche-duo-media {
 		order: 0;
 	}
+	.jose-da-silva .fiche-duo-media img,
 	.pascal-lescouet .fiche-duo-media img {
 		max-height: 60vh;
 	}
