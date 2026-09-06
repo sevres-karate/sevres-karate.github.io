@@ -127,6 +127,15 @@
 
 {% include 'analytics.html' %}
 {% include 'disqus_script.html' %}
+{# Fenêtre vidéo pour les liens « a[data-video] » (voir main.css). #}
+<div class="video-modal" id="video-modal" hidden>
+    <div class="video-modal-backdrop"></div>
+    <div class="video-modal-box" role="dialog" aria-modal="true" aria-labelledby="video-modal-title">
+        <button type="button" class="video-modal-close" aria-label="Fermer la vidéo">&#10005;</button>
+        <p class="video-modal-title" id="video-modal-title"></p>
+        <div class="video-wrapper video-portrait video-modal-player"></div>
+    </div>
+</div>
 <script>
 (function () {
     function loadVideo(el) {
@@ -147,6 +156,50 @@
     document.addEventListener('click', function (e) {
         var el = e.target.closest('.video-facade');
         if (el) loadVideo(el);
+    });
+
+    /* Fenêtre vidéo : un lien portant data-video="ID_YOUTUBE" ouvre la
+       vidéo dans un lecteur superposé à la page. Le href reste le lien
+       YouTube, utilisé seulement si JavaScript est indisponible. */
+    var modal = document.getElementById('video-modal');
+    if (!modal) return;
+    var player = modal.querySelector('.video-modal-player');
+    var title = modal.querySelector('.video-modal-title');
+    var closeBtn = modal.querySelector('.video-modal-close');
+    var lastFocus = null;
+    function openModal(link) {
+        lastFocus = link;
+        player.innerHTML = '';
+        player.classList.remove('video-loaded');
+        player.setAttribute('data-embed', link.getAttribute('data-video') + '?rel=0&modestbranding=1');
+        player.setAttribute('data-title', link.getAttribute('data-title') || link.textContent.trim());
+        title.textContent = link.getAttribute('data-title') || link.textContent.trim();
+        loadVideo(player);
+        modal.hidden = false;
+        document.body.classList.add('video-modal-open');
+        closeBtn.focus();
+    }
+    function closeModal() {
+        if (modal.hidden) return;
+        modal.hidden = true;
+        player.innerHTML = '';
+        player.classList.remove('video-loaded');
+        document.body.classList.remove('video-modal-open');
+        if (lastFocus) lastFocus.focus();
+    }
+    document.addEventListener('click', function (e) {
+        var link = e.target.closest('a[data-video]');
+        if (link) {
+            e.preventDefault();
+            openModal(link);
+            return;
+        }
+        if (e.target.closest('.video-modal-close') || e.target.classList.contains('video-modal-backdrop')) {
+            closeModal();
+        }
+    });
+    document.addEventListener('keydown', function (e) {
+        if (e.key === 'Escape') closeModal();
     });
 })();
 (function () {

@@ -18,6 +18,27 @@ Nos horaires ne sont pas le fruit du hasard : ils sont construits chaque saison 
 
 Tous les cours se déroulent au __gymnase des Cent-Gardes__, 45 Grande Rue, 92310 Sèvres.
 
+<div class="hor-video">
+<p class="hor-video-title">Où nous trouver dans le gymnase&nbsp;? On vous guide en vidéo.</p>
+<p class="hor-video-intro">Deux salles, deux niveaux&nbsp;: le <strong>parquet au niveau -1</strong> et le <strong>tatami au niveau -2</strong>. Suivez le guide pour arriver directement au bon endroit.</p>
+<div class="hor-video-grid">
+<div class="hor-video-item">
+<p class="hor-video-label">Salle Parquet &mdash; niveau -1</p>
+<div class="video-wrapper video-facade video-portrait" data-embed="HbsL0rjv8gc?rel=0&amp;modestbranding=1" data-title="Trouver la salle Parquet">
+<img src="/images/web/salle_parquet.jpg" alt="La porte de la salle Parquet, au fond du couloir du niveau -1" loading="lazy">
+<button type="button" class="video-play" aria-label="Lire la vidéo : trouver la salle Parquet"></button>
+</div>
+</div>
+<div class="hor-video-item">
+<p class="hor-video-label">Salle Tatamis &mdash; niveau -2</p>
+<div class="video-wrapper video-facade video-portrait" data-embed="yPxbyjlKhRk?rel=0&amp;modestbranding=1" data-title="Trouver la salle Tatamis">
+<img src="/images/web/salle_tatamis.jpg" alt="L'escalier qui descend vers la salle Tatamis, au niveau -2" loading="lazy">
+<button type="button" class="video-play" aria-label="Lire la vidéo : trouver la salle Tatamis"></button>
+</div>
+</div>
+</div>
+</div>
+
 **Débutants bienvenus**, quel que soit votre niveau — venez simplement essayer !
 
 ## Baby - 5* à 6 ans

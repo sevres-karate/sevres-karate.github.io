@@ -1071,6 +1071,57 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 
 .horaires2025 .hor-why strong { color: #24512c; }
 
+/* Bloc « Où nous trouver dans le gymnase ? » — deux vidéos YouTube côte à
+   côte (salle Parquet, salle Tatamis), sur fond indigo pâle pour se démarquer
+   des tableaux d'horaires et des encadrés verts. */
+.horaires2025 .hor-video {
+	margin: 1.6em 0 2.4em;
+	padding: 1.3em 1.4em 1.4em;
+	background: #f1f0f8;
+	border: 1px solid #d9d6ea;
+	border-radius: 10px;
+}
+
+.horaires2025 .hor-video-title {
+	font-family: var(--font-display, inherit);
+	font-size: 1.35em;
+	font-weight: 700;
+	line-height: 1.25;
+	color: #231c4f;
+	margin: 0 0 .4em !important;
+}
+
+.horaires2025 .hor-video-intro {
+	color: #3f3a5c;
+	margin: 0 0 1.1em !important;
+}
+
+.horaires2025 .hor-video-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 1.3em;
+}
+
+.horaires2025 .hor-video-item { text-align: center; }
+
+.horaires2025 .hor-video-label {
+	font-family: var(--font-body);
+	font-size: .82em;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: .1em;
+	color: #3c6f9e;
+	margin: 0 0 .5em !important;
+}
+
+/* Les deux façades vidéo (.video-facade .video-portrait, voir plus haut) :
+   on ne règle ici que la marge et l'arrondi. */
+.horaires2025 .hor-video .video-wrapper {
+	margin: 0 auto;
+	border-radius: 8px;
+	box-shadow: 0 4px 16px -6px rgba(35,28,79,.35);
+}
+
 /* ---- Téléphone -------------------------------------------------------------
    Sur un écran étroit, un tableau de 4 colonnes est illisible : chaque cellule
    se casse sur deux lignes et l'œil ne suit plus les lignes. On abandonne donc
@@ -1139,6 +1190,8 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 	/* Encadrés « Pourquoi ce créneau ? » : on récupère de la largeur de texte
 	   en resserrant la marge réservée au ✓. */
 	.horaires2025 .hor-why { padding: .8em .9em .9em 2.4em; }
+	.horaires2025 .hor-video { padding: 1em 1em 1.1em; }
+	.horaires2025 .hor-video-grid { grid-template-columns: 1fr; }
 	.horaires2025 .hor-why::before { left: .75em; }
 }
 
@@ -1323,6 +1376,69 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 	padding-bottom: 100%;   /* ratio 1:1 */
 	max-width: 420px;
 }
+
+/* Shorts verticaux (9:16) : les vidéos « trouver la salle » de la page
+   Horaires, et le lecteur de la fenêtre vidéo (base.html). */
+.video-wrapper.video-portrait {
+	padding-bottom: 177.78%;   /* ratio 9:16 */
+	max-width: 300px;
+}
+
+/* Fenêtre vidéo : ouverte par un lien « a[data-video] » (boutons de
+   l'accueil, ligne « Dans le gymnase » des infos pratiques). La vidéo se
+   lance dans un lecteur superposé à la page, sans quitter le site — le
+   script est dans base.html. Sans JavaScript, le lien mène à YouTube. */
+.video-modal {
+	position: fixed;
+	inset: 0;
+	z-index: 1000;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 3.2em 1em 1em;
+}
+.video-modal[hidden] { display: none; }
+.video-modal-backdrop {
+	position: absolute;
+	inset: 0;
+	background: rgba(10, 8, 20, .85);
+}
+.video-modal-box {
+	position: relative;
+	z-index: 1;
+	width: min(100%, calc((100vh - 5em) * 9 / 16));
+}
+.video-modal-box .video-wrapper {
+	margin: 0;
+	max-width: none;
+	border-radius: 12px;
+	box-shadow: 0 12px 40px -10px rgba(0, 0, 0, .8);
+}
+.video-modal-title {
+	margin: 0 0 .5em;
+	color: #fff;
+	font-weight: 700;
+	font-size: 1.05em;
+	text-align: center;
+}
+.video-modal-close {
+	position: absolute;
+	top: -2.6em;
+	right: 0;
+	width: 2.2em;
+	height: 2.2em;
+	padding: 0;
+	border: 0;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, .15);
+	color: #fff;
+	font-size: 1.2em;
+	line-height: 1;
+	cursor: pointer;
+}
+.video-modal-close:hover,
+.video-modal-close:focus { background: rgba(255, 255, 255, .35); }
+body.video-modal-open { overflow: hidden; }
 
 /* Texte et video cote a cote ; une seule colonne quand la place manque.
    Le titre est dans la colonne de texte : les deux colonnes demarrent a la
