@@ -1,11 +1,20 @@
 Title: Horaires 2026-2027
 Date: 2025-08-28 00:00
-Modified: 2026-09-06 00:00
+Modified: 2026-07-31 00:00
 Category: Horaires
 Tags: horaires
 Slug: horaires2025
 Authors: Sèvres Karaté 92
 Summary: Les horaires des cours de Karaté pour la saison 2026-2027 — des créneaux pensés pour l'école, le travail et la vie de famille
+
+Nos horaires ne sont pas le fruit du hasard : ils sont construits chaque saison pour **s'adapter à la vie réelle des familles** — l'école, le travail, les week-ends. Résultat : quel que soit votre âge et votre emploi du temps, il y a un créneau pour vous.
+
+<div class="hor-tiles">
+<div class="hor-tile"><p class="hor-label">Jusqu'à 3 cours</p><p class="hor-value">par semaine</p><p class="hor-sub">vous venez quand vous pouvez : rien n'est obligatoire, tout est compris dans la cotisation</p></div>
+<div class="hor-tile"><p class="hor-label">1 seul lieu</p><p class="hor-value">Cent-Gardes</p><p class="hor-sub">tous les cours au même gymnase, en plein centre de Sèvres</p></div>
+<div class="hor-tile"><p class="hor-label">Parent &amp; enfant</p><p class="hor-value">le même jour</p><p class="hor-sub">chaque jour de cours, le créneau enfants précède celui des adultes</p></div>
+<div class="hor-tile"><p class="hor-label">Lundi, mercredi</p><p class="hor-value">samedi</p><p class="hor-sub">mardi, jeudi et vendredi restent libres pour vos autres activités</p></div>
+</div>
 
 Tous les cours se déroulent au __gymnase des Cent-Gardes__, 45 Grande Rue, 92310 Sèvres.
 
@@ -28,15 +37,6 @@ Tous les cours se déroulent au __gymnase des Cent-Gardes__, 45 Grande Rue, 9231
 </div>
 </div>
 </div>
-</div>
-
-Nos horaires ne sont pas le fruit du hasard : ils sont construits chaque saison pour **s'adapter à la vie réelle des familles** — l'école, le travail, les week-ends. Résultat : quel que soit votre âge et votre emploi du temps, il y a un créneau pour vous.
-
-<div class="hor-tiles">
-<div class="hor-tile"><p class="hor-label">Jusqu'à 3 cours</p><p class="hor-value">par semaine</p><p class="hor-sub">vous venez quand vous pouvez : rien n'est obligatoire, tout est compris dans la cotisation</p></div>
-<div class="hor-tile"><p class="hor-label">1 seul lieu</p><p class="hor-value">Cent-Gardes</p><p class="hor-sub">tous les cours au même gymnase, en plein centre de Sèvres</p></div>
-<div class="hor-tile"><p class="hor-label">Parent &amp; enfant</p><p class="hor-value">le même jour</p><p class="hor-sub">chaque jour de cours, le créneau enfants précède celui des adultes</p></div>
-<div class="hor-tile"><p class="hor-label">Lundi, mercredi</p><p class="hor-value">samedi</p><p class="hor-sub">mardi, jeudi et vendredi restent libres pour vos autres activités</p></div>
 </div>
 
 **Débutants bienvenus**, quel que soit votre niveau — venez simplement essayer !
