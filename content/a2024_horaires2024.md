@@ -1,6 +1,6 @@
 Title: Horaires 2026-2027
 Date: 2025-08-28 00:00
-Modified: 2026-07-31 00:00
+Modified: 2026-09-06 00:00
 Category: Horaires
 Tags: horaires
 Slug: horaires2025
@@ -25,14 +25,14 @@ Tous les cours se déroulent au __gymnase des Cent-Gardes__, 45 Grande Rue, 9231
 <div class="hor-video-item">
 <p class="hor-video-label">Salle Parquet &mdash; niveau -1</p>
 <div class="video-wrapper video-facade video-portrait" data-embed="HbsL0rjv8gc?rel=0&amp;modestbranding=1" data-title="Trouver la salle Parquet">
-<img src="/images/web/salle_parquet.jpg" alt="La porte de la salle Parquet, au fond du couloir du niveau -1" loading="lazy">
+<img src="/images/web/salle_parquet.jpg" alt="Carton-titre de la vidéo : Où trouver la salle Parquet ? On vous guide en vidéo" loading="lazy">
 <button type="button" class="video-play" aria-label="Lire la vidéo : trouver la salle Parquet"></button>
 </div>
 </div>
 <div class="hor-video-item">
 <p class="hor-video-label">Salle Tatamis &mdash; niveau -2</p>
 <div class="video-wrapper video-facade video-portrait" data-embed="yPxbyjlKhRk?rel=0&amp;modestbranding=1" data-title="Trouver la salle Tatamis">
-<img src="/images/web/salle_tatamis.jpg" alt="L'escalier qui descend vers la salle Tatamis, au niveau -2" loading="lazy">
+<img src="/images/web/salle_tatamis.jpg" alt="Carton-titre de la vidéo : Où trouver la salle tatamis ? On vous guide en vidéo" loading="lazy">
 <button type="button" class="video-play" aria-label="Lire la vidéo : trouver la salle Tatamis"></button>
 </div>
 </div>
