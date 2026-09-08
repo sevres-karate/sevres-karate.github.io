@@ -100,6 +100,14 @@
 }
 .hp .hp-btn-light:hover { color: var(--indigo-deep); transform: translateY(-2px); box-shadow: var(--shadow-sm); }
 .hp .hp-btn-row { display: flex; gap: .8rem; flex-wrap: wrap; }
+/* Grille 2x2 du hero : les quatre boutons ont la même taille et se
+   superposent (« Trouver la salle Tatamis » sous « Voir les horaires »).
+   Une seule colonne quand le panneau est trop étroit pour deux boutons. */
+.hp .hp-btn-grid {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(17rem, 1fr));
+  gap: .8rem; max-width: 36rem;
+}
+.hp .hp-btn-grid .hp-btn { width: 100%; padding-left: 1rem; padding-right: 1rem; white-space: nowrap; }
 
 /* ---------- Bandeau d'accroche ---------- */
 .hp .hp-trybar {
@@ -317,7 +325,7 @@
   </div>
   <div class="hp-wrap hp-hero-inner hp-hero-bottom">
     <p class="hp-lead">Le karaté Shotokan s'adresse aux enfants, aux ados et aux adultes, débutants comme confirmés. On commence par un cours d'essai, sans engagement, dans une ambiance sportive et bienveillante, où l'on s'encourage plus qu'on ne se compare.</p>
-    <div class="hp-btn-row">
+    <div class="hp-btn-row hp-btn-grid">
       <a class="hp-btn hp-btn-primary" href="/pages/essai-gratuit.html">Réserver un cours d'essai gratuit</a>
       <a class="hp-btn hp-btn-light" href="/horaires2025.html">Voir les horaires →</a>
       <a class="hp-btn hp-btn-light" href="https://youtube.com/shorts/HbsL0rjv8gc" data-video="HbsL0rjv8gc" data-title="Trouver la salle Parquet">▶ Trouver la salle Parquet</a>
