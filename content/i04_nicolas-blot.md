@@ -10,7 +10,7 @@ Summary: Présentation de Nicolas Blot, instructeur au COS Karaté
 # Nicolas Blot — 4e DAN FFK, Instructeur Fédéral
 
 <figure class="fiche-large">
-  <img src="/images/nicolas_2026_02.jpg" alt="Nicolas Blot portant un coup de pied face à Cristelle Lauvergnat">
+  <img src="/images/nicolas_2026_03.jpg" alt="Nicolas Blot en position basse, bras écartés">
 </figure>
 
 Nicolas est lui aussi un **pur produit du club** : il monte sur le tatami du CO Sèvres en **1989, à 10 ans**, formé par **Pascal Lescouët** et **José Castro Da Silva**. Il sera le **premier élève entièrement formé par eux à décrocher son 1er DAN**, en **1997** — une filiation qui dit beaucoup de la continuité pédagogique du club.
@@ -55,7 +55,7 @@ Nicolas est lui aussi un **pur produit du club** : il monte sur le tatami du CO 
 </div>
 
 <figure class="fiche-large">
-  <img src="/images/nicolas_2026_03.jpg" alt="Nicolas Blot en position basse, bras écartés" loading="lazy">
+  <img src="/images/nicolas_2026_02.jpg" alt="Nicolas Blot portant un coup de pied face à Cristelle Lauvergnat" loading="lazy">
 </figure>
 
 <p class="fiche-conclusion"><strong>Ce que cela signifie pour vous :</strong> votre enfant fait ses premiers pas encadré par un <strong>karatéka de très haut niveau</strong>, formé dans ce club et par ces professeurs, qui sait exactement d'où l'on part et où l'on peut aller.</p>
