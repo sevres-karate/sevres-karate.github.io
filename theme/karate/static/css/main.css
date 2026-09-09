@@ -1227,15 +1227,18 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 .pascal-lescouet strong { color: #2f5f9e; font-weight: 700; }
 
 /* --------------------------------------------------------------------------
-   Fiches de Pascal et de Jose : texte et photos alternes (une photo a cote
-   de chaque bloc de texte, une image en ouverture et en fermeture).
+   Fiches de Pascal, de Jose et de Nicolas : texte et photos alternes (une
+   photo a cote de chaque bloc de texte, une image en ouverture et en
+   fermeture).
    Les blocs sont du HTML brut dans le markdown, donc identiques sur la
    fiche seule et sur la page « Instructeurs ».
    -------------------------------------------------------------------------- */
+.nicolas-blot .fiche-large,
 .jose-da-silva .fiche-large,
 .pascal-lescouet .fiche-large {
 	margin: 0 0 2em;
 }
+.nicolas-blot .fiche-large img,
 .jose-da-silva .fiche-large img,
 .pascal-lescouet .fiche-large img {
 	width: 100%;
@@ -1246,6 +1249,7 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 /* Variante pour une image d'ouverture au format portrait ou carre : pleine
    largeur, elle ecraserait le haut de la fiche. On la bride en hauteur et on
    la centre. */
+.nicolas-blot .fiche-large-portrait img,
 .jose-da-silva .fiche-large-portrait img,
 .pascal-lescouet .fiche-large-portrait img {
 	width: auto;
@@ -1253,6 +1257,7 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 	max-height: 620px;
 	margin: 0 auto;
 }
+.nicolas-blot .fiche-large figcaption,
 .jose-da-silva .fiche-large figcaption,
 .pascal-lescouet .fiche-large figcaption {
 	font-size: .85em;
@@ -1260,6 +1265,7 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 	margin-top: .5em;
 }
 
+.nicolas-blot .fiche-duo,
 .jose-da-silva .fiche-duo,
 .pascal-lescouet .fiche-duo {
 	display: grid;
@@ -1271,14 +1277,17 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 	margin: 0 0 2.4em;
 }
 /* Photo a gauche une fois sur deux : le regard zigzague, la page respire. */
+.nicolas-blot .fiche-duo.photo-gauche,
 .jose-da-silva .fiche-duo.photo-gauche,
 .pascal-lescouet .fiche-duo.photo-gauche {
 	grid-template-columns: minmax(0, 1fr) minmax(0, 2.5fr);
 }
+.nicolas-blot .fiche-duo.photo-gauche .fiche-duo-media,
 .jose-da-silva .fiche-duo.photo-gauche .fiche-duo-media,
 .pascal-lescouet .fiche-duo.photo-gauche .fiche-duo-media {
 	order: -1;
 }
+.nicolas-blot .fiche-duo-media img,
 .jose-da-silva .fiche-duo-media img,
 .pascal-lescouet .fiche-duo-media img {
 	display: block;
@@ -1289,6 +1298,8 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 	height: auto;
 	border-radius: 8px;
 }
+.nicolas-blot .fiche-duo p:last-child,
+.nicolas-blot .fiche-duo ul:last-child,
 .jose-da-silva .fiche-duo p:last-child,
 .jose-da-silva .fiche-duo ul:last-child,
 .pascal-lescouet .fiche-duo p:last-child,
@@ -1298,16 +1309,20 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 
 /* Telephone et petites tablettes : une seule colonne, le texte d'abord. */
 @media screen and (max-width: 720px) {
+	.nicolas-blot .fiche-duo,
+	.nicolas-blot .fiche-duo.photo-gauche,
 	.jose-da-silva .fiche-duo,
 	.jose-da-silva .fiche-duo.photo-gauche,
 	.pascal-lescouet .fiche-duo,
 	.pascal-lescouet .fiche-duo.photo-gauche {
 		grid-template-columns: 1fr;
 	}
+	.nicolas-blot .fiche-duo.photo-gauche .fiche-duo-media,
 	.jose-da-silva .fiche-duo.photo-gauche .fiche-duo-media,
 	.pascal-lescouet .fiche-duo.photo-gauche .fiche-duo-media {
 		order: 0;
 	}
+	.nicolas-blot .fiche-duo-media img,
 	.jose-da-silva .fiche-duo-media img,
 	.pascal-lescouet .fiche-duo-media img {
 		max-height: 60vh;
