@@ -1227,17 +1227,19 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 .pascal-lescouet strong { color: #2f5f9e; font-weight: 700; }
 
 /* --------------------------------------------------------------------------
-   Fiches de Pascal, de Jose et de Nicolas : texte et photos alternes (une
-   photo a cote de chaque bloc de texte, une image en ouverture et en
-   fermeture).
+   Fiches de Pascal, de Jose, de Nicolas et de Cristelle : texte et photos
+   alternes (une photo a cote de chaque bloc de texte, une image en ouverture
+   et en fermeture).
    Les blocs sont du HTML brut dans le markdown, donc identiques sur la
    fiche seule et sur la page « Instructeurs ».
    -------------------------------------------------------------------------- */
+.cristelle-lauvergnat .fiche-large,
 .nicolas-blot .fiche-large,
 .jose-da-silva .fiche-large,
 .pascal-lescouet .fiche-large {
 	margin: 0 0 2em;
 }
+.cristelle-lauvergnat .fiche-large img,
 .nicolas-blot .fiche-large img,
 .jose-da-silva .fiche-large img,
 .pascal-lescouet .fiche-large img {
@@ -1249,6 +1251,7 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 /* Variante pour une image d'ouverture au format portrait ou carre : pleine
    largeur, elle ecraserait le haut de la fiche. On la bride en hauteur et on
    la centre. */
+.cristelle-lauvergnat .fiche-large-portrait img,
 .nicolas-blot .fiche-large-portrait img,
 .jose-da-silva .fiche-large-portrait img,
 .pascal-lescouet .fiche-large-portrait img {
@@ -1257,6 +1260,7 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 	max-height: 620px;
 	margin: 0 auto;
 }
+.cristelle-lauvergnat .fiche-large figcaption,
 .nicolas-blot .fiche-large figcaption,
 .jose-da-silva .fiche-large figcaption,
 .pascal-lescouet .fiche-large figcaption {
@@ -1265,6 +1269,7 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 	margin-top: .5em;
 }
 
+.cristelle-lauvergnat .fiche-duo,
 .nicolas-blot .fiche-duo,
 .jose-da-silva .fiche-duo,
 .pascal-lescouet .fiche-duo {
@@ -1277,16 +1282,19 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 	margin: 0 0 2.4em;
 }
 /* Photo a gauche une fois sur deux : le regard zigzague, la page respire. */
+.cristelle-lauvergnat .fiche-duo.photo-gauche,
 .nicolas-blot .fiche-duo.photo-gauche,
 .jose-da-silva .fiche-duo.photo-gauche,
 .pascal-lescouet .fiche-duo.photo-gauche {
 	grid-template-columns: minmax(0, 1fr) minmax(0, 2.5fr);
 }
+.cristelle-lauvergnat .fiche-duo.photo-gauche .fiche-duo-media,
 .nicolas-blot .fiche-duo.photo-gauche .fiche-duo-media,
 .jose-da-silva .fiche-duo.photo-gauche .fiche-duo-media,
 .pascal-lescouet .fiche-duo.photo-gauche .fiche-duo-media {
 	order: -1;
 }
+.cristelle-lauvergnat .fiche-duo-media img,
 .nicolas-blot .fiche-duo-media img,
 .jose-da-silva .fiche-duo-media img,
 .pascal-lescouet .fiche-duo-media img {
@@ -1298,7 +1306,9 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 	height: auto;
 	border-radius: 8px;
 }
+.cristelle-lauvergnat .fiche-duo p:last-child,
 .nicolas-blot .fiche-duo p:last-child,
+.cristelle-lauvergnat .fiche-duo ul:last-child,
 .nicolas-blot .fiche-duo ul:last-child,
 .jose-da-silva .fiche-duo p:last-child,
 .jose-da-silva .fiche-duo ul:last-child,
@@ -1309,7 +1319,9 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 
 /* Telephone et petites tablettes : une seule colonne, le texte d'abord. */
 @media screen and (max-width: 720px) {
+	.cristelle-lauvergnat .fiche-duo,
 	.nicolas-blot .fiche-duo,
+	.cristelle-lauvergnat .fiche-duo.photo-gauche,
 	.nicolas-blot .fiche-duo.photo-gauche,
 	.jose-da-silva .fiche-duo,
 	.jose-da-silva .fiche-duo.photo-gauche,
@@ -1317,11 +1329,13 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 	.pascal-lescouet .fiche-duo.photo-gauche {
 		grid-template-columns: 1fr;
 	}
+	.cristelle-lauvergnat .fiche-duo.photo-gauche .fiche-duo-media,
 	.nicolas-blot .fiche-duo.photo-gauche .fiche-duo-media,
 	.jose-da-silva .fiche-duo.photo-gauche .fiche-duo-media,
 	.pascal-lescouet .fiche-duo.photo-gauche .fiche-duo-media {
 		order: 0;
 	}
+	.cristelle-lauvergnat .fiche-duo-media img,
 	.nicolas-blot .fiche-duo-media img,
 	.jose-da-silva .fiche-duo-media img,
 	.pascal-lescouet .fiche-duo-media img {
