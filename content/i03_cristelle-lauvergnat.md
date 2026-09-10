@@ -9,8 +9,8 @@ Summary: Présentation de Cristelle Lauvergnat, instructrice au COS Karaté
 
 # Cristelle Lauvergnat — 5e DAN FFK, Brevet d'État
 
-<figure class="fiche-large">
-  <img src="/images/cristelle_2026_01.jpg" alt="Cristelle Lauvergnat en garde face à Nicolas Blot">
+<figure class="fiche-large fiche-large-portrait">
+  <img src="/images/cristelle_2026_01.jpg" alt="Cristelle Lauvergnat exécutant un blocage haut">
 </figure>
 
 Cristelle est une **pure enfant du club** : elle a poussé la porte du CO Sèvres Karaté en **1993, à 12 ans**, formée par **Pascal Lescouët** et **José Castro Da Silva**. **Plus de trente ans de pratique** plus tard, elle y transmet à son tour ce qu'elle y a reçu.
@@ -50,12 +50,12 @@ Cristelle est une **pure enfant du club** : elle a poussé la porte du CO Sèvre
     <p>Sa curiosité l'a par ailleurs menée au-delà du karaté : elle pratique aussi le <strong>krav maga</strong> et le <strong>kali</strong>. Cette ouverture enrichit directement ses cours — travail des <strong>distances</strong>, des <strong>saisies</strong>, de la <strong>réaction</strong>, applications concrètes des techniques — sans jamais diluer la <strong>rigueur du Shotokan</strong>.</p>
   </div>
   <div class="fiche-duo-media">
-    <img src="/images/cristelle_2026_05.jpg" alt="Cristelle Lauvergnat exécutant un blocage haut" loading="lazy">
+    <img src="/images/cristelle_2026_05.jpg" alt="Cristelle Lauvergnat en garde, main ouverte" loading="lazy">
   </div>
 </div>
 
-<figure class="fiche-large fiche-large-portrait">
-  <img src="/images/cristelle_2026_06.jpg" alt="Cristelle Lauvergnat appliquant une technique de saisie face à Nicolas Blot" loading="lazy">
+<figure class="fiche-large">
+  <img src="/images/cristelle_2026_06.jpg" alt="Cristelle Lauvergnat en garde face à Nicolas Blot" loading="lazy">
 </figure>
 
 <p class="fiche-conclusion"><strong>Ce que cela signifie pour vous :</strong> que vous inscriviez votre enfant ou que vous débutiez vous-même à l'âge adulte, vous êtes encadré par une <strong>enseignante diplômée d'État</strong>, de très haut niveau technique, qui <strong>enseigne depuis deux décennies</strong>, forme et évalue les cadres du département, et connaît le club de l'intérieur.</p>
