@@ -525,6 +525,11 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 		height: 0;
 		overflow: hidden;
 	}
+	/* Vidéo hébergée sur le site (fichier MP4, pas YouTube) : même cadre
+	   16:9 que les intégrations YouTube, mais lecteur natif du navigateur. */
+	.video-wrapper.video-native { background: #000; }
+	.video-wrapper.video-native::after { display: none; }
+	.video-wrapper video,
 	.video-wrapper iframe {
 		position: absolute;
 		top: 0;

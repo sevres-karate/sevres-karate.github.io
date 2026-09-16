@@ -58,6 +58,7 @@ THEME = 'theme/karate'
 STATIC_PATHS = [
     "images",
     "pdfs",
+    "videos",
     "extra/robots.txt",
     "extra/favicon.ico",
     "extra/membres.enc.json",
