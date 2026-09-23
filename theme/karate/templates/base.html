@@ -74,18 +74,14 @@
                 </ul></nav>
         </header><!-- /#banner -->
         {# Pages « préparer sa venue » : Horaires, Tarifs, Contacts, Inscription
-           en ligne et Essai gratuit. Elles reçoivent le bandeau de rentrée
-           au-dessus du contenu et le bloc « On vous attend » en dessous.
-           L'accueil a déjà les deux, intégrés à son habillage (voir
+           en ligne et Essai gratuit. Elles reçoivent le bloc « On vous attend »
+           sous le contenu. L'accueil l'a déjà, intégré à son habillage (voir
            content/pages/accueil.html) : il n'est pas dans la liste. #}
         {% set reprise_categories = ['Horaires', 'Tarifs'] %}
         {% set reprise_pages = ['contacts', 'inscription-en-ligne', 'essai-gratuit'] %}
         {% set reprise = (category and category.name in reprise_categories)
                          or (article and article.category and article.category.name in reprise_categories)
                          or (page and page.slug in reprise_pages) %}
-        {% if reprise %}
-        <div class="rentree-bar">&#128197; Reprise des cours le <strong>lundi 7 septembre</strong></div>
-        {% endif %}
         {% block content %}
         {% endblock %}
         {# Sur les pages Tarifs et sur « Essai gratuit », la carte de rappel des
