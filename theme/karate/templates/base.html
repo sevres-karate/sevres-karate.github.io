@@ -47,14 +47,27 @@
                         <li><a href="{{ SITEURL }}/pages/acces-membres.html">Accès Membres</a></li>
                     </ul>
                 </li>
-                <li class="has-submenu{% if category and category.name == 'Karaté' %} active{% endif %}"><a href="{{ SITEURL }}/code-moral.html">Karaté</a>
-                    <ul class="submenu">
+                {# Sous-menu « Karaté » en quatre blocs (intitulés non cliquables,
+                   voir .submenu-group dans main.css). Le lien de tête ouvre
+                   « Débuter / FAQ », la porte d'entrée naturelle de la rubrique. #}
+                <li class="has-submenu{% if category and category.name == 'Karaté' %} active{% endif %}"><a href="{{ SITEURL }}/debuter-faq.html">Karaté</a>
+                    <ul class="submenu submenu-groupes">
+                        <li class="submenu-group">Débuter</li>
                         <li><a href="{{ SITEURL }}/debuter-faq.html">Débuter / FAQ</a></li>
-                        <li><a href="{{ SITEURL }}/code-moral.html">Le code moral du karaté</a></li>
+                        <li><a href="{{ SITEURL }}/guide-debutant.html">Les bases du karaté</a></li>
                         <li><a href="{{ SITEURL }}/deroulement-cours.html">Le déroulement d'un cours</a></li>
+                        <li class="submenu-group">Culture</li>
+                        <li><a href="{{ SITEURL }}/code-moral.html">Le code moral du karaté</a></li>
+                        <li><a href="{{ SITEURL }}/katas.html">Les 26 katas du Shotokan</a></li>
+                        <li class="submenu-group">Technique</li>
                         <li><a href="{{ SITEURL }}/controle.html">Le contrôle</a></li>
                         <li><a href="{{ SITEURL }}/mawashi-geri.html">Mawashi geri</a></li>
-                        <li><a href="{{ SITEURL }}/guide-debutant.html">Les bases du karaté</a></li>
+                        <li class="submenu-group"><a href="{{ SITEURL }}/paroles-de-profs.html">Paroles de profs</a></li>
+                        <li><a href="{{ SITEURL }}/paroles-de-profs.html#parcours">Parcours</a></li>
+                        <li><a href="{{ SITEURL }}/paroles-de-profs.html#le-club">Le club</a></li>
+                        <li><a href="{{ SITEURL }}/paroles-de-profs.html#pratique-et-technique">Pratique et technique</a></li>
+                        <li><a href="{{ SITEURL }}/paroles-de-profs.html#ce-que-le-karate-apporte">Ce que le karaté apporte</a></li>
+                        <li><a href="{{ SITEURL }}/paroles-de-profs.html#se-lancer">Se lancer</a></li>
                     </ul>
                 </li>
                 <li{% if category and category.name == 'Horaires' %} class="active"{% endif %}><a href="{{ SITEURL }}/category/horaires.html">Horaires</a></li>

@@ -263,6 +263,46 @@ div.figure p.caption, figure p.caption { /* margin provided by figure */
 		white-space: nowrap;
 	}
 
+	/* Intitulés de groupe dans le sous-menu « Karaté » (Débuter, Culture,
+	   Technique, Paroles de profs) : petites capitales atténuées, séparées
+	   du groupe précédent par un filet. Un intitulé peut porter un lien
+	   (Paroles de profs ouvre la page complète) ; il garde alors le même
+	   habillage, et se colore seulement au survol. */
+	#banner nav ul.submenu li.submenu-group {
+		padding: 9px 1.5em 3px;
+		font-size: .72em;
+		font-weight: bold;
+		letter-spacing: .12em;
+		text-transform: uppercase;
+		color: #b9b3e0;
+		cursor: default;
+		white-space: nowrap;
+	}
+	#banner nav ul.submenu li.submenu-group + li a:link,
+	#banner nav ul.submenu li.submenu-group + li a:visited {padding-top: 6px;}
+	#banner nav ul.submenu li.submenu-group:not(:first-child) {
+		margin-top: 4px;
+		border-top: 1px solid rgba(255,255,255,.14);
+	}
+	#banner nav ul.submenu li.submenu-group a:link,
+	#banner nav ul.submenu li.submenu-group a:visited {
+		display: inline;
+		padding: 0;
+		color: inherit;
+		font: inherit;
+		letter-spacing: inherit;
+		text-transform: inherit;
+	}
+	#banner nav ul.submenu li.submenu-group a:hover,
+	#banner nav ul.submenu li.submenu-group a:active {
+		background: none;
+		color: #fff;
+		text-decoration: underline;
+	}
+	/* Les groupes ne sont pas cliquables : on n'y applique pas le fond rouge
+	   du survol prévu pour les liens. */
+	#banner nav ul.submenu li.submenu-group:hover {background: none;}
+
 	#banner nav a:link, #banner nav a:visited {
 		color: #fff;
 		display: inline-block;
