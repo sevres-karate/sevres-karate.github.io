@@ -578,15 +578,18 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 		height: 100%;
 		border: 0;
 	}
-	/* Zone invisible qui recouvre la barre supérieure du lecteur YouTube
-	   (titre / Partager) une fois la vidéo lancée, pour bloquer ces clics.
-	   La lecture reste possible : play/pause au centre, contrôles en bas. */
+	/* Zone invisible qui recouvre le titre et le lien vers la chaîne, en
+	   haut à gauche du lecteur YouTube, une fois la vidéo lancée, pour
+	   bloquer ces clics. Elle s'arrête à 60 % de la largeur : YouTube place
+	   désormais les boutons son, sous-titres et réglages en haut à DROITE,
+	   et une bande sur toute la largeur les rendait inaccessibles. La
+	   lecture reste possible : play/pause au centre, contrôles en bas. */
 	.video-wrapper::after {
 		content: "";
 		position: absolute;
 		top: 0;
 		left: 0;
-		width: 100%;
+		width: 60%;
 		height: 60px;
 		z-index: 2;
 		pointer-events: none;
@@ -850,6 +853,35 @@ li:first-child .hentry, #content > .hentry {border: 0; margin: 0;}
 	color: #C74350;
 	font-size: 1.15em;
 	font-weight: 700;
+}
+
+/* Page « Paroles de professeurs » : chaque section (h2) est nettement
+   détachée de la précédente, bandeau gris à filet bleu comme sur
+   « Débuter / FAQ » ; les témoignages (h3) d'une même section sont
+   séparés par un filet léger. */
+.paroles-de-profs .entry-content h2 {
+	margin-top: 3.2em;
+	margin-bottom: .8em;
+	padding: .5em .9em;
+	background: #f5f5f5;
+	border-left: 5px solid #5b8fc7;
+	border-radius: 0 6px 6px 0;
+}
+.paroles-de-profs .entry-content h2:first-of-type {
+	margin-top: 2.2em;
+}
+.paroles-de-profs .entry-content h3 {
+	margin-top: 2.4em;
+	padding-top: 1.4em;
+	border-top: 1px solid #e3e3e3;
+}
+.paroles-de-profs .entry-content h2 + p + h3 {
+	border-top: 0;
+	padding-top: 0;
+	margin-top: 1.8em;
+}
+.paroles-de-profs .entry-content .video-wrapper {
+	margin-bottom: 1em;
 }
 
 /* Page « Le bureau » : fiches des membres du bureau */
