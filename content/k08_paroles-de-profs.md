@@ -24,6 +24,40 @@ dizaines d'années de tatami derrière eux ; cette page rassemble ce qu'ils ont
 Comment ils sont arrivés au karaté, ce qui les y a gardés, et le chemin
 jusqu'à l'enseignement.
 
+### Les débuts à 14 ans, par Paskal
+
+Avant le 6<sup>e</sup> dan, avant l'enseignement, avant même le CO Sèvres
+Karaté, il y a eu un adolescent de 14 ans qui poussait pour la première fois
+la porte d'un dojo.
+
+C'était en 1979, au club Budo XI, à Paris, auprès de Marcel Le Rolland, élève
+direct de Senseï Taïji Kase. [Paskal](/pascal-lescouet.html) raconte ici ses
+débuts : ce qui l'a amené au karaté, et ce qui a fait qu'il n'a plus jamais
+quitté le tatami.
+
+Chacun a ses propres raisons de venir au karaté, et nombreux sont les chemins
+qui y mènent : un ami, un film, l'envie de se défendre ou de se dépasser, un
+simple hasard. Celui de Paskal en est un parmi d'autres, et peu importe la
+porte par laquelle on entre.
+
+<div class="video-wrapper video-facade" data-embed="_3ETE6OlCYk?rel=0&amp;modestbranding=1" data-title="Les débuts à 14 ans, par Paskal">
+<img src="https://i.ytimg.com/vi/_3ETE6OlCYk/hqdefault.jpg" alt="Paskal Lescouët raconte ses débuts au karaté à 14 ans" loading="lazy">
+<button type="button" class="video-play" aria-label="Lire la vidéo : Les débuts à 14 ans, par Paskal"></button>
+</div>
+
+### « Le déclic », par Paskal
+
+Commencer le karaté est une chose. Se prendre de passion pour lui en est une
+autre, et cela n'arrive pas forcément au premier cours.
+
+Paskal raconte ici quand il a eu ce déclic, et comment une pratique
+d'adolescent est devenue la passion de toute une vie.
+
+<div class="video-wrapper video-facade" data-embed="xD5Bq6qUUdg?rel=0&amp;modestbranding=1" data-title="« Le déclic », par Paskal">
+<img src="https://i.ytimg.com/vi/xD5Bq6qUUdg/hqdefault.jpg" alt="Paskal Lescouët raconte le moment où il s'est pris de passion pour le karaté" loading="lazy">
+<button type="button" class="video-play" aria-label="Lire la vidéo : Le déclic, par Paskal"></button>
+</div>
+
 ### « Le 6e dan », par Paskal
 
 Quarante-sept ans de karaté, dont près de quarante au club. Et au bout de ce
@@ -47,16 +81,132 @@ et c'est précisément ce qui rend ce chemin si beau.
 <button type="button" class="video-play" aria-label="Lire la vidéo : Le 6e dan, par Paskal"></button>
 </div>
 
+### « Que travailler après le 6e dan ? », par Paskal
+
+Le grade est obtenu, le diplôme est rangé. Et le lundi suivant, on remet son
+kimono comme tous les lundis. Pour travailler quoi, au juste ?
+
+On pourrait croire qu'à ce niveau tout est acquis, et qu'il ne reste plus
+qu'à entretenir. C'est tout le contraire : plus on avance, plus on mesure ce
+qu'il reste à comprendre, jusque dans les techniques que l'on répète depuis
+le premier cours.
+
+Paskal nous partage ici sa vision de la suite du chemin : ce que l'on cherche
+encore après plus de quarante ans de pratique, et ce qui donne envie de
+revenir au dojo, séance après séance.
+
+Une réponse qui ne concerne pas que les hauts gradés. Quelle que soit la
+couleur de la ceinture, la question reste la même : qu'est-ce que je viens
+travailler aujourd'hui ?
+
+<div class="video-wrapper video-facade" data-embed="zmNf4XUBXu8?rel=0&amp;modestbranding=1" data-title="« Que travailler après le 6e dan ? », par Paskal">
+<img src="https://i.ytimg.com/vi/zmNf4XUBXu8/hqdefault.jpg" alt="Paskal Lescouët partage sa vision de ce qu'il reste à travailler après le 6e dan" loading="lazy">
+<button type="button" class="video-play" aria-label="Lire la vidéo : Que travailler après le 6e dan ?, par Paskal"></button>
+</div>
+
 <h2 id="le-club">Le club</h2>
 
 Leur regard sur le CO Sèvres Karaté : ce qui fait son esprit, et ce qu'ils
 cherchent à y transmettre.
+
+### « Des gradés au club, quelles différences sur le tatami ? », par Paskal
+
+Au CO Sèvres Karaté, plus d'un quart des adhérents porte la ceinture noire,
+du 1<sup>er</sup> au 6<sup>e</sup> dan. Une richesse rare pour un club de
+cette taille, que détaille la page
+[Le club en chiffres](/club-en-chiffres.html).
+
+Mais au-delà des chiffres, qu'est-ce que cela change vraiment, un soir de
+cours ? [Paskal](/pascal-lescouet.html) répond ici à la question.
+
+Sur le tatami, les gradés ne s'entraînent pas entre eux, à l'écart. Ils sont
+dans les rangs, à côté des débutants, et travaillent avec eux : un partenaire
+qui a vingt ou trente ans de pratique montre le geste, donne le bon rythme,
+rassure, et corrige d'un mot au bon moment.
+
+Pour celui qui débute, c'est une chance : on progresse plus vite quand on a
+de bons exemples sous les yeux. Et pour les gradés, c'est une façon de rendre
+ce qu'ils ont eux-mêmes reçu en arrivant au club.
+
+<div class="video-wrapper video-facade" data-embed="4W1ZlY_mbOQ?rel=0&amp;modestbranding=1" data-title="« Des gradés au club, quelles différences sur le tatami ? », par Paskal">
+<img src="https://i.ytimg.com/vi/4W1ZlY_mbOQ/hqdefault.jpg" alt="Paskal Lescouët explique ce que la présence de nombreux gradés change sur le tatami" loading="lazy">
+<button type="button" class="video-play" aria-label="Lire la vidéo : Des gradés au club, quelles différences sur le tatami ?, par Paskal"></button>
+</div>
+
+### « La fierté du club », par Paskal
+
+Près de quarante ans au CO Sèvres Karaté : on ne reste pas aussi longtemps
+dans une maison sans y être profondément attaché.
+
+[Paskal](/pascal-lescouet.html) dit ici, avec ses mots, ce qui le rend fier de
+notre club.
+
+Cette fierté, elle se voit d'abord sur le tatami : des enfants qui grandissent
+au dojo, des débutants devenus ceintures noires, d'anciens élèves qui
+enseignent aujourd'hui à leur tour, et toutes les générations qui s'entraînent
+ensemble, dans la même exigence et la même bonne humeur.
+
+Un club, ce sont avant tout des personnes. Celles qui poussent la porte pour
+la première fois, celles qui reviennent chaque semaine depuis des années, et
+celles qui donnent de leur temps pour que tout cela continue.
+
+Une fierté qui se partage, donc : elle appartient à chacun de ceux qui font
+vivre le CO Sèvres Karaté.
+
+<div class="video-wrapper video-facade" data-embed="FPruJJPtFS0?rel=0&amp;modestbranding=1" data-title="« La fierté du club », par Paskal">
+<img src="https://i.ytimg.com/vi/FPruJJPtFS0/hqdefault.jpg" alt="Paskal Lescouët dit sa fierté pour le CO Sèvres Karaté" loading="lazy">
+<button type="button" class="video-play" aria-label="Lire la vidéo : La fierté du club, par Paskal"></button>
+</div>
 
 <h2 id="pratique-et-technique">Pratique et technique</h2>
 
 Leur façon d'aborder la technique, l'entraînement et la progression. Pour le
 détail d'un geste, voir aussi [Le contrôle](/controle.html) et
 [Mawashi geri](/mawashi-geri.html).
+
+### « Progresser quel que soit notre âge », par Paskal
+
+Un jour, on s'aperçoit que la vitesse de ses vingt ans n'est plus tout à fait
+là. Le corps récupère moins vite, l'explosivité se fait attendre, et l'on se
+demande si les plus belles années de karaté ne sont pas derrière soi.
+
+[Paskal](/pascal-lescouet.html) est bien placé pour répondre : plus de
+quarante ans de pratique, et un 6<sup>e</sup> dan obtenu bien après ses vingt
+ans. Il donne ici ses conseils pour continuer à progresser, quel que soit
+notre âge.
+
+Car le karaté ne se résume pas à aller vite. Ce que l'on perd en explosivité,
+on peut le regagner ailleurs : dans la précision du geste, le relâchement, le
+sens de la distance et du bon moment, et dans une compréhension de la
+technique qui ne cesse de s'affiner avec les années.
+
+C'est l'une des grandes forces de cet art : on ne le pratique pas à
+cinquante ans comme à vingt, mais on peut y progresser toute sa vie. Il suffit
+de continuer à venir, et de savoir ce que l'on cherche.
+
+<div class="video-wrapper video-facade" data-embed="3bKgGcCyI_8?rel=0&amp;modestbranding=1" data-title="« Progresser quel que soit notre âge », par Paskal">
+<img src="https://i.ytimg.com/vi/3bKgGcCyI_8/hqdefault.jpg" alt="Paskal Lescouët donne ses conseils pour continuer à progresser en karaté quel que soit notre âge" loading="lazy">
+<button type="button" class="video-play" aria-label="Lire la vidéo : Progresser quel que soit notre âge, par Paskal"></button>
+</div>
+
+### « Geste juste ou geste puissant ? », par Paskal
+
+C'est une question que tout pratiquant finit par se poser, à la ceinture
+blanche comme à la ceinture noire : faut-il d'abord chercher la puissance, ou
+d'abord la justesse ?
+
+La tentation est grande de vouloir frapper fort, tout de suite. Mais un geste
+puissant et mal placé ne mène pas bien loin, et un geste parfaitement dessiné
+qui ne porte pas laisse un goût d'inachevé.
+
+Paskal nous partage ici ses réflexions sur ce que l'on oppose trop vite. Et
+si la puissance n'était pas le contraire de la justesse, mais ce qui vient
+quand le geste est enfin à sa place ?
+
+<div class="video-wrapper video-facade" data-embed="BmOsue14ox0?rel=0&amp;modestbranding=1" data-title="« Geste juste ou geste puissant ? », par Paskal">
+<img src="https://i.ytimg.com/vi/BmOsue14ox0/hqdefault.jpg" alt="Paskal Lescouët partage ses réflexions sur le geste juste et le geste puissant" loading="lazy">
+<button type="button" class="video-play" aria-label="Lire la vidéo : Geste juste ou geste puissant ?, par Paskal"></button>
+</div>
 
 ### Le regard du jury, par Paskal
 
@@ -80,6 +230,32 @@ qui convainc. Les passages de grade de Karim et de Pierre, racontés dans
 <h2 id="ce-que-le-karate-apporte">Ce que le karaté apporte</h2>
 
 Au-delà du dojo : ce que des années de pratique ont changé pour eux.
+
+### « Ce qu'apprend un enfant », par Paskal
+
+On inscrit souvent un enfant au karaté pour qu'il se dépense, ou pour qu'il
+apprenne à se défendre. Il en repart avec bien davantage.
+
+[Paskal](/pascal-lescouet.html), qui a créé la section enfants du club avec
+[José](/jose-da-silva.html) en 1989, explique ici ce qu'un enfant apprend sur
+le tatami, et qui dépasse largement le sport.
+
+Saluer, écouter, attendre son tour. Respecter son partenaire, qu'il soit plus
+grand ou plus petit. Recommencer un geste jusqu'à ce qu'il soit juste, et
+découvrir que l'effort finit par payer.
+
+Ce sont des choses simples, apprises sans grands discours, séance après
+séance. Et elles ne restent pas au dojo : la concentration, la confiance en
+soi et le respect des autres suivent l'enfant à l'école, à la maison, et bien
+plus tard dans sa vie d'adulte.
+
+Une ceinture se mérite. Ce qu'on apprend en la préparant, on le garde
+longtemps après.
+
+<div class="video-wrapper video-facade" data-embed="qvsHqnQ8j7w?rel=0&amp;modestbranding=1" data-title="« Ce qu'apprend un enfant », par Paskal">
+<img src="https://i.ytimg.com/vi/qvsHqnQ8j7w/hqdefault.jpg" alt="Paskal Lescouët explique ce qu'un enfant apprend au karaté au-delà du sport" loading="lazy">
+<button type="button" class="video-play" aria-label="Lire la vidéo : Ce qu'apprend un enfant, par Paskal"></button>
+</div>
 
 <h2 id="se-lancer">Se lancer</h2>
 
