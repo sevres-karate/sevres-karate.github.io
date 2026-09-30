@@ -51,6 +51,15 @@ forme grâce au karaté. Chacun progresse à son rythme, et l'intensité s'adapt
 votre niveau du jour. Les premières séances, on découvre en douceur — personne ne
 vous demandera l'impossible.
 
+C'est sans doute la crainte qu'on entend le plus souvent à l'entrée du dojo.
+[Paskal](pascal-lescouet.html), notre professeur, y répond en vidéo, avec plus de
+quarante ans de tatami derrière lui :
+
+<div id="video-pas-assez-sportif" class="video-wrapper video-facade" data-embed="6Hcz_nMwhW0?rel=0&amp;modestbranding=1" data-title="« Pas assez sportif, pas assez souple ? », par Paskal">
+<img src="https://i.ytimg.com/vi/6Hcz_nMwhW0/hqdefault.jpg" alt="Paskal Lescouët répond à ceux qui pensent ne pas être assez sportifs ou assez souples pour le karaté" loading="lazy">
+<button type="button" class="video-play" aria-label="Lire la vidéo : Pas assez sportif, pas assez souple ?, par Paskal"></button>
+</div>
+
 ## Je n'ai jamais fait de sport de combat, est-ce un problème ?
 
 Au contraire, c'est le point de départ de **tout le monde**. Tous les gradés du
@@ -77,6 +86,24 @@ sa condition physique à tout âge. Beaucoup d'adultes débutent chez nous aprè
 50 ans ou plus, et y trouvent autant de plaisir que de bienfaits. Vous irez à
 votre rythme, et c'est très bien ainsi.
 
+## J'ai déjà pratiqué il y a longtemps, puis-je reprendre ?
+
+Bien sûr, et vous ne repartez pas de zéro. Ce qui a été appris ne s'efface pas :
+les gestes reviennent plus vite qu'on ne le croit, et personne ne vous demandera
+de comptes sur les années d'absence.
+
+Que la pause ait duré cinq, dix ou vingt ans, [Paskal](pascal-lescouet.html)
+s'adresse ici à celles et ceux qui ont connu le tatami et qui n'osent pas y
+revenir :
+
+<div class="video-wrapper video-facade" data-embed="D_VPAXnmrSI?rel=0&amp;modestbranding=1" data-title="« Reprendre le kimono », par Paskal">
+<img src="https://i.ytimg.com/vi/D_VPAXnmrSI/hqdefault.jpg" alt="Paskal Lescouët s'adresse aux anciens pratiquants qui hésitent à reprendre le karaté" loading="lazy">
+<button type="button" class="video-play" aria-label="Lire la vidéo : Reprendre le kimono, par Paskal"></button>
+</div>
+
+Là aussi, le [premier cours est gratuit](pages/essai-gratuit.html) : venez
+simplement retrouver vos marques.
+
 ## Est-ce qu'on se fait mal ? C'est violent ?
 
 Non, le karaté pratiqué au club **n'est pas un sport violent**. La sécurité et le
@@ -95,7 +122,8 @@ mais c'est le seul « risque » à prévoir !
 
 Absolument pas. La souplesse n'est **pas** un prérequis, c'est un **résultat**.
 Séance après séance, votre corps gagnera naturellement en amplitude. On ne vous
-demandera jamais de faire le grand écart.
+demandera jamais de faire le grand écart. Paskal le dit lui-même dans
+[la vidéo un peu plus haut](#video-pas-assez-sportif).
 
 ## Je suis timide, j'ai peur de ne pas y arriver
 

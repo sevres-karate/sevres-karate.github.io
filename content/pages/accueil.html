@@ -205,6 +205,16 @@
 }
 .hp .hp-videos figcaption b { color: var(--ink); }
 
+/* Vidéo seule, au format 16:9, dans une colonne (bloc « Débuter »). */
+.hp .hp-video-solo { margin: 1.8rem 0 0; }
+.hp .hp-video-solo .video-wrapper {
+  margin: 0; max-width: 100%; border-radius: var(--radius); box-shadow: var(--shadow-sm);
+}
+.hp .hp-video-solo figcaption {
+  margin-top: .75rem; font-size: .95rem; color: var(--ink-soft);
+}
+.hp .hp-video-solo figcaption b { color: var(--ink); }
+
 /* ---------- Galerie photos ---------- */
 /* Meme logique que les autres grilles : auto-fit plutot que media queries,
    le panneau de contenu du theme etant plus etroit que la fenetre. */
@@ -378,6 +388,14 @@
       </div>
       <p style="font-size:.95rem;color:var(--ink-soft);margin-top:1rem">Envie de savoir à quoi ressemble une séance ?</p>
       <p style="margin-top:.5rem"><a class="hp-linkout" href="/deroulement-cours.html">Le déroulement d'un cours <span class="hp-arrow">→</span></a></p>
+      <!-- Vidéo reprise de « Paroles de profs → Se lancer » -->
+      <figure class="hp-video-solo">
+        <div class="video-wrapper video-facade" data-embed="6Hcz_nMwhW0?rel=0&amp;modestbranding=1" data-title="« Pas assez sportif, pas assez souple ? », par Paskal">
+          <img src="https://i.ytimg.com/vi/6Hcz_nMwhW0/hqdefault.jpg" alt="Paskal Lescouët répond à ceux qui pensent ne pas être assez sportifs ou assez souples pour le karaté" loading="lazy">
+          <button type="button" class="video-play" aria-label="Lire la vidéo : Pas assez sportif, pas assez souple ?, par Paskal"></button>
+        </div>
+        <figcaption><b>« Pas assez sportif, pas assez souple ? »</b> — la réponse de Paskal, notre professeur</figcaption>
+      </figure>
     </div>
   </div>
 </div>

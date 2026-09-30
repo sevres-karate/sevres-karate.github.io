@@ -151,6 +151,23 @@
 
 .eg .eg-btn-row { display: flex; gap: .7rem; flex-wrap: wrap; margin-top: 1rem; }
 
+/* ---------- Vidéos « Encore une hésitation ? » ---------- */
+/* Le cadre 16:9 et la vignette viennent de .video-wrapper / .video-facade
+   (main.css) : on ne règle ici que la disposition. */
+.eg .eg-hesite { background: var(--cream-deep); }
+.eg .eg-hesite h2 { font-size: clamp(1.5rem, 3vw, 2.1rem); margin-bottom: 1.5rem; }
+.eg .eg-videos {
+  display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.6rem;
+}
+.eg .eg-videos figure { margin: 0; }
+.eg .eg-videos .video-wrapper {
+  margin: 0; max-width: 100%; border-radius: var(--radius); box-shadow: var(--shadow-sm);
+}
+.eg .eg-videos figcaption { margin-top: .75rem; font-size: .95rem; color: var(--ink-soft); }
+.eg .eg-videos figcaption b { display: block; color: var(--ink); }
+.eg .eg-hesite-suite { margin-top: 1.6rem; font-size: .95rem; color: var(--ink-soft); }
+.eg .eg-hesite-suite a { color: var(--rust); font-weight: 600; }
+
 /* ---------- Bandeau indigo ---------- */
 .eg .eg-indigo { background: var(--indigo); color: #fff; text-align: center; }
 .eg .eg-indigo h2 { color: #fff; font-size: clamp(1.5rem, 3vw, 2.1rem); margin-bottom: 1.4rem; }
@@ -281,6 +298,33 @@
       </div>
 
     </div>
+  </div>
+</div>
+
+<!-- Deux vidéos reprises de « Paroles de profs → Se lancer » -->
+<div class="eg-hesite">
+  <div class="eg-wrap">
+    <span class="eg-eyebrow">Encore une hésitation&nbsp;?</span>
+    <h2>Paskal, notre professeur, vous répond.</h2>
+    <div class="eg-videos">
+      <figure>
+        <div class="video-wrapper video-facade" data-embed="6Hcz_nMwhW0?rel=0&amp;modestbranding=1" data-title="« Pas assez sportif, pas assez souple ? », par Paskal">
+          <img src="https://i.ytimg.com/vi/6Hcz_nMwhW0/hqdefault.jpg" alt="Paskal Lescouët répond à ceux qui pensent ne pas être assez sportifs ou assez souples pour le karaté" loading="lazy">
+          <button type="button" class="video-play" aria-label="Lire la vidéo : Pas assez sportif, pas assez souple ?, par Paskal"></button>
+        </div>
+        <figcaption><b>«&nbsp;Pas assez sportif, pas assez souple&nbsp;?&nbsp;»</b> Pour celles et ceux qui n'ont jamais pratiqué.</figcaption>
+      </figure>
+      <figure>
+        <div class="video-wrapper video-facade" data-embed="D_VPAXnmrSI?rel=0&amp;modestbranding=1" data-title="« Reprendre le kimono », par Paskal">
+          <img src="https://i.ytimg.com/vi/D_VPAXnmrSI/hqdefault.jpg" alt="Paskal Lescouët s'adresse aux anciens pratiquants qui hésitent à reprendre le karaté" loading="lazy">
+          <button type="button" class="video-play" aria-label="Lire la vidéo : Reprendre le kimono, par Paskal"></button>
+        </div>
+        <figcaption><b>«&nbsp;Reprendre le kimono&nbsp;»</b> Pour celles et ceux qui ont déjà connu le tatami.</figcaption>
+      </figure>
+    </div>
+    <p class="eg-hesite-suite">
+      D'autres questions&nbsp;? La page <a href="/debuter-faq.html">Débuter / FAQ</a> y répond point par point.
+    </p>
   </div>
 </div>
 

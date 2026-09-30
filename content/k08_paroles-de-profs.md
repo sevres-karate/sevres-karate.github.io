@@ -302,8 +302,7 @@ Paskal s'adresse ici à celles et ceux qui ont connu le tatami et qui n'osent
 pas y revenir.
 
 Ce qui a été appris ne s'efface pas. Les gestes reviennent plus vite qu'on ne
-le croit, la ceinture est celle que vous aviez, et personne ne vous demandera
-de comptes sur les années d'absence.
+le croit, et personne ne vous demandera de comptes sur les années d'absence.
 
 Reprendre, c'est retrouver un plaisir qu'on connaît déjà. Le
 [premier cours est gratuit](/pages/essai-gratuit.html), et le dojo n'attend
