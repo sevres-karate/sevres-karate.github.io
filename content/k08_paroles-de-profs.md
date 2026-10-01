@@ -58,6 +58,70 @@ d'adolescent est devenue la passion de toute une vie.
 <button type="button" class="video-play" aria-label="Lire la vidéo : Le déclic, par Paskal"></button>
 </div>
 
+### « L'influence de la compétition », par Paskal
+
+On connaît Paskal professeur. On sait moins qu'il a longtemps été
+compétiteur : membre de l'équipe nationale JKA, il a disputé tournois
+internationaux, championnats d'Europe et Coupes du Monde, jusqu'à un quart de
+finale en kata au Championnat du Monde JKA, à Paris, en 1998. Son palmarès
+est détaillé sur [sa fiche](/pascal-lescouet.html).
+
+Il revient ici sur ces années, et sur l'influence que la compétition a eue sur
+sa pratique.
+
+Les coupes finissent sur une étagère. Mais que reste-t-il, des années plus
+tard, de ces saisons passées à se préparer pour un jour précis ? Qu'est-ce que
+le compétiteur a laissé au pratiquant, puis au professeur ?
+
+Un témoignage qui parle autant à ceux qui s'alignent en compétition qu'à ceux
+qui n'y mettront jamais les pieds.
+
+<div class="video-wrapper video-facade" data-embed="KrFEsqLA1XQ?rel=0&amp;modestbranding=1" data-title="« L'influence de la compétition », par Paskal">
+<img src="https://i.ytimg.com/vi/KrFEsqLA1XQ/hqdefault.jpg" alt="Paskal Lescouët revient sur l'influence de la compétition sur sa pratique du karaté" loading="lazy">
+<button type="button" class="video-play" aria-label="Lire la vidéo : L'influence de la compétition, par Paskal"></button>
+</div>
+
+### « Les entraînements au Japon », par Paskal
+
+Pour un pratiquant de Shotokan, il y a une adresse à part : le Hombu Dojo de
+la JKA, à Tokyo, là où se forme l'élite mondiale du style.
+[Paskal](/pascal-lescouet.html) y est allé s'entraîner à plusieurs reprises.
+
+Il raconte ici ce qui l'a surpris, et ce qui l'a impressionné, lors de ces
+entraînements.
+
+On y arrive avec des années de pratique derrière soi. Et pourtant,
+qu'y découvre-t-on que l'on n'avait jamais vu ailleurs ?
+
+Un récit pour tous ceux qui se sont un jour demandé à quoi ressemble un cours
+là-bas.
+
+<div class="video-wrapper video-facade" data-embed="PxsIYFk04RE?rel=0&amp;modestbranding=1" data-title="« Les entraînements au Japon », par Paskal">
+<img src="https://i.ytimg.com/vi/PxsIYFk04RE/hqdefault.jpg" alt="Paskal Lescouët raconte ce qui l'a surpris et impressionné lors de ses entraînements au Hombu Dojo de la JKA à Tokyo" loading="lazy">
+<button type="button" class="video-play" aria-label="Lire la vidéo : Les entraînements au Japon, par Paskal"></button>
+</div>
+
+### « L'influence des grands maîtres », par Paskal
+
+Abe, Asai, Nishiyama, Enoeda, Ochi, Yahara, Isaka, Miyazaki, Kawawada : pour
+un pratiquant de Shotokan, ces noms comptent parmi ceux des plus grands
+experts japonais. [Paskal](/pascal-lescouet.html) a suivi les stages de chacun
+de ces senseïs.
+
+Il explique ici l'influence que ces stages ont eue sur lui.
+
+Un stage ne dure que quelques heures, parfois quelques jours. Mais que
+garde-t-on d'un maître que l'on n'a côtoyé que le temps d'un stage, et que
+retrouve-t-on de lui dans sa propre pratique, des années plus tard ?
+
+Un témoignage sur ce qui se transmet, de maître à élève, puis d'élève devenu
+professeur.
+
+<div class="video-wrapper video-facade" data-embed="HWjPcBEk-1s?rel=0&amp;modestbranding=1" data-title="« L'influence des grands maîtres », par Paskal">
+<img src="https://i.ytimg.com/vi/HWjPcBEk-1s/hqdefault.jpg" alt="Paskal Lescouët explique l'influence qu'ont eue sur lui ses stages avec les grands maîtres japonais" loading="lazy">
+<button type="button" class="video-play" aria-label="Lire la vidéo : L'influence des grands maîtres, par Paskal"></button>
+</div>
+
 ### « Le 6e dan », par Paskal
 
 Quarante-sept ans de karaté, dont près de quarante au club. Et au bout de ce
