@@ -1,15 +1,15 @@
-Title: Paskal prend la parole : douze vidéos à découvrir
+Title: Paskal prend la parole : quinze vidéos à découvrir
 Date: 2026-09-30 09:00
-Modified: 2026-09-30 09:00
+Modified: 2026-10-01 12:30
 Category: Actu
 Tags: club
 Slug: paskal-prend-la-parole
 Authors: Sèvres Karaté 92
-Summary: Ses débuts à 14 ans, le 6e dan, la fierté du club, ses conseils pour progresser ou pour se lancer : Paskal, notre professeur, répond en douze vidéos sur la nouvelle page « Paroles de professeurs ».
+Summary: Ses débuts à 14 ans, le 6e dan, la fierté du club, ses conseils pour progresser ou pour se lancer : Paskal, notre professeur, répond en quinze vidéos sur la nouvelle page « Paroles de professeurs ».
 
 **Quarante-sept ans de karaté, dont près de quarante au club, et un 6<sup>e</sup>
 dan** : [Paskal](/pascal-lescouet.html), notre professeur, a beaucoup à
-raconter. Il l'a fait devant la caméra, et cela donne **douze vidéos**, réunies
+raconter. Il l'a fait devant la caméra, et cela donne **quinze vidéos**, réunies
 sur une nouvelle page du site : [Paroles de professeurs](/paroles-de-profs.html).
 
 Pour vous donner envie, en voici une : ce qui le rend fier de notre club.
@@ -19,13 +19,14 @@ Pour vous donner envie, en voici une : ce qui le rend fier de notre club.
 <button type="button" class="video-play" aria-label="Lire la vidéo : La fierté du club, par Paskal"></button>
 </div>
 
-## Onze autres vidéos vous attendent
+## Quatorze autres vidéos vous attendent
 
 Elles sont rangées par thème, à regarder dans l'ordre ou au gré de vos
 envies :
 
 - **[Parcours](/paroles-de-profs.html#parcours)** : ses débuts à 14 ans, le
-  déclic, le 6<sup>e</sup> dan, et ce qu'il reste à travailler après.
+  déclic, la compétition, les entraînements au Japon, les stages avec les
+  grands maîtres, le 6<sup>e</sup> dan, et ce qu'il reste à travailler après.
 - **[Le club](/paroles-de-profs.html#le-club)** : ce que change, sur le tatami,
   la présence de nombreux gradés.
 - **[Pratique et technique](/paroles-de-profs.html#pratique-et-technique)** :
