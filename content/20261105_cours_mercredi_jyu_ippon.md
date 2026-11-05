@@ -1,6 +1,6 @@
 Title: Mercredi soir : tatami plein et gros travail de jyu ippon kumite
 Date: 2026-11-05 18:00
-Modified: 2026-11-05 18:00
+Modified: 2026-11-05 19:30
 Category: Actu
 Tags: cours
 Slug: cours-mercredi-4-novembre-2026
@@ -12,7 +12,7 @@ Summary: Retour en images sur le cours adultes du mercredi 4 novembre avec Nicol
 </div>
 
 Retour de vacances, retour sur le tatami ! **Mercredi 4 novembre**, pour le
-premier cours adultes après la Toussaint, la salle tatamis du gymnase des
+deuxième cours adultes après la Toussaint, la salle tatamis du gymnase des
 Cent-Gardes était **pleine d'un bout à l'autre**. Aux commandes ce soir-là,
 [Nicolas](/nicolas-blot.html) et [Cristelle](/cristelle-lauvergnat.html), qui
 nous avaient préparé une séance dense, exigeante... et franchement réjouissante.
@@ -86,14 +86,15 @@ simplement... **collés au mur**.
 </div>
 
 Le défenseur, le dos contre les protections de la salle, n'a plus le choix :
-impossible de fuir, il faut **rester sur place, bloquer fort et contrer tout de
-suite**. Le long du mur, toute la salle s'y est mise, et l'on a vite compris
-pourquoi l'exercice est si efficace : quand on ne peut plus reculer, on
-apprend à **tenir sa garde, à engager les hanches** et à répondre dans le
+impossible de fuir, il faut **sortir de l'axe de l'attaque sans reculer**, par
+un déplacement latéral ou une rotation des hanches, pour **contrer vite**. Le
+long du mur, toute la salle s'y est mise, et l'on a vite compris pourquoi
+l'exercice est si efficace : quand on ne peut plus reculer, on apprend à
+**tenir sa garde, à se décaler plutôt qu'à encaisser** et à répondre dans le
 même temps que l'attaque.
 
 <div style="text-align: center;">
-  <img src="/images/cours20261104_13.jpg" alt="Tous les binômes alignés le long du mur pour le travail de défense" style="max-width: 100%; height: auto; border-radius: 6px;" loading="lazy">
+  <img src="/images/cours20261104_13.jpg" alt="Les binômes alignés le long du mur pour le travail de défense" style="max-width: 100%; height: auto; border-radius: 6px;" loading="lazy">
 </div>
 
 Cristelle, de son côté, n'a pas hésité à **se mettre elle-même au mur** pour
@@ -103,7 +104,7 @@ blocage sans contre, c'est un blocage à moitié fait.
 
 <div style="display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 12px; align-items: start; margin-top: 12px;">
   <img src="/images/cours20261104_14.jpg" alt="Cristelle travaille la défense au mur avec une élève, un autre binôme à côté" style="width: 100%; height: auto; border-radius: 6px;" loading="lazy">
-  <img src="/images/cours20261104_01.jpg" alt="Cristelle au contact avec sa partenaire pendant le travail au mur" style="width: 100%; height: auto; border-radius: 6px;" loading="lazy">
+  <img src="/images/cours20261104_01.jpg" alt="Un binôme travaille la défense au mur" style="width: 100%; height: auto; border-radius: 6px;" loading="lazy">
 </div>
 
 <div style="text-align: center; margin-top: 12px;">
